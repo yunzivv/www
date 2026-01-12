@@ -1317,7 +1317,7 @@ h1, h2{
 .mv-glass-title{ font-weight:900; margin-bottom:4px; letter-spacing:-.02em; }
 .mv-glass-desc{ font-size:13px; font-weight:700; }
 .mv-section{
-    padding:clamp(40px, 6vw, 80px) 0;
+    padding:clamp(30px, 4vw, 60px) 0;
 }
 
 #mv_expected {
@@ -1344,6 +1344,11 @@ h1, h2{
     border: 1px solid #bee2ff;
     box-shadow: 0 12px 36px rgba(15, 23, 42, .12);
     padding:clamp(18px, 2.6vw, 26px);
+}
+
+.mv-card p {
+    color: #64748b;
+    font-size: 0.8rem;
 }
 
 .mv-media{
@@ -2610,7 +2615,7 @@ p{ margin:0 0 12px; font-size:15px; line-height:1.8; }
 }
 
 #mv-centos-page .mv-section{
-    padding:clamp(40px, 6vw, 80px) 0;
+    padding:clamp(20px, 3vw, 40px) 0;
 }
 
 #mv-centos-page .mv-surface{
