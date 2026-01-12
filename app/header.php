@@ -4,9 +4,8 @@
 <header class="site-header" id="siteHeader">
     <div class="header-inner">
         <a class="brand" href="/index.php" aria-label="Go to home">
-            <span class="brand-text">ASSIST</span>
-                <!-- logo 교체 -->
-<!--            <img src="" alt="assist logo">-->
+<!--            <span class="brand-text">ASSIST</span>-->
+            <img src="/assets/img/assist_logo.png" alt="assist logo">
         </a>
 
         <nav class="gnb">

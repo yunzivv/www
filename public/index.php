@@ -104,7 +104,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
                     </p>
 
                     <div class="solutions-cta">
-                        <a class="btn primary" href="solutions/flexera.php">FlexNet Code Insight&nbsp;&nbsp;&nbsp;→</a>
+                        <a class="btn primary" href="solutions/flexera_backup.php">FlexNet Code Insight&nbsp;&nbsp;&nbsp;→</a>
                         <a class="btn btn-ghost-dark" href="contact.php">도입 문의</a>
                     </div>
 
