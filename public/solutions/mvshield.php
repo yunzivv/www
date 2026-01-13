@@ -134,8 +134,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                     </div>
                 </div>
-
-                <div class="mv-cases-watermark" aria-hidden="true">MVShield</div>
             </section>
 
             <section id="about-mvshield">
@@ -182,10 +180,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                     <span>Supported versions</span>
                                 </div>
                                 <div class="chips" aria-label="CentOS supported versions">
-                                    <span class="chip">5</span>
-                                    <span class="chip">6</span>
-                                    <span class="chip">7</span>
-                                    <span class="chip">8</span>
+                                    <span class="chip version">5</span>
+                                    <span class="chip version">6</span>
+                                    <span class="chip version">7</span>
+                                    <span class="chip version">8</span>
                                 </div>
                             </div>
                         </article>
@@ -216,14 +214,13 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
             </section>
 
-            <section id="mvshield-journey">
-                <!--                <div class="wrap">-->
+            <section class="journey">
                 <section>
                     <header class="head">
                         <h2 class="title"><span class="text-highlight-g">EOL</span> 이후에도 멈추지 않는 <span
                                     class="text-highlight">장기 지원</span></h2>
-                        <p class="sub">EOL 이후에도 10년(LTM 5년 + ELTM 5년)간의 장기유지보수를 보장하고,<br>
-                            이후에도 고객이 원하는 시점까지 종료 없이 연장 지원합니다.</p>
+                        <div class="sub">EOL 이후에도 10년(LTM 5년 + ELTM 5년)간의 장기유지보수를 보장하고,<br>
+                            이후에도 고객이 원하는 시점까지 종료 없이 연장 지원합니다.</div>
                     </header>
 
                     <div>

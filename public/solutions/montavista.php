@@ -88,8 +88,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <div class="mv-shell">
                 <div class="mv-head">
                     <h1 class="section-title">도입 시 기대효과</h1>
-                    <span class="card-desc">에이시스트는
-                    빠른 개발, 유연한 확장, 그리고 검증된 안정성을 제공합니다.</span>
                 </div>
 
                 <div class="mv-parallax" data-mv-slider>
@@ -175,7 +173,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                     <button class="mv-sbtn next" type="button" aria-label="다음" data-mv-next>></button>
                 </div>
-
+                <div class="watermark" aria-hidden="true">MontaVista Software</div>
             </div>
         </section>
 
