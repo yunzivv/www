@@ -1,5 +1,5 @@
 <footer class="site-footer">
-    <div class="footWrap">
+    <div class="wrap">
         <div class="footCnt footer-inner">
             <address>
                 <span>에이시스트㈜</span>

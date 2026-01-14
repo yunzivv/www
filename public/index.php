@@ -5,7 +5,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     <section class="hero">
         <img class="bg" src="assets/img/main_bg01.jpg" alt="main background1"/>
 
-        <div class="hero-inner">
+        <div class="hero-inner wrap">
 
                 <div class="hero-copy">
                     <p class="hero-eyebrow">JOURNEY TO THE MOST</p>
@@ -21,11 +21,6 @@ require_once __DIR__ . '/../app/header.php'; ?>
                         리눅스 개발환경 구축, 엔터프라이즈 리눅스에 대한 기술지원, 장기유지보수서비스를 제공합니다.
                     </p>
 
-                    <div class="hero-actions">
-                        <a class="hero-btn hero-btn--primary" href="/contact.php">문의하기</a>
-                        <a class="hero-btn hero-btn--ghost" href="/solutions.php">서비스 보기</a>
-                    </div>
-
                     <ul class="hero-chips" aria-label="핵심 제공 분야">
                         <li>Linux 기술지원</li>
                         <li>컨설팅</li>
@@ -38,7 +33,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
 
     <section id="highlights" class="main-section ">
-        <div class="container">
+        <div class="wrap">
             <header class="section-head">
                 <h1 class="kicker text-highlight-gr2">· HIGHLIGHTS</h1>
             </header>
@@ -74,17 +69,16 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </section>
 
     <section id="solutions">
-        <header class="solution-head">
+        <header class="solution-head wrap">
             <p class="kicker">· SOLUTIONS</p>
             <div class="main-title ">
                 에이시스트가 제공하는 <br>
-                <strong class="hero-title-accent2">최고의 솔루션을 소개</strong>합니다.
+                <strong class="hero-title-accent3">최고의 솔루션을 소개</strong>합니다.
             </div>
         </header>
-        <div class="solutions-page">
+        <div class="solutions-page wrap">
             <div class="solutions-shell">
                 <div>
-<!--                    <p class="kicker">· SOLUTIONS</p>-->
                     <h2 class="title1">
                         Linux is<br/>
                         Everywhere
@@ -97,9 +91,6 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
                     <div class="solutions-cta">
                         <a class="btn primary" href="solutions/montavista.php">MontaVista Linux&nbsp;&nbsp;&nbsp;→</a>
-                        <a class="btn btn-ghost-dark" href="solutions/mvshield.php">
-                            <img src="assets/img/montaVista_logo02.png" alt="">
-                        </a>
                     </div>
 
                     <ul class="solutions-pills">
@@ -115,7 +106,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
             </div>
         </div>
 
-        <div class="solutions-page">
+        <div class="solutions-page wrap">
             <div class="solutions-shell">
                 <div>
 <!--                    <p class="kicker">· SOLUTIONS</p>-->
@@ -148,7 +139,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
 
     <section id="service" class="service-section">
-        <div class="container">
+        <div class="container wrap">
 
             <header class="service-head">
                 <p class="kicker">· SERVICE</p>
@@ -191,7 +182,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     <section id="contact" class="main-section contact-cta">
         <div class="contact-bg"></div>
 
-        <div class="container">
+        <div class="container wrap">
             <header class="section-head section-head--light">
                 <h2 class="kicker text-highlight0">CONTACT US</h2>
                 <div class="main-title">

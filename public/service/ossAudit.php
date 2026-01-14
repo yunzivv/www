@@ -4,7 +4,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- HERO -->
     <section class="oa-hero" aria-labelledby="oa-title">
-        <div class="oa-shell">
+        <div class="wrap">
             <div class="oa-hero__grid">
                 <div class="oa-hero__copy" data-reveal>
                     <p class="oa-kicker">OSS Audit Service</p>
@@ -34,7 +34,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- INSIGHT -->
     <section class="oa-section" aria-labelledby="oa-insight">
-        <div class="oa-shell">
+        <div class="wrap">
             <div class="oa-insight" data-reveal>
                 <h2 class="oa-h2" id="oa-insight">"오픈소스 라이선스 검증 및 관리 체계를 갖추지 않은 조직의 경우,<br/>
                     <span class="text-highlight2">실제 오픈소스 사용량의 10%</span> 만을 파악하고 있습니다."</h2>
@@ -54,7 +54,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- SCOPE -->
     <section class="oa-section oa-section--tint" aria-labelledby="oa-scope">
-        <div class="oa-shell">
+        <div class="wrap">
             <header class="oa-head" data-reveal>
                 <h2 class="oa-h2" id="oa-scope">서비스별 검증 범위</h2>
             </header>
@@ -103,7 +103,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- CASES -->
     <section class="oa-section" aria-labelledby="oa-cases">
-        <div class="oa-shell">
+        <div class="wrap">
             <header class="oa-head" data-reveal>
                 <h2 class="oa-h2" id="oa-cases">검증 서비스 사례</h2>
             </header>
@@ -142,7 +142,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <div class="oa-benefits" aria-label="서비스 강점">
                 <article class="oa-benefit" data-reveal>
                     <div class="oa-icon">
-                        <i class="fa-solid fa-binoculars" aria-hidden="true"></i>
+                        <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div class="oa-con">
                         <h4 class="oa-h4">Secure and Timely M&amp;A Audits</h4>
@@ -151,6 +151,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </article>
 
                 <article class="oa-benefit" data-reveal>
+                    <div class="oa-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
                     <div class="oa-con">
                         <h4 class="oa-h4">Baseline Audits</h4>
                         <p class="oa-muted">Fair and objective third party audits.</p>
@@ -158,6 +161,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </article>
 
                 <article class="oa-benefit" data-reveal>
+                    <div class="oa-icon">
+                        <i class="fa-solid fa-user-shield"></i>
+
+                    </div>
                     <div class="oa-con">
                         <h4 class="oa-h4">Expert Audit Team</h4>
                         <p class="oa-muted">
@@ -169,44 +176,42 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </article>
             </div>
 
-            <section class="mv-section">
-                <div class="mv-shell">
-                    <div class="mv-cta-block">
-                        <div class="mv-cta-copy">
-                            <p class="mv-kicker">· RESOURCES</p>
-                            <h2 class="mv-h2">Datasheets & Links</h2>
-                            <p class="mv-muted">제품 검토에 필요한 문서를 바로 확인하세요.</p>
-                        </div>
+            <section class="resources">
+                <div class="mv-cta-block">
+                    <div class="mv-cta-copy">
+                        <p class="mv-kicker">· RESOURCES</p>
+                        <h2 class="mv-h2">Datasheets & Links</h2>
+                        <p class="mv-muted">제품 검토에 필요한 문서를 바로 확인하세요.</p>
+                    </div>
 
-                        <div class="mv-cta-actions">
-                            <a class="mv-rbtn ghost"
-                               href="https://info.revenera.com/SCA-WP-License-Compliance-Report?lead_source=Website%20Visitor&id=Revenera.com"
-                               target="_blank"
-                               rel="noopener noreferrer">Research Report
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                     viewBox="0 0 24 24" fill="none"
-                                     stroke="#0B1220" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round"
-                                     aria-hidden="true">
-                                    <path d="M7 17L17 7"/>
-                                    <path d="M9 7h8v8"/>
-                                </svg>
-                            </a>
-                            <a class="mv-rbtn primary" href="ossaudit_ds.pdf" target="_blank"
-                               rel="noopener noreferrer">
-                                DATA SHEET
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                     viewBox="0 0 24 24" fill="none"
-                                     stroke="#fff" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round"
-                                     aria-hidden="true">
-                                    <path d="M12 4v10"/>
-                                    <path d="M8 10l4 4 4-4"/>
-                                    <path d="M6 20h12"/>
-                                </svg>
+                    <div class="mv-cta-actions">
+                        <a class="mv-rbtn ghost"
+                           href="https://info.revenera.com/SCA-WP-License-Compliance-Report?lead_source=Website%20Visitor&id=Revenera.com"
+                           target="_blank"
+                           rel="noopener noreferrer">Research Report
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                 viewBox="0 0 24 24" fill="none"
+                                 stroke="#0B1220" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M7 17L17 7"/>
+                                <path d="M9 7h8v8"/>
+                            </svg>
+                        </a>
+                        <a class="mv-rbtn primary" href="ossaudit_ds.pdf" target="_blank"
+                           rel="noopener noreferrer">
+                            DATA SHEET
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                 viewBox="0 0 24 24" fill="none"
+                                 stroke="#fff" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M12 4v10"/>
+                                <path d="M8 10l4 4 4-4"/>
+                                <path d="M6 20h12"/>
+                            </svg>
 
-                            </a>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>

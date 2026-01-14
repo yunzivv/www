@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- HERO -->
     <section class="rl-hero" aria-labelledby="rl-title">
-        <div class="rl-wrap rl-hero__grid">
+        <div class="wrap rl-hero__grid">
             <div class="rl-hero__copy" data-reveal>
                 <p class="rl-eyebrow">Rocky Linux Migration</p>
                 <h1 class="rl-h1" id="rl-title">Why <br><span class="rl-accent">Rocky Linux?</span></h1>
@@ -33,7 +33,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     </section>
 
     <section class="mv-section ">
-        <div class="mv-shell">
+        <div class="wrap">
             <div class="safe-migration">
                 <h2 class="rl-h2">CentOS에서 Rocky Linux로의 <br/>
                     안전한 <span class="hero-title-accent">마이그레이션</span> 지원</h2>
@@ -54,23 +54,23 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- TARGET VERSIONS -->
     <section id="migration-target" class="rl-section" aria-labelledby="rl-target">
-        <div class="rl-wrap">
+        <div class="wrap">
             <header class="rl-head" data-reveal>
                 <h2 class="rl-h2" id="rl-target">마이그레이션 대상 버전</h2>
             </header>
 
-            <figure class="rl-figure" data-reveal>
+<!--            <figure class="rl-figure" data-reveal>-->
                 <picture>
                     <source media="(max-width: 640px)" srcset="/../assets/img/rockylinux_info03_mo.png">
                     <img src="/../assets/img/rockylinux_info03.png" alt=""/>
                 </picture>
-            </figure>
+<!--            </figure>-->
         </div>
     </section>
 
     <!-- SERVICE PLANS -->
     <section class="rl-section rl-section--plans" aria-labelledby="rl-plans">
-        <div class="rl-wrap">
+        <div class="wrap">
             <header class="rl-head" data-reveal>
                 <h2 class="rl-h2" id="rl-plans">서비스 구성 및 내용</h2>
             </header>

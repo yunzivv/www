@@ -4,7 +4,7 @@ require_once __DIR__ . '/../../app/header.php';
 ?>
 <main>
     <section aria-labelledby="ci-title" class="mv-hero" id="flexera-hero">
-        <div class="mv-shell reverse">
+        <div class="mv-shell reverse wrap">
             <div>
                 <p class="kicker">FLEXERA · REVENERA</p>
                 <div class="up-tit">소프트웨어보안 통합 솔루션<br></div>
@@ -25,7 +25,7 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
     </section>
     <section class="mv-section">
-        <div class="mv-shell">
+        <div class="wrap">
             <div class="mv-split">
                 <div class="fl-card">
                     <span class="fl-sub-title">About</span>
@@ -49,7 +49,7 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
     </section>
     <section class="mv-section">
-        <div class="mv-shell">
+        <div class="wrap">
             <div class="mv-split mv-split-reverse">
                 <div class="fl-media">
                     <img alt="FlexNet Code Insight" src="/assets/img/flexera02.jpg"/>
@@ -68,7 +68,7 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
     </section>
 
-    <div class="fl-section3">
+    <div class="fl-section3 mv-section wrap">
         <div class="">
             <div class="fl-title3">“The Largest Open Source Knowledge Base”</div>
             <div class="fl-desc">
@@ -78,15 +78,15 @@ require_once __DIR__ . '/../../app/header.php';
             </div>
         </div>
 
-        <div>
+        <div class="fl-img-wrapper">
             <source media="(max-width: 640px)" srcset="/assets/img/flexera03_mo.jpg">
             <img src="/assets/img/flexera03.jpg" alt="">
         </div>
     </div>
 
 
-    <section id="main-feature" class=" sec--dark">
-        <div class="mv-shell">
+    <section id="main-feature" class="sec--dark">
+        <div class="wrap">
             <header>
                 <h1 class="flex-feature-title">주요 기능</h1>
             </header>
@@ -94,10 +94,11 @@ require_once __DIR__ . '/../../app/header.php';
             <div class="flex-func">
                 <article class="func-card">
                     <div class="func-icon">
-                        <i class="fa-solid fa-binoculars" aria-hidden="true"></i>
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <span class="f-card-title">모든 오픈소스 <br>소프트웨어 탐지 및 추적</span>
+                        <span class="f-card-title">모든 오픈소스 소프트웨어 탐지 및 추적 <br>
+                        리포트 생성 및 대시보드 제공</span>
                     </div>
                 </article>
 
@@ -140,19 +141,10 @@ require_once __DIR__ . '/../../app/header.php';
 
                 <article class="func-card">
                     <div class="func-icon">
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
-                    <div>
-                        <span class="f-card-title">리포트 생성 및 대시보드 제공</span>
-                    </div>
-                </article>
-
-                <article class="func-card">
-                    <div class="func-icon">
                         <i class="fa-solid fa-sliders" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <span class="f-card-title">프로필 유형에 따른 유연한 오픈소스 탐지 및 분석</span>
+                        <span class="f-card-title">프로필 유형에 따른 유연한 <br>오픈소스 탐지 및 분석</span>
                         <ul class="f-card-pills">
                             <li>Package Discovery</li>
                             <li>Standard Scan</li>
@@ -167,11 +159,13 @@ require_once __DIR__ . '/../../app/header.php';
     </section>
 
     <figure class="mv-chart">
+        <div class="wrap">
         <img alt="" src="/assets/img/flexera_chartbox.jpg"/>
+        </div>
     </figure>
 
     <section class="mv-section">
-        <div class="mv-shell">
+        <div class="wrap">
             <div class="mv-cta-block">
                 <div class="mv-cta-copy">
                     <p class="mv-kicker">· RESOURCES</p>

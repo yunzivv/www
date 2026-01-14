@@ -3,8 +3,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <main id="mv-page">
 
-        <section class="mv-hero">
-            <div class="mv-shell">
+        <section class="mv-hero ">
+            <div class="wrap">
                 <div class="mv-hero-visual">
                     <img src="/../assets/img/montavista_img01.png" alt="MontaVista"/>
                 </div>
@@ -32,7 +32,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </section>
 
         <section class="mv-section" id="mv-about">
-            <div class="mv-shell mv-split">
+            <div class="wrap mv-split">
                 <div class="">
                     <h2 class="mv-h2">About</h2>
                     <div class="mv-sec-title">MontaVista Software</div>
@@ -59,7 +59,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </section>
 
         <section class="mv-section">
-            <div class="mv-shell mv-split2">
+            <div class="wrap mv-split2">
                 <div class="">
                     <img src="/../assets/img/montavista_img02.jpg" alt=""/>
                 </div>
@@ -79,7 +79,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </section>
 
         <section class="" id="mv_expected">
-            <div class="mv-shell">
+            <div class="wrap">
                 <div class="mv-head">
                     <h1 class="section-title">도입 시 기대효과</h1>
                 </div>
@@ -173,7 +173,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </div>
         </section>
 
-        <div class="mv-figure">
+        <div class="mv-figure wrap">
             <div class="figure-wrap">
                 <h2 class="carrier-title">Carrier Grade Express</h2>
                 <div>
@@ -189,7 +189,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
 
         <section class="mv-section" id="mv-profiles">
-            <div class="mv-shell">
+            <div class="wrap">
                 <div class="mv-head">
                     <h1 class="section-title">Technology Profiles</h1>
                 </div>
@@ -229,8 +229,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </div>
         </section>
 
-        <section class="mv-section">
-            <div class="mv-shell mv-customer">
+        <section class="wrap">
+            <div class="mv-customer">
                 <div class="mv-head">
                     <h1 class="section-title">산업별 주요 고객사</h1>
                 </div>
@@ -275,7 +275,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
             </div>
 
-            <div class="mv-shell">
+            <div class="resources">
                 <div class="mv-cta-block">
                     <div class="mv-cta-copy">
                         <p class="mv-kicker">· RESOURCES</p>
@@ -453,7 +453,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             let dots = [];
             if (dotsWrap) {
                 dotsWrap.innerHTML = "";
-                dots = Array.from({ length: n }, (_, i) => {
+                dots = Array.from({length: n}, (_, i) => {
                     const b = document.createElement('button');
                     b.type = "button";
                     b.className = "mv-dot";
@@ -509,7 +509,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     const r = s.getBoundingClientRect();
                     const c = r.left + r.width / 2;
                     const d = Math.abs(c - centerX);
-                    if (d < bestDist) { bestDist = d; best = i; }
+                    if (d < bestDist) {
+                        bestDist = d;
+                        best = i;
+                    }
                 });
 
                 list.forEach((s, i) => s.classList.toggle('is-active', i === best));
@@ -525,13 +528,13 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     const el = list[idx];
                     if (!el) return;
                     const offset = getSlideCenterOffset(el);
-                    track.scrollBy({ left: offset, top: 0, behavior: 'auto' });
+                    track.scrollBy({left: offset, top: 0, behavior: 'auto'});
                 } else if (idx < n) {
                     idx += n;
                     const el = list[idx];
                     if (!el) return;
                     const offset = getSlideCenterOffset(el);
-                    track.scrollBy({ left: offset, top: 0, behavior: 'auto' });
+                    track.scrollBy({left: offset, top: 0, behavior: 'auto'});
                 }
             };
 
@@ -541,7 +544,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 if (!el) return;
 
                 const offset = getSlideCenterOffset(el);
-                track.scrollBy({ left: offset, top: 0, behavior });
+                track.scrollBy({left: offset, top: 0, behavior});
 
                 idx = i;
 
@@ -566,19 +569,35 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 timer = null;
             };
 
-            nextBtn?.addEventListener('click', () => { next(); start(); });
-            prevBtn?.addEventListener('click', () => { prev(); start(); });
+            nextBtn?.addEventListener('click', () => {
+                next();
+                start();
+            });
+            prevBtn?.addEventListener('click', () => {
+                prev();
+                start();
+            });
 
             let raf = 0;
             track.addEventListener('scroll', () => {
                 if (raf) cancelAnimationFrame(raf);
                 raf = requestAnimationFrame(() => setActiveByNearestCenter());
-            }, { passive: true });
+            }, {passive: true});
 
-            root.addEventListener('mouseenter', () => { paused = true; });
-            root.addEventListener('mouseleave', () => { paused = false; start(); });
-            root.addEventListener('touchstart', () => { paused = true; }, { passive: true });
-            root.addEventListener('touchend', () => { paused = false; start(); }, { passive: true });
+            root.addEventListener('mouseenter', () => {
+                paused = true;
+            });
+            root.addEventListener('mouseleave', () => {
+                paused = false;
+                start();
+            });
+            root.addEventListener('touchstart', () => {
+                paused = true;
+            }, {passive: true});
+            root.addEventListener('touchend', () => {
+                paused = false;
+                start();
+            }, {passive: true});
 
             window.requestAnimationFrame(() => {
                 scrollToIndex(idx, 'auto');
@@ -589,10 +608,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             window.addEventListener('resize', () => {
                 scrollToIndex(idx, 'auto');
                 setActiveByNearestCenter();
-            }, { passive: true });
+            }, {passive: true});
         })();
     </script>
-
 
 
 <?php require_once __DIR__ . '/../../app/footer.php'; ?>

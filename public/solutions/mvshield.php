@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         <div id="mvshield">
 
             <section id="hero-mvshield">
-                <div class="hero-wrap">
+                <div class="hero-wrap wrap">
                     <div class="hero-copy">
 
                         <div class="hero-title">
@@ -28,7 +28,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
 
             <section id="mv-cases">
-                <div class="mv-cases-wrap">
+                <div class="mv-cases-wrap wrap">
                     <header class="mv-cases-head">
                         <p class="mv-cases-kicker">USE CASES</p>
                         <h2 class="mv-cases-title">
@@ -104,7 +104,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
             </section>
 
-            <section id="about-mvshield">
+            <section id="about-mvshield" class="wrap">
                 <div class="about-content">
                     <div class="hero-title">
 					<span class="hero-title-accent">
@@ -179,11 +179,12 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </section>
 
             <section class="journey">
-                <section>
+                <section class="wrap">
                     <header class="head">
                         <h2 class="title"><span class="text-highlight-g">MVShield</span>는</h2>
                         <div class="sub">EOL 이후에도 10년(LTM 5년 + ELTM 5년)간의 장기유지보수를 보장하고,<br>
-                            이후에도 고객이 원하는 시점까지 종료 없이 연장 지원합니다.</div>
+                            이후에도 고객이 원하는 시점까지 종료 없이 연장 지원합니다.
+                        </div>
                     </header>
 
                     <div>
@@ -200,7 +201,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </section>
 
-                <section id="rocky-migration" class="section">
+                <section id="rocky-migration" class="wrap">
                     <header class="head">
                         <h2 class="title">OS Migration이 필요하다면, <span class="text-highlight-m">Rocky Linux</span>로 !</h2>
                     </header>
@@ -236,36 +237,38 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </section>
 
                 <section id="cost-saving" class="section">
-                    <header class="head">
-                        <div class="sub">OS 버전별 과금 정책, 대규모 인프라 보유 시 </div>
-                        <h2 class="title"><span class="text-highlight-g">획기적인 비용절감</span>을 기대할 수 있습니다. </h2>
-                    </header>
+                    <div class="wrap">
+                        <header class="head">
+                            <div class="sub">OS 버전별 과금 정책, 대규모 인프라 보유 시</div>
+                            <h2 class="title"><span class="text-highlight-g">획기적인 비용절감</span>을 기대할 수 있습니다. </h2>
+                        </header>
 
-                    <div class=" media wide">
-                        <picture>
-                            <source media="(max-width:720px)"
-                                    srcset="/../assets/img/mvshield_info07_mo.png">
-                            <source media="(max-width:980px)"
-                                    srcset="/../assets/img/mvshield_info07_tab.png">
-                            <img src="/../assets/img/mvshield_info07.png" alt="">
-                        </picture>
-                    </div>
-
-                    <div class="callout">
-                        <div class="callout-copy">
-                            <div class="h3">소규모 인프라 고객은
-                                <span class="text-highlight-g">CentOS/Rocky Linux LTS 서비스</span>
-                                를 이용할 수 있습니다.</div>
-                            <div class="p">* CentOS/Rocky Linux 설치 서버 기준 25대 미만</div>
+                        <div class=" media wide">
+                            <picture>
+                                <source media="(max-width:720px)"
+                                        srcset="/../assets/img/mvshield_info07_mo.png">
+                                <source media="(max-width:980px)"
+                                        srcset="/../assets/img/mvshield_info07_tab.png">
+                                <img src="/../assets/img/mvshield_info07.png" alt="">
+                            </picture>
                         </div>
-                        <a class="cta" href="/service/centoslts.php" target="_blank">LTSecure 바로가기</a>
+
+                        <div class="callout">
+                            <div class="callout-copy">
+                                <div class="h3">소규모 인프라 고객은
+                                    <span class="text-highlight-g">CentOS/Rocky Linux LTS 서비스</span>
+                                    를 이용할 수 있습니다.
+                                </div>
+                                <div class="p">* CentOS/Rocky Linux 설치 서버 기준 25대 미만</div>
+                            </div>
+                            <a class="cta" href="/service/centoslts.php" target="_blank">LTSecure 바로가기</a>
+                        </div>
                     </div>
                 </section>
 
-                <section id="lts" class="section">
-
+                <section class="wrap resources">
 <!--                    <section class="mv-section">-->
-<!--                        <div class="mv-shell">-->
+                        <div class="mv-shell">
                             <div class="mv-cta-block">
                                 <div class="mv-cta-copy">
                                     <p class="mv-kicker">· RESOURCES</p>
@@ -300,7 +303,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                     </a>
                                 </div>
                             </div>
-<!--                        </div>-->
+                        </div>
 <!--                    </section>-->
                 </section>
             </section>

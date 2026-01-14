@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- HERO -->
     <section class="lt-hero">
-        <div class="lt-wrap lt-hero-grid">
+        <div class="wrap lt-hero-grid">
             <div class="lt-hero-copy">
                 <h1 class="lt-title">CentOS를
                     <br><span class="text-highlight2">아직 사용하고 계시나요?</span></h1>
@@ -34,7 +34,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <section class="lt-sec sec--dark">
 
-        <div class="lt-risk-wrap">
+        <div class="lt-risk-wrap wrap">
             <div class="lt-head">
                 <h3 class="lt-sub">CentOS EOL 버전을 계속 사용할 경우</h3>
                 <h2 class="lt-h2">발생할 수 있는 위험</h2>
@@ -62,7 +62,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- SOLUTION -->
     <section class="journey">
-        <section>
+        <section class="wrap">
             <header class="head">
                 <h1 class="title">CentOS EOL 버전을 <span class="text-highlight2">안전하게 사용하는 최적 솔루션</span>
                     <br>
@@ -72,7 +72,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     소규모 인프라를 운영 중인 고객을 위해 비용 부담을 줄인 가격정책을 제시합니다.</div>
             </header>
 
-            <div>
+            <div class="">
                 <img src="../assets/img/centoslts_info03.png" alt="">
                 <div class="mvshield-desc">
                     <img src="../assets/img/centoslts_info04.png" alt="">
@@ -91,7 +91,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <section id="os-support">
         <div class="wrap">
             <header class="head">
-                <h1 class="support-title">지원 OS</h1>
+                <h2 class="lt-h2">지원 OS</h2>
             </header>
 
             <div class="grid four">
@@ -121,16 +121,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </article>
 
-<!--                <article class="os">-->
-<!--                    <div class="logo">-->
-<!--                        <img src="/../assets/img/ubuntu_ci.png" alt="Ubuntu">-->
-<!--                    </div>-->
-<!--                    <div class="name">-->
-<!--                        <strong>Ubuntu</strong>-->
-<!--                        <span>LTS / selected</span>-->
-<!--                    </div>-->
-<!--                </article>-->
-
                 <article class="os">
                     <div class="logo">
                         <img src="/../assets/img/almaLinux_logo.png" alt="">
@@ -145,7 +135,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- COMPOSITION -->
     <section class="lt-sec">
-        <div class="lt-wrap">
+        <div class="wrap">
             <div class="lt-head">
                 <h2 class="lt-h2">LTSecure 서비스 구성</h2>
                 <p class="lt-sub"><span>
@@ -288,7 +278,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     </section>
 
     <section class="lt-sec sec--dark">
-        <div class="lt-wrap">
+        <div class="wrap">
             <div class="lt-head lt-head--dark">
                 <h2 class="lt-h2">Why <span class="hero-title-accent3">LTSecure?</span></h2>
             </div>
@@ -296,14 +286,45 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <div class="lt-why-desktop">
                 <div class="lt-why-tabs" role="tablist" aria-label="Why LTSecure">
                     <button type="button" role="tab" aria-selected="false">
-                        <img src="/../assets/img/ltsecure01_on.svg" alt="" class="fx on">
-                        <img src="/../assets/img/ltsecure01_off.svg" alt="" class="fx on">
-                        최신 보안패치 제공 <br> (CVE대응)</button>
-                    <button type="button" role="tab" aria-selected="false">산업 맞춤형 <br>보안패치</button>
-                    <button type="button" role="tab" aria-selected="false">자체 업데이트 <br>레포지토리 운영</button>
-                    <button type="button" role="tab" aria-selected="false">보안컨설팅 및 <br>기술지원</button>
-                    <button type="button" role="tab" aria-selected="false">Rocky Linux<br> 마이그레이션</button>
-                </div>
+                        <span class="lt-why-icn" aria-hidden="true">
+                            <img src="/../assets/img/ltsecure01_off.svg" alt="" class="lt-why-icn__img is-off">
+                            <img src="/../assets/img/ltsecure01_on.svg" alt="" class="lt-why-icn__img is-on">
+                        </span>
+                        최신 보안패치 제공 <br> (CVE대응)
+                    </button>
+
+                    <button type="button" role="tab" aria-selected="false">
+                        <span class="lt-why-icn" aria-hidden="true">
+                            <img src="/../assets/img/ltsecure02_off.svg" alt="" class="lt-why-icn__img is-off">
+                            <img src="/../assets/img/ltsecure02_on.svg" alt="" class="lt-why-icn__img is-on">
+                        </span>
+                        산업 맞춤형 <br>보안패치
+                    </button>
+
+                    <button type="button" role="tab" aria-selected="false">
+                        <span class="lt-why-icn" aria-hidden="true">
+                            <img src="/../assets/img/ltsecure03_off.svg" alt="" class="lt-why-icn__img is-off">
+                            <img src="/../assets/img/ltsecure03_on.svg" alt="" class="lt-why-icn__img is-on">
+                        </span>
+                        자체 업데이트 <br>레포지토리 운영
+                    </button>
+
+                    <button type="button" role="tab" aria-selected="false">
+                        <span class="lt-why-icn" aria-hidden="true">
+                            <img src="/../assets/img/ltsecure04_off.svg" alt="" class="lt-why-icn__img is-off">
+                            <img src="/../assets/img/ltsecure04_on.svg" alt="" class="lt-why-icn__img is-on">
+                        </span>
+                        보안컨설팅 및 <br>기술지원
+                    </button>
+
+                    <button type="button" role="tab" aria-selected="false">
+                        <span class="lt-why-icn" aria-hidden="true">
+                            <img src="/../assets/img/ltsecure05_off.svg" alt="" class="lt-why-icn__img is-off">
+                            <img src="/../assets/img/ltsecure05_on.svg" alt="" class="lt-why-icn__img is-on">
+                        </span>
+                        Rocky Linux<br> 마이그레이션
+                    </button>
+                </div></div>
 
                 <div class="lt-why-body">
                     <div class="swiper lt-why-swiper">
@@ -383,51 +404,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
-    <div class="contents_con">
-        <div class="title_con">
-				<span>
-					대상 고객
-				</span>
-        </div>
-
-        <div class="list_con">
-            <ul>
-                <li>
-                    <div class="list_div">
-
-                        <div class="text_con">
-								<span>
-									금융, 공공기관, 제조업 등 CentOS 기반 시스템을 장기간 운영해야 하는 기업 및 기관
-								</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="list_div">
-
-                        <div class="text_con">
-								<span>
-									보안이 중요한 미션 크리티컬 시스템 운영 기업
-								</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="list_div">
-                        <div class="text_con">
-								<span>
-									소규모 인프라 운영 고객 대상 (설치 서버 기준 25대 미만)
-								</span>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <!-- PROCESS -->
     <section class="lt-sec">
-        <div class="lt-wrap">
+        <div class="wrap">
             <div class="lt-head">
                 <h2 class="lt-h2">서비스 신청 및 개시절차</h2>
             </div>
@@ -457,16 +436,15 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- FAQ -->
     <section class="lt-sec sec--soft">
-        <div class="lt-wrap">
+        <div class="wrap">
             <div class="lt-head">
-                <span class="kicker">FAQ</span>
                 <h2 class="lt-h2">자주 묻는 질문</h2>
             </div>
 
             <div class="lt-faq">
 
                 <details class="lt-details">
-                    <summary><span class="lt-q">Q</span>MVShield 서비스와 LTSecure 서비스의 차이점이 무엇인가요?</summary>
+                    <summary class="faq"><span class="lt-q">Q</span>MVShield 서비스와 LTSecure 서비스의 차이점이 무엇인가요?</summary>
                     <div class="lt-details-body"><span class="lt-a">A</span>
                         <span>MVShield는 MontaVista Software의 Enterprise
                         Linux 유지보수 및 기술지원 서비스입니다. <br>
@@ -479,26 +457,26 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </details>
                 <details class="lt-details">
-                    <summary><span class="lt-q">Q</span>MVShield 에서 제공하는 업데이트 패치가 LTSecure 서비스에도 포함 되나요?</summary>
+                    <summary class="faq"><span class="lt-q">Q</span>MVShield 에서 제공하는 업데이트 패치가 LTSecure 서비스에도 포함 되나요?</summary>
                     <div class="lt-details-body"><span class="lt-a">A</span>네. LTSecure 서비스는 MVShield 는 물론, Redhat CVE
                         Tracker, NVD 등 다양한 공공데이터베이스를 모니터링하여 <br>
                         CVE 정보를 지속적으로 수집, 추가 패치를 제공합니다.
                     </div>
                 </details>
                 <details class="lt-details">
-                    <summary><span class="lt-q">Q</span>LTSecure 패치를 적용하면 기존 시스템과 충돌이 발생할 가능성은 없나요?</summary>
+                    <summary class="faq"><span class="lt-q">Q</span>LTSecure 패치를 적용하면 기존 시스템과 충돌이 발생할 가능성은 없나요?</summary>
                     <div class="lt-details-body"><span class="lt-a">A</span>패치는 철저한 사전 테스트 후 배포되며, 기존 환경과의 호환성을 유지하는 것을
                         최우선으로 합니다. <br>패치 적용 전후의 백업 및 롤백 가이드를 제공하여 안전한 업데이트가 가능합니다.
                     </div>
                 </details>
                 <details class="lt-details">
-                    <summary><span class="lt-q">Q</span>CentOS 이외에 다른 배포판도 지원하나요?</summary>
+                    <summary class="faq"><span class="lt-q">Q</span>CentOS 이외에 다른 배포판도 지원하나요?</summary>
                     <div class="lt-details-body"><span class="lt-a">A</span>현재 CentOS EOL 버전과 Rocky Linux, AlmaLinux 일부
                         EOL버전을 지원합니다. <br>필요에 따라 다른 RHEL 호환 배포판에 대한 지원도 가능합니다. (AlmaLinux, Oracle Linux 등)
                     </div>
                 </details>
                 <details class="lt-details">
-                    <summary><span class="lt-q">Q</span>MVShield나 LTSecure는 임시방편이고, 결국 상위버전의 RHEL이나 Rocky Linux로 마이그레이션
+                    <summary class="faq"><span class="lt-q">Q</span>MVShield나 LTSecure는 임시방편이고, 결국 상위버전의 RHEL이나 Rocky Linux로 마이그레이션
                         해야 하는 것 아닌가요?
                     </summary>
                     <div class="lt-details-body"><span class="lt-a">A</span>아닙니다. MVShield는 글로벌 리눅스 벤더인 MontaVista
@@ -508,7 +486,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </details>
                 <details class="lt-details">
-                    <summary><span class="lt-q">Q</span>LTSecure 서비스를 사용하다가 Rocky Linux로 Migration 이 필요한 경우 지원이 가능한가요?
+                    <summary class="faq"><span class="lt-q">Q</span>LTSecure 서비스를 사용하다가 Rocky Linux로 Migration 이 필요한 경우 지원이 가능한가요?
                     </summary>
                     <div class="lt-details-body"><span class="lt-a">A</span>네. 가능합니다. Rocky Linux Migration 서비스 페이지를
                         참고하시기 바랍니다.
