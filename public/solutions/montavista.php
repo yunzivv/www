@@ -6,7 +6,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         <section class="mv-hero ">
             <div class="wrap">
                 <div class="mv-hero-visual">
-                    <img src="/../assets/img/montavista_img01.png" alt="MontaVista"/>
+                    <img src="/../assets/img/montavista_img02.png" alt="MontaVista"/>
                 </div>
 
                 <div class="mv-hero-copy">
@@ -47,7 +47,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
 
                 <div class="mv-media">
-                    <img src="/../assets/img/montavista_logo.png" alt="MontaVista"/>
+                    <img src="/../assets/img/montavista_img01.png" alt="MontaVista"/>
                 </div>
             </div>
 
