@@ -30,7 +30,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <section id="mv-cases">
                 <div class="mv-cases-wrap wrap">
                     <header class="mv-cases-head">
-                        <p class="mv-cases-kicker">USE CASES</p>
+                        <p class="mv-kicker">USE CASES</p>
                         <h2 class="mv-cases-title">
                             CentOS 7 유지가 필요한 사례
                         </h2>
@@ -46,9 +46,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             <div class="mv-case-body">
                                 <p class="mv-case-eyebrow">보안/인증</p>
                                 <h3 class="mv-case-title">
-                                    현실적으로 모든 서버 인프라의 OS를
-                                    6월까지 모두 업그레이드 하는 것은
-                                    불가능해!
+                                    현실적으로 모든 서버 인프라의 OS를 <br>
+                                    <strong class="text-highlight">일시에 모두 업그레이드 하는 것은
+                                    불가능해!</strong>
                                 </h3>
                             </div>
                         </article>
@@ -62,8 +62,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                 <p class="mv-case-eyebrow">시간 부족</p>
                                 <h3 class="mv-case-title">
                                     CentOS 7 EOL 이후에는
-                                    보안 패치 제공이 안된다는데,
-                                    ISMS-P 인증이 걱정이네 ..
+                                    <br>
+                                    <strong class="text-highlight">보안 패치 제공이 안된다는데,
+                                        ISMS-P 인증이 걱정이네 ..</strong>
                                 </h3>
                             </div>
                         </article>
@@ -78,9 +79,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             <div class="mv-case-body">
                                 <p class="mv-case-eyebrow">현실적인 제약</p>
                                 <h3 class="mv-case-title">
-                                    기존서비스의 종료가 얼마 남지 않았는데,
-                                    그때까진 CentOS 7 을 계속
-                                    사용할 수 없을까?
+                                    기존 서비스의 종료가 얼마 남지 않았는데,
+                                    <br>
+                                    <strong class="text-highlight">그때까진 CentOS 7을 계속
+                                        사용할 수 없을까?</strong>
                                 </h3>
                             </div>
                         </article>
@@ -94,8 +96,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                 <p class="mv-case-eyebrow">벤더 신뢰</p>
                                 <h3 class="mv-case-title">
                                     믿을 수 있는 Linux OS 벤더가
-                                    EOL OS의 유지보수와 기술지원을
-                                    계속해 줄 수 있다면...
+                                    <br>
+                                    <strong class="text-highlight">EOL OS의 유지보수와 기술지원을
+                                        계속해 줄 수 있다면 ..</strong>
+
                                 </h3>
                             </div>
                         </article>
@@ -117,14 +121,18 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 						Enterprise Linux 장기유지보수 및 기술지원 서비스
                     </span>
                 </div>
-                <img src="/../assets/img/mvshield_info03.png" alt="">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="/../assets/img/mvshield_info03_mo.png"/>
+                    <img src="/../assets/img/mvshield_info03.png" alt="">
+                </picture>
+
             </section>
 
 
             <section id="os-support">
                 <div class="wrap">
                     <header class="head">
-                        <h2>MVShield 지원 OS</h2>
+                        MVShield 지원 OS
                     </header>
 
                     <div class="grid">
@@ -181,7 +189,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <section class="journey">
                 <section class="wrap">
                     <header class="head">
-                        <h2 class="title"><span class="text-highlight-g">MVShield</span>는</h2>
+                        <div class="title"><span class="text-highlight-g">MVShield</span>는</div>
                         <div class="sub">EOL 이후에도 10년(LTM 5년 + ELTM 5년)간의 장기유지보수를 보장하고,<br>
                             이후에도 고객이 원하는 시점까지 종료 없이 연장 지원합니다.
                         </div>
@@ -203,7 +211,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                 <section id="rocky-migration" class="wrap">
                     <header class="head">
-                        <h2 class="title">OS Migration이 필요하다면, <span class="text-highlight-m">Rocky Linux</span>로 !</h2>
+                        <span class="rck-title-eyebrow">OS Migration이 필요하다면,</span>
+                        <h2 class="title">
+                            <span class="text-highlight-m">Rocky Linux</span>로 !</h2>
                     </header>
 
                     <div class="grid three">
@@ -256,8 +266,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         <div class="callout">
                             <div class="callout-copy">
                                 <div class="h3">소규모 인프라 고객은
-                                    <span class="text-highlight-g">CentOS/Rocky Linux LTS 서비스</span>
-                                    를 이용할 수 있습니다.
+                                    <span class="text-highlight-g">CentOS/Rocky Linux LTS 서비스</span>를 이용할 수 있습니다.
                                 </div>
                                 <div class="p">* CentOS/Rocky Linux 설치 서버 기준 25대 미만</div>
                             </div>
@@ -266,49 +275,44 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </section>
 
-                <section class="wrap resources">
-<!--                    <section class="mv-section">-->
-                        <div class="mv-shell">
-                            <div class="mv-cta-block">
-                                <div class="mv-cta-copy">
-                                    <p class="mv-kicker">· RESOURCES</p>
-                                    <h2 class="mv-h2">Datasheets & Links</h2>
-                                    <p class="mv-muted">제품 검토에 필요한 문서를 바로 확인하세요.</p>
-                                </div>
+                <section class="wrap">
+                    <section class="resources">
+                        <div class="mv-cta-block">
+                            <div class="mv-cta-copy">
+                                <p class="mv-kicker">· RESOURCES</p>
+                                <h2 class="mv-h2">Datasheets & Links</h2>
+                                <p class="mv-muted">제품 검토에 필요한 문서를 바로 확인하세요.</p>
+                            </div>
 
-                                <div class="mv-cta-actions">
-                                    <a class="mv-rbtn ghost" href="https://www.mvista.com" target="_blank"
-                                       rel="noopener noreferrer">MVShield 홈페이지
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             viewBox="0 0 24 24" fill="none"
-                                             stroke="#0B1220" stroke-width="2"
-                                             stroke-linecap="round" stroke-linejoin="round"
-                                             aria-hidden="true">
-                                            <path d="M7 17L17 7"/>
-                                            <path d="M9 7h8v8"/>
-                                        </svg>
-                                    </a>
-                                    <a class="mv-rbtn primary" href="mvshield.pdf" download>
-                                        소개자료
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                             viewBox="0 0 24 24" fill="none"
-                                             stroke="#fff" stroke-width="2"
-                                             stroke-linecap="round" stroke-linejoin="round"
-                                             aria-hidden="true">
-                                            <path d="M12 4v10"/>
-                                            <path d="M8 10l4 4 4-4"/>
-                                            <path d="M6 20h12"/>
-                                        </svg>
+                            <div class="mv-cta-actions">
+                                <a class="mv-rbtn ghost" href="https://www.mvista.com" target="_blank"
+                                   rel="noopener noreferrer">MVShield 홈페이지
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none"
+                                         stroke="#0B1220" stroke-width="2"
+                                         stroke-linecap="round" stroke-linejoin="round"
+                                         aria-hidden="true">
+                                        <path d="M7 17L17 7"/>
+                                        <path d="M9 7h8v8"/>
+                                    </svg>
+                                </a>
+                                <a class="mv-rbtn primary" href="mvshield.pdf" download>
+                                    소개자료
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                         viewBox="0 0 24 24" fill="none"
+                                         stroke="#fff" stroke-width="2"
+                                         stroke-linecap="round" stroke-linejoin="round"
+                                         aria-hidden="true">
+                                        <path d="M12 4v10"/>
+                                        <path d="M8 10l4 4 4-4"/>
+                                        <path d="M6 20h12"/>
+                                    </svg>
 
-                                    </a>
-                                </div>
+                                </a>
                             </div>
                         </div>
-<!--                    </section>-->
+                    </section>
                 </section>
-            </section>
-
-
         </div>
     </main>
 

@@ -5,9 +5,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- HERO -->
     <section class="rl-hero" aria-labelledby="rl-title">
+        <div class="service-title rocky">
+            Rocky Linux Migration
+        </div>
         <div class="wrap rl-hero__grid">
             <div class="rl-hero__copy" data-reveal>
-                <p class="rl-eyebrow">Rocky Linux Migration</p>
                 <h1 class="rl-h1" id="rl-title">Why <br><span class="rl-accent">Rocky Linux?</span></h1>
                 <p class="rl-lead">
                     Rocky Linux는 Red Hat Enterprise Linux®와 100% 호환되도록 설계된
@@ -19,11 +21,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     매우 안정적인 환경을 제공할 수 있습니다.
                 </p>
 
-                <div class="rl-badges" data-reveal>
-                    <span class="rl-badge">스크립트 기반 전환</span>
-                    <span class="rl-badge">서비스 영향 최소화</span>
-                    <span class="rl-badge">검증/정보 제공</span>
-                </div>
+                <ul class="pills" data-reveal>
+                    <li class="">스크립트 기반 전환</li>
+                    <li class="">서비스 영향 최소화</li>
+                    <li class="">검증/정보 제공</li>
+                </ul>
             </div>
 
             <figure class="rl-hero__media" data-reveal>
@@ -59,12 +61,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 <h2 class="rl-h2" id="rl-target">마이그레이션 대상 버전</h2>
             </header>
 
-<!--            <figure class="rl-figure" data-reveal>-->
-                <picture>
-                    <source media="(max-width: 640px)" srcset="/../assets/img/rockylinux_info03_mo.png">
-                    <img src="/../assets/img/rockylinux_info03.png" alt=""/>
-                </picture>
-<!--            </figure>-->
+            <div class="media-wrap">
+                <source media="(max-width: 640px)" srcset="/../assets/img/rockylinux_info03_mo.png">
+                <img src="/../assets/img/rockylinux_info03.png" alt=""/>
+            </div>
         </div>
     </section>
 

@@ -499,6 +499,10 @@
 }
 
 @media (max-width: 720px) {
+
+    #cost-saving h2.title, .mv-cases-title, .mv-sec-title, .fl-sec-title, .fl-title3, .oa-title, .about-title,.mv-h1 {font-size: 30px;}
+    .about-content .accent, .fl-sub-title, .mv-h2, .oa-h2 {font-size: 24px;}
+    #cost-saving sub, .callout-copy .h3, .about-content .basic{font-size: 18px;}
     .mv-slide {
         flex-direction: column;
     }

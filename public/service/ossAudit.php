@@ -4,12 +4,14 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- HERO -->
     <section class="oa-hero" aria-labelledby="oa-title">
+        <div class="service-title ">
+            OSS Audit Service
+        </div>
         <div class="wrap">
             <div class="oa-hero__grid">
                 <div class="oa-hero__copy" data-reveal>
-                    <p class="oa-kicker">OSS Audit Service</p>
-                    <h1 class="oa-h1 hero-title-accent2" id="oa-title">Open Source Audit Service</h1>
-                    <p class="oa-lead">
+                    <h1 class="oa-title hero-title-accent2" id="oa-title">Open Source Audit Service</h1>
+                    <p class="lead">
                         소프트웨어 자산에 대한 검증은 기업의 오픈소스 소프트웨어 라이선스관리는 물론 기업간 인수합병
                         (M&amp;A)시에도 필수 불가결한 요소입니다. 하지만 오픈소스 소프트웨어 라이선스 관리 및 검증을 위한
                         전문 인력을 채용하거나 담당 부서를 설치하는 것은 대부분의 기업의 경영환경에서 큰 부담이
@@ -56,7 +58,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <section class="oa-section oa-section--tint" aria-labelledby="oa-scope">
         <div class="wrap">
             <header class="oa-head" data-reveal>
-                <h2 class="oa-h2" id="oa-scope">서비스별 검증 범위</h2>
+                <h2 class="oa-title" id="oa-scope">서비스별 검증 범위</h2>
             </header>
 
             <div class="oa-scope">
@@ -105,7 +107,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <section class="oa-section" aria-labelledby="oa-cases">
         <div class="wrap">
             <header class="oa-head" data-reveal>
-                <h2 class="oa-h2" id="oa-cases">검증 서비스 사례</h2>
+                <h2 class="oa-title" id="oa-cases">검증 서비스 사례</h2>
             </header>
 
             <div class="oa-cases">
@@ -198,8 +200,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                 <path d="M9 7h8v8"/>
                             </svg>
                         </a>
-                        <a class="mv-rbtn primary" href="ossaudit_ds.pdf" target="_blank"
-                           rel="noopener noreferrer">
+                        <a class="mv-rbtn primary" href="ossaudit_ds.pdf" download="">
                             DATA SHEET
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                  viewBox="0 0 24 24" fill="none"

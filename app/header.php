@@ -91,7 +91,6 @@
                                 <span class="mnav-chevron">▾</span>
                             </button>
                             <div class="mnav-sub">
-                                <a href="/service/centos.php">MontaVista MVShield</a>
                                 <a href="/service/ltsecure.php">LTSecure</a>
                                 <a href="/service/migration.php">Rocky Linux Migration</a>
                                 <a href="/service/ossAudit.php">OSS Audit Service</a>
@@ -99,7 +98,16 @@
                         </li>
 
                         <li class="mnav-link"><a href="/about.php">ABOUT US</a></li>
-                        <li class="mnav-link"><a href="/contact.php">CONTACT</a></li>
+                        <li class="mnav-item">
+                            <button class="mnav-acc" type="button" aria-expanded="false">
+                                CONTACT
+                                <span class="mnav-chevron">▾</span>
+                            </button>
+                            <div class="mnav-sub">
+                                <a href="mailto:assist@assist.com">Contact Us</a>
+                                <a href="/location.php">오시는 길</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </aside>

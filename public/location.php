@@ -3,7 +3,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
 <main id="location" class="mv-page">
 
-    <div class="lo-wrap mv-reveal">
+    <div class="lo-wrap wrap">
         <h1 class="mv-h1">오시는길</h1>
         <div class="lo-desc">
             아래 지도와 안내를 통해 회사 위치 및 교통편을 확인하실 수 있습니다.
@@ -16,7 +16,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </div>
 
 
-    <div class="location-card">
+    <div class="location-card wrap">
         <div class="direction">
             <div class="dir-column">
                 <h2>회사위치 및 연락처</h2>

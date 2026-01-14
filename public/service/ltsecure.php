@@ -5,7 +5,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!-- HERO -->
     <section class="lt-hero">
+        <div class="service-title">
+            LTSecure
+        </div>
         <div class="wrap lt-hero-grid">
+
             <div class="lt-hero-copy">
                 <h1 class="lt-title">CentOS를
                     <br><span class="text-highlight2">아직 사용하고 계시나요?</span></h1>
@@ -18,7 +22,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     서비스입니다.
                 </p>
 
-                <ul class="lt-pills" aria-label="핵심 요약">
+                <ul class="pills" aria-label="핵심 요약">
                     <li>최신 CVE 대응</li>
                     <li>10년 장기지원</li>
                     <li>보안보고서 제공</li>
@@ -43,16 +47,16 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <div class="lt-risk-grid">
 
                 <article class="lt-risk">
-                    <span class="lt-risk-no">01</span>새로운 보안 취약점에<strong>대응하지 못함</strong>
+                    <span class="lt-risk-no">01</span><span>새로운 보안 취약점에<strong> 대응하지 못함</strong></span>
                 </article>
                 <article class="lt-risk">
-                    <span class="lt-risk-no">02</span>ISMS-P 등 다양한<strong>보안 인증 심사에서 결함 판단</strong>
+                    <span class="lt-risk-no">02</span><span>ISMS-P 등 다양한<strong> 보안 인증 심사에서 결함 판단</strong></span>
                 </article>
                 <article class="lt-risk">
-                    <span class="lt-risk-no">03</span>최신 애플리케이션과의<strong>호환성 문제</strong>
+                    <span class="lt-risk-no">03</span><span>최신 애플리케이션과의<strong> 호환성 문제</strong></span>
                 </article>
                 <article class="lt-risk">
-                    <span class="lt-risk-no">04</span>문제 발생시,<strong>커뮤니티 기술 지원 불가</strong>
+                    <span class="lt-risk-no">04</span><span>문제 발생시,<strong> 커뮤니티 기술 지원 불가</strong></span>
                 </article>
 
             </div>
@@ -64,9 +68,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <section class="journey">
         <section class="wrap">
             <header class="head">
-                <h1 class="title">CentOS EOL 버전을 <span class="text-highlight2">안전하게 사용하는 최적 솔루션</span>
+                <div class="title">CentOS EOL 버전을 <span class="text-highlight2">안전하게 사용하는 최적 솔루션</span>
                     <br>
-                    <span class="hero-title-accent lts-title">LTSecure</span></h1>
+                    <span class="hero-title-accent lts-title">LTSecure</span>
+                </div>
                     <div class="feature-desc">EOL 시점으로부터 10년 (LTM 5년 + ELTM 5년) 간의 장기 유지보수를 보장하여 안정적인 운영환경을 제공합니다.
                     <br>
                     소규모 인프라를 운영 중인 고객을 위해 비용 부담을 줄인 가격정책을 제시합니다.</div>
@@ -91,7 +96,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <section id="os-support">
         <div class="wrap">
             <header class="head">
-                <h2 class="lt-h2">지원 OS</h2>
+                <div class="lt-h2">지원 OS</div>
             </header>
 
             <div class="grid four">
@@ -138,7 +143,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         <div class="wrap">
             <div class="lt-head">
                 <h2 class="lt-h2">LTSecure 서비스 구성</h2>
-                <p class="lt-sub"><span>
+                <p class="lt-sub composition"><span>
 						보안위협 및 인증심사 대비를 위한 업데이트 및 보안 패치를 제공합니다.
 					</span></p>
             </div>
@@ -404,6 +409,17 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
+    <div class="lts-target">
+        <div class="wrap">
+            <div class="lts-target-title">대상 고객</div>
+            <ul>
+                <li><img src="/../assets/img/check.svg" alt="">금융, 공공기관, 제조업 등 CentOS 기반 시스템을 장기간 운영해야 하는 기업 및 기관</li>
+                <li><img src="/../assets/img/check.svg" alt="">보안이 중요한 미션 크리티컬 시스템 운영 기업</li>
+                <li><img src="/../assets/img/check.svg" alt="">소규모 인프라 운영 고객 대상 (설치 서버 기준 25대 미만)</li>
+            </ul>
+        </div>
+    </div>
+
     <!-- PROCESS -->
     <section class="lt-sec">
         <div class="wrap">
@@ -414,9 +430,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <div class="lt-process">
                 <div class="lt-process-visual">
                     <picture>
-                        <source media="(max-width: 640px)" srcset="/../assets/img/centoslts_info08.png"/>
+                        <source media="(max-width: 640px)" srcset="/../assets/img/centoslts_info08_mo.png"/>
                         <source media="(max-width: 1024px)"
-                                srcset="/../assets/img/centoslts_info08.png"/>
+                                srcset="/../assets/img/centoslts_info08_tab.png"/>
                         <img src="/../assets/img/centoslts_info08.png" alt="">
                     </picture>
                 </div>

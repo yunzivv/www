@@ -6,7 +6,6 @@ require_once __DIR__ . '/../../app/header.php';
     <section aria-labelledby="ci-title" class="mv-hero" id="flexera-hero">
         <div class="mv-shell reverse wrap">
             <div>
-                <p class="kicker">FLEXERA · REVENERA</p>
                 <div class="up-tit">소프트웨어보안 통합 솔루션<br></div>
                 <h1 class="fl-title hero-title-accent2">FlexNet Code Insight</h1>
                 <p class="mv-lead">

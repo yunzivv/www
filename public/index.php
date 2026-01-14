@@ -7,27 +7,27 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
         <div class="hero-inner wrap">
 
-                <div class="hero-copy">
-                    <p class="hero-eyebrow">JOURNEY TO THE MOST</p>
+            <div class="hero-copy">
+                <p class="hero-eyebrow">JOURNEY TO THE MOST</p>
 
-                    <h1 class="main-hero-title">
-                        최고를 향한 여정에 <br/>
-                        동반자가 되겠습니다.
-                    </h1>
+                <h1 class="main-hero-title">
+                    최고를 향한 여정에 <br/>
+                    동반자가 되겠습니다.
+                </h1>
 
-                    <p class="hero-desc">
-                        에이시스트는 글로벌 리눅스 전문기업인 MontaVista Software LLC 의 한국 공식 기술지원 파트너입니다. <br/>
-                        리눅스 기술지원·컨설팅 전문기업으로서 임베디드시스템 개발을 위한 <br/>
-                        리눅스 개발환경 구축, 엔터프라이즈 리눅스에 대한 기술지원, 장기유지보수서비스를 제공합니다.
-                    </p>
+                <p class="hero-desc">
+                    에이시스트는 글로벌 리눅스 전문기업인 MontaVista Software LLC 의 한국 공식 기술지원 파트너입니다. <br/>
+                    리눅스 기술지원·컨설팅 전문기업으로서 임베디드시스템 개발을 위한 <br/>
+                    리눅스 개발환경 구축, 엔터프라이즈 리눅스에 대한 기술지원, 장기유지보수서비스를 제공합니다.
+                </p>
 
-                    <ul class="hero-chips" aria-label="핵심 제공 분야">
-                        <li>Linux 기술지원</li>
-                        <li>컨설팅</li>
-                        <li>장기 유지보수</li>
-                        <li>엔터프라이즈 지원</li>
-                    </ul>
-                </div>
+                <ul class="hero-chips" aria-label="">
+                    <li>Linux 기술지원</li>
+                    <li>컨 설 팅</li>
+                    <li>장기 유지보수</li>
+                    <li>엔터프라이즈 지원</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -35,7 +35,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     <section id="highlights" class="main-section ">
         <div class="wrap">
             <header class="section-head">
-                <h1 class="kicker text-highlight-gr2">· HIGHLIGHTS</h1>
+                <h1 class="kicker text-highlight-gr2">HIGHLIGHTS</h1>
             </header>
 
             <div class="card-grid">
@@ -70,7 +70,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
     <section id="solutions">
         <header class="solution-head wrap">
-            <p class="kicker">· SOLUTIONS</p>
+            <p class="kicker">SOLUTIONS</p>
             <div class="main-title ">
                 에이시스트가 제공하는 <br>
                 <strong class="hero-title-accent3">최고의 솔루션을 소개</strong>합니다.
@@ -109,7 +109,6 @@ require_once __DIR__ . '/../app/header.php'; ?>
         <div class="solutions-page wrap">
             <div class="solutions-shell">
                 <div>
-<!--                    <p class="kicker">· SOLUTIONS</p>-->
                     <h2 class="title1">
                         Know what’s in<br/>
                         your code.
@@ -142,37 +141,64 @@ require_once __DIR__ . '/../app/header.php'; ?>
         <div class="container wrap">
 
             <header class="service-head">
-                <p class="kicker">· SERVICE</p>
+                <p class="kicker">SERVICE</p>
                 <div class="text-highlight-gr main-title">
                     에이시스트가 제공하는 <br>
                     <strong class="hero-title-accent2">최고의 서비스를 소개</strong>합니다.
                 </div>
             </header>
 
-            <div class="service-list">
-                <article class="service-item" style="--bg:url('img/main_service01.png')">
-                    <div class="service-index">01</div>
-                    <div class="service-content">
-                        <h2>CentOS EOL Support & Maintenance</h2>
-                        <p class="desc">
+            <!--            <div class="service-list">-->
+            <!--                <article class="service-item" style="--bg:url('img/main_service01.png')">-->
+            <!--                    <div class="service-index">01</div>-->
+            <!--                    <div class="service-content">-->
+            <!--                        <h2>CentOS EOL Support & Maintenance</h2>-->
+            <!--                        <p class="desc">-->
+            <!--                            CentOS에 대한 상용 기술지원을 제공합니다.<br/>-->
+            <!--                            특정 고객을 위한 전용 CentOS Branch를 구성합니다.-->
+            <!--                        </p>-->
+            <!--                    </div>-->
+            <!--                    <a href="/service/ltsecure.php">자세히 보기 →</a>-->
+            <!--                </article>-->
+            <!---->
+            <!--                <article class="service-item" style="--bg:url('img/main_service02.png')">-->
+            <!--                    <div class="service-index">02</div>-->
+            <!--                    <div class="service-content">-->
+            <!--                        <h2>OpenSource Audit Service</h2>-->
+            <!--                        <p class="desc">-->
+            <!--                            오픈소스 컨설팅 전문기업으로<br/>-->
+            <!--                            직접 OpenSource Audit Service를 수행합니다.-->
+            <!--                        </p>-->
+            <!--                    </div>-->
+            <!--                    <a href="/service/ossAudit.php">자세히 보기 →</a>-->
+            <!--                </article>-->
+            <!--            </div>-->
+            <div class="card-grid">
+                <a href="/service/ltsecure.php" class="card">
+                    <div class="card-media">
+                        <img src="assets/img/main_service01.png" alt="LTSecure"/>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">CentOS EOL Support & Maintenance</h3>
+                        <p class="card-desc">
                             CentOS에 대한 상용 기술지원을 제공합니다.<br/>
                             특정 고객을 위한 전용 CentOS Branch를 구성합니다.
                         </p>
                     </div>
-                    <a href="/service/ltsecure.php">자세히 보기 →</a>
-                </article>
+                </a>
 
-                <article class="service-item" style="--bg:url('img/main_service02.png')">
-                    <div class="service-index">02</div>
-                    <div class="service-content">
-                        <h2>OpenSource Audit Service</h2>
-                        <p class="desc">
+                <a href="/service/ossAudit.php" class="card">
+                    <div class="card-media">
+                        <img src="assets/img/main_service02.png" alt="OpenSource Audit Service"/>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">OpenSource Audit Service</h3>
+                        <p class="card-desc">
                             오픈소스 컨설팅 전문기업으로<br/>
                             직접 OpenSource Audit Service를 수행합니다.
                         </p>
                     </div>
-                    <a href="/service/ossAudit.php">자세히 보기 →</a>
-                </article>
+                </a>
             </div>
 
         </div>
@@ -186,7 +212,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
             <header class="section-head section-head--light">
                 <h2 class="kicker text-highlight0">CONTACT US</h2>
                 <div class="main-title">
-                    에이시스트의 전문가에게 문의하세요. <br />
+                    에이시스트의 전문가에게 문의하세요. <br/>
                     신속하게 연락드리겠습니다.
                 </div>
             </header>
@@ -200,7 +226,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
                     <path d="M3 7l9 7 9-7"/>
                 </svg>
             </a>
-            <a class="btn btn-ghost-dark" href="/location.php">오시는 길 &nbsp;&nbsp;
+            <a class="btn btn-ghost-dark wide-letter" href="/location.php">오시는 길 &nbsp;&nbsp;
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                      viewBox="0 0 24 24" fill="none"
                      stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
