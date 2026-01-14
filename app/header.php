@@ -4,7 +4,6 @@
 <header class="site-header" id="siteHeader">
     <div class="header-inner">
         <a class="brand" href="/index.php" aria-label="Go to home">
-<!--            <span class="brand-text">ASSIST</span>-->
             <img src="/assets/img/assist_logo.png" alt="assist logo">
         </a>
 
@@ -25,12 +24,11 @@
 
                 <!-- service -->
                 <li class="gnb-item dropdown">
-                    <a class="gnb-link dropdown-trigger" href="/service/centos.php" aria-expanded="false">
+                    <a class="gnb-link dropdown-trigger" href="/service/ltsecure.php" aria-expanded="false">
                         SERVICE
                     </a>
 
                     <div class="dropdown-panel" role="menu">
-                        <a class="dropdown-item" href="/service/centos.php" role="menuitem">MontaVista MVShield</a>
                         <a class="dropdown-item" href="/service/ltsecure.php" role="menuitem">LTSecure</a>
                         <a class="dropdown-item" href="/service/migration.php" role="menuitem">Rocky Linux Migration</a>
                         <a class="dropdown-item" href="/service/ossAudit.php" role="menuitem">OSS Audit Service</a>
@@ -39,6 +37,10 @@
 
                 <li class="gnb-item">
                     <a class="gnb-link" href="/about.php">ABOUT US</a>
+                </li>
+
+                <li class="gnb-item login">
+                    <a class="gnb-link" href="/login.php">SURPORT LOGIN</a>
                 </li>
             </ul>
         </nav>
@@ -119,10 +121,7 @@
 
         triggers.forEach(a => {
             a.addEventListener('click', (e) => {
-                // ✅ 클릭 이동은 유지하되, "열기 기능도" 원할 때는
-                // CSS에서 hover로도 열리고, 클릭 시 잠깐 열렸다가 이동할 수 있음.
-                // 만약 "클릭 시 이동하지 말고 열기만"이면 아래 줄을 켜면 됨:
-                // e.preventDefault();
+                e.preventDefault();
 
                 const li = e.currentTarget.closest('.dropdown');
                 if (!li) return;

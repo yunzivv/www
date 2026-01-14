@@ -1,27 +1,20 @@
 <?php require_once __DIR__ . '/../../app/head.php';
 require_once __DIR__ . '/../../app/header.php'; ?>
 
-<?php require_once __DIR__ . '/../../app/head.php';
-require_once __DIR__ . '/../../app/header.php'; ?>
-
     <main id="mv-page">
 
         <section class="mv-hero">
             <div class="mv-shell">
                 <div class="mv-hero-visual">
-                    <img src="/../assets/img/montavista_img01.jpg" alt="MontaVista"/>
+                    <img src="/../assets/img/montavista_img01.png" alt="MontaVista"/>
                 </div>
 
                 <div class="mv-hero-copy">
-                    <p class="mv-kicker">· ABOUT</p>
-
                     <h1 class="mv-title hero-title-accent">MontaVista Software</h1>
-
-                    <p class="mv-lead">
-                        1999년 실리콘밸리에서 설립된 <b>Embedded Linux</b> 전문 기업.<br>
-                        Linux 한 분야에 집중해 <b>전 세계 2,000+ 고객</b>과 함께해왔습니다.
-                    </p>
-
+                    <div class="mv-lead">
+                        에이시스트는 <b>Embedded Linux</b> 전문 기업 MontaVista Software사와
+                        10년 이상 파트너십을 유지하고 있으며, <b>국내 고객을 대상으로 다양한 리눅스 관련 사업</b>을 함께 수행하고 있습니다.
+                    </div>
 
                     <div class="mv-hero-cta">
                         <a class="btn primary" href="#">Linux is Everywhere</a>
@@ -35,14 +28,14 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </ul>
                 </div>
             </div>
-
+            <div class="watermark" aria-hidden="true">MontaVista Software</div>
         </section>
 
         <section class="mv-section" id="mv-about">
             <div class="mv-shell mv-split">
-                <div class="mv-card">
+                <div class="">
                     <h2 class="mv-h2">About</h2>
-                    <h1 class="section-title">MontaVista Software</h1>
+                    <div class="mv-sec-title">MontaVista Software</div>
 
                     <p class="mv-desc">
                         MontaVista Software는 1999년 미국 실리콘벨리에서 설립된 Embedded Linux 전문기업 입니다.
@@ -62,16 +55,17 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     <img src="/../assets/img/montavista_logo.png" alt="MontaVista"/>
                 </div>
             </div>
+
         </section>
 
         <section class="mv-section">
-            <div class="mv-shell mv-split mv-split-reverse">
-                <div class="mv-media">
-                    <img src="/../assets/img/montavista_img02.jpg" alt="MontaVista 제품 이미지"/>
+            <div class="mv-shell mv-split2">
+                <div class="">
+                    <img src="/../assets/img/montavista_img02.jpg" alt=""/>
                 </div>
 
-                <div class="mv-card">
-                    <h1 class="section-title">Carrier Grade Express(CGX) / Carrier Grade Edition 7(CGE7)</h1>
+                <div class="">
+                    <div class="mv-sec-title">Carrier Grade Express(CGX) / Carrier Grade Edition 7(CGE7)</div>
                     <p class="mv-desc">
                         CGX/CGE7은 캐리어그레이드급의 안정성, 강화된 보안성, 운용성을 보장하는 MontaVista의 Embedded Linux 배포판입니다.
                         <br><br>
@@ -96,9 +90,9 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     <div class="mv-track" data-mv-track>
                         <article class="mv-slide">
                             <img src="/../assets/img/expected01.png" alt="개발기간단축/빠른 제품출시"/>
-                            <div>
+                            <div class="slide-desc">
                                 <div class="mv-slide-top">
-                                    <h2 class="section-title">개발 기간 단축 / 빠른 제품출시</h2>
+                                    <h2 class="slide-title">개발 기간 단축 / 빠른 제품출시</h2>
                                 </div>
                                 <p class="mv-desc">
                                     MontaVista Linux CGX/CGE7는 완전한 Embedded Linux 배포판으로 다양한 개발도구를 포함합니다.
@@ -114,7 +108,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             <img src="/../assets/img/expected02.png" alt="유연한 개발환경"/>
                             <div>
                                 <div class="mv-slide-top">
-                                    <h2 class="section-title">유연한 개발환경</h2>
+                                    <h2 class="slide-title">유연한 개발환경</h2>
                                 </div>
                                 <p class="mv-desc">
                                     MontaVista는 오픈소스의 철학, 협업과 공유의 가치를 지지하며, 오픈소스라이선스를 준수합니다.
@@ -128,7 +122,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             <img src="/../assets/img/expected03.png" alt="신속한 양산 H/W 지원"/>
                             <div>
                                 <div class="mv-slide-top">
-                                    <h2 class="section-title">신속한 양산 H/W 지원</h2>
+                                    <h2 class="slide-title">신속한 양산 H/W 지원</h2>
                                 </div>
                                 <p class="mv-desc">
                                     다양한 Embedded System 개발용 SoC H/W에 대한 Linux BSP를 제작하는 것은 MontaVista가 지난 20년간 꾸준히 해온 핵심
@@ -143,49 +137,51 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         <article class="mv-slide">
                             <img src="/../assets/img/expected04.png" alt="컴플라이언스"/>
                             <div>
-                            <div class="mv-slide-top">
-                                <h2 class="section-title">컴플라이언스</h2>
-                            </div>
+                                <div class="mv-slide-top">
+                                    <h2 class="slide-title">컴플라이언스</h2>
+                                </div>
                                 <p class="mv-desc">
-                                오픈소스소프트웨어 사용에 따라 발생하는 컴플라이언스 이슈, 법적분쟁 발생 시의 대응, 국가별 수출규제 사항들은
-                                전담 법무팀을 보유하지 않은 기업에게는 무척 까다로운 문제일 수 있습니다.
-                                MontaVista Linux CGX/CGE7는 GPL과 각종 FOSS 라이선스, 미국의 Export Regulation 을 준수합니다.
-                                MontaVista 는 고객이 CGX/CGE7사용에 있어 제 3자의 의한 법적 분쟁에 대해 Legal Indemnification 을 제공합니다.
-                            </p>
+                                    오픈소스소프트웨어 사용에 따라 발생하는 컴플라이언스 이슈, 법적분쟁 발생 시의 대응, 국가별 수출규제 사항들은
+                                    전담 법무팀을 보유하지 않은 기업에게는 무척 까다로운 문제일 수 있습니다.
+                                    MontaVista Linux CGX/CGE7는 GPL과 각종 FOSS 라이선스, 미국의 Export Regulation 을 준수합니다.
+                                    MontaVista 는 고객이 CGX/CGE7사용에 있어 제 3자의 의한 법적 분쟁에 대해 Legal Indemnification 을 제공합니다.
+                                </p>
                             </div>
                         </article>
 
                         <article class="mv-slide">
                             <img src="/../assets/img/expected05.png" alt="Technology Profiles"/>
                             <div>
-                            <div class="mv-slide-top">
-                                <h2 class="section-title">산업군 별 Technology Profile 제공</h2>
-                            </div>
+                                <div class="mv-slide-top">
+                                    <h2 class="slide-title">산업군 별 Technology Profile 제공</h2>
+                                </div>
                                 <p class="mv-desc">
-                                MontaVista Linux CGX는 개발 시스템의 용도에 따라 편리하게 적용이 가능한 Technology Profile 을 제공합니다.
-                                CGX의 기초가 되는 Foundation Profile은 Carrier Grade Linux 표준을 만족하며, 보다 향상된 보안관련 기능을 포함합니다.
-                                추가적으로 Virtualization, Datapath Acceleration, Graphic, IoT Gateway Technology profile을
-                                선택적으로 적용할 수 있습니다.
-                            </p>
+                                    MontaVista Linux CGX는 개발 시스템의 용도에 따라 편리하게 적용이 가능한 Technology Profile 을 제공합니다.
+                                    CGX의 기초가 되는 Foundation Profile은 Carrier Grade Linux 표준을 만족하며, 보다 향상된 보안관련 기능을 포함합니다.
+                                    추가적으로 Virtualization, Datapath Acceleration, Graphic, IoT Gateway Technology
+                                    profile을
+                                    선택적으로 적용할 수 있습니다.
+                                </p>
                             </div>
                         </article>
                     </div>
+                    <div class="mv-dots" data-mv-dots></div>
 
                     <button class="mv-sbtn next" type="button" aria-label="다음" data-mv-next>></button>
                 </div>
-                <div class="watermark" aria-hidden="true">MontaVista Software</div>
+
             </div>
         </section>
 
         <div class="mv-figure">
             <div class="figure-wrap">
-                <h2 class="mv-pill">Carrier Grade Express</h2>
+                <h2 class="carrier-title">Carrier Grade Express</h2>
                 <div>
                     <img src="/../assets/img/mont_carrier01.jpg" alt="Carrier Grade Express"/>
                 </div>
             </div>
             <div class="figure-wrap">
-                <h2 class="mv-pill">Carrier Grade Edition 7</h2>
+                <h2 class="carrier-title">Carrier Grade Edition 7</h2>
                 <div>
                     <img src="/../assets/img/mont_carrier02.jpg" alt="Carrier Grade Express"/>
                 </div>
@@ -234,7 +230,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </section>
 
         <section class="mv-section">
-            <div class="mv-shell">
+            <div class="mv-shell mv-customer">
                 <div class="mv-head">
                     <h1 class="section-title">산업별 주요 고객사</h1>
                 </div>
@@ -277,82 +273,61 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
 
                 </div>
-
-
             </div>
 
-            <section class="mv-section">
-                <div class="mv-shell">
-                    <div class="mv-cta-block">
-                        <div class="mv-cta-copy">
-                            <p class="mv-kicker">· RESOURCES</p>
-                            <h2 class="mv-h2">Datasheets & Links</h2>
-                            <p class="mv-muted">제품 검토에 필요한 문서를 바로 확인하세요.</p>
-                        </div>
+            <div class="mv-shell">
+                <div class="mv-cta-block">
+                    <div class="mv-cta-copy">
+                        <p class="mv-kicker">· RESOURCES</p>
+                        <h2 class="mv-h2">Datasheets & Links</h2>
+                        <p class="mv-muted">제품 검토에 필요한 문서를 바로 확인하세요.</p>
+                    </div>
 
-                        <div class="mv-cta-actions">
-                            <a class="mv-rbtn ghost" href="https://www.mvista.com" target="_blank"
-                               rel="noopener noreferrer">MontaVista &nbsp;&nbsp;
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                     viewBox="0 0 24 24" fill="none"
-                                     stroke="#0B1220" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round"
-                                     aria-hidden="true">
-                                    <path d="M7 17L17 7"/>
-                                    <path d="M9 7h8v8"/>
-                                </svg>
-                            </a>
-                            <a class="mv-rbtn primary" href="ds_CGE7.pdf" target="_blank" rel="noopener noreferrer">DATA
-                                SHEET_CGE7&nbsp;&nbsp;&nbsp;&nbsp;
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                     viewBox="0 0 24 24" fill="none"
-                                     stroke="#fff" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round"
-                                     aria-hidden="true">
-                                    <path d="M12 4v10"/>
-                                    <path d="M8 10l4 4 4-4"/>
-                                    <path d="M6 20h12"/>
-                                </svg>
+                    <div class="mv-cta-actions">
+                        <a class="mv-rbtn ghost" href="https://www.mvista.com" target="_blank"
+                           rel="noopener noreferrer">MontaVista &nbsp;&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                 viewBox="0 0 24 24" fill="none"
+                                 stroke="#0B1220" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M7 17L17 7"/>
+                                <path d="M9 7h8v8"/>
+                            </svg>
+                        </a>
+                        <a class="mv-rbtn primary" href="ds_CGE7.pdf" download>DATA
+                            SHEET_CGE7&nbsp;&nbsp;&nbsp;&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                 viewBox="0 0 24 24" fill="none"
+                                 stroke="#fff" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M12 4v10"/>
+                                <path d="M8 10l4 4 4-4"/>
+                                <path d="M6 20h12"/>
+                            </svg>
 
-                            </a>
-                            <a class="mv-rbtn primary" href="ds_CGX_2.6.pdf" target="_blank" rel="noopener noreferrer">DATA
-                                SHEET_CGX 2.6&nbsp;&nbsp;&nbsp;&nbsp;
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                     viewBox="0 0 24 24" fill="none"
-                                     stroke="#fff" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round"
-                                     aria-hidden="true">
-                                    <path d="M12 4v10"/>
-                                    <path d="M8 10l4 4 4-4"/>
-                                    <path d="M6 20h12"/>
-                                </svg>
+                        </a>
+                        <a class="mv-rbtn primary" href="ds_CGX_2.6.pdf" download>DATA
+                            SHEET_CGX 2.6&nbsp;&nbsp;&nbsp;&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                 viewBox="0 0 24 24" fill="none"
+                                 stroke="#fff" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M12 4v10"/>
+                                <path d="M8 10l4 4 4-4"/>
+                                <path d="M6 20h12"/>
+                            </svg>
 
-                            </a>
-                        </div>
+                        </a>
                     </div>
                 </div>
-            </section>
-
-
+            </div>
         </section>
 
     </main>
 
-    <script>
-        (() => {
-            const root = document.querySelector('[data-mv-slider]');
-            if (!root) return;
-
-            const track = root.querySelector('[data-mv-track]');
-            const prev = root.querySelector('[data-mv-prev]');
-            const next = root.querySelector('[data-mv-next]');
-
-            const step = () => track.clientWidth * 0.85;
-
-            prev.addEventListener('click', () => track.scrollBy({left: -step(), behavior: 'smooth'}));
-            next.addEventListener('click', () => track.scrollBy({left: step(), behavior: 'smooth'}));
-        })();
-    </script>
 
     <script>
         (() => {
@@ -462,53 +437,162 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <script>
         (() => {
-            const slider = document.querySelector('[data-mv-slider]');
-            if (!slider) return;
+            const root = document.querySelector('[data-mv-slider]');
+            if (!root) return;
 
-            const track = slider.querySelector('[data-mv-track]');
-            const prevBtn = slider.querySelector('[data-mv-prev]');
-            const nextBtn = slider.querySelector('[data-mv-next]');
-            if (!track || !prevBtn || !nextBtn) return;
+            const track = root.querySelector('[data-mv-track]');
+            const prevBtn = root.querySelector('[data-mv-prev]');
+            const nextBtn = root.querySelector('[data-mv-next]');
+            const dotsWrap = root.querySelector('[data-mv-dots]');
+            if (!track) return;
 
-            const getSlides = () => Array.from(track.querySelectorAll('.mv-slide'));
-            const getClosestIndex = () => {
-                const slides = getSlides();
-                const tRect = track.getBoundingClientRect();
-                const tCenter = tRect.left + tRect.width / 2;
+            const originals = Array.from(track.querySelectorAll('.mv-slide'));
+            const n = originals.length;
+            if (n <= 1) return;
+
+            let dots = [];
+            if (dotsWrap) {
+                dotsWrap.innerHTML = "";
+                dots = Array.from({ length: n }, (_, i) => {
+                    const b = document.createElement('button');
+                    b.type = "button";
+                    b.className = "mv-dot";
+                    b.setAttribute('aria-label', `슬라이드 ${i + 1}`);
+                    b.dataset.dot = String(i);
+                    b.addEventListener('click', () => {
+                        scrollToIndex(n + i, 'smooth');
+                        start();
+                    });
+                    dotsWrap.appendChild(b);
+                    return b;
+                });
+            }
+
+            const makeClones = () => originals.map(el => {
+                const c = el.cloneNode(true);
+                c.dataset.clone = "1";
+                return c;
+            });
+
+            const pre = makeClones();
+            const post = makeClones();
+            track.prepend(...pre);
+            track.append(...post);
+
+            const slides = () => Array.from(track.querySelectorAll('.mv-slide'));
+
+            let idx = n;
+            let timer = null;
+            let paused = false;
+
+            const getSlideCenterOffset = (el) => {
+                const trackRect = track.getBoundingClientRect();
+                const elRect = el.getBoundingClientRect();
+                const trackCenter = trackRect.left + trackRect.width / 2;
+                const elCenter = elRect.left + elRect.width / 2;
+                return (elCenter - trackCenter);
+            };
+
+            const updateDots = () => {
+                if (!dots.length) return;
+                const real = ((idx - n) % n + n) % n;
+                dots.forEach((d, k) => d.classList.toggle('is-on', k === real));
+            };
+
+            const setActiveByNearestCenter = () => {
+                const list = slides();
+                const trackRect = track.getBoundingClientRect();
+                const centerX = trackRect.left + trackRect.width / 2;
+
                 let best = 0, bestDist = Infinity;
-
-                slides.forEach((s, i) => {
+                list.forEach((s, i) => {
                     const r = s.getBoundingClientRect();
                     const c = r.left + r.width / 2;
-                    const d = Math.abs(c - tCenter);
+                    const d = Math.abs(c - centerX);
                     if (d < bestDist) { bestDist = d; best = i; }
                 });
-                return best;
+
+                list.forEach((s, i) => s.classList.toggle('is-active', i === best));
+                idx = best;
+                updateDots();
             };
 
-            const goTo = (idx) => {
-                const slides = getSlides();
-                if (!slides[idx]) return;
-                slides[idx].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            const fixLoop = () => {
+                const list = slides();
+
+                if (idx >= 2 * n) {
+                    idx -= n;
+                    const el = list[idx];
+                    if (!el) return;
+                    const offset = getSlideCenterOffset(el);
+                    track.scrollBy({ left: offset, top: 0, behavior: 'auto' });
+                } else if (idx < n) {
+                    idx += n;
+                    const el = list[idx];
+                    if (!el) return;
+                    const offset = getSlideCenterOffset(el);
+                    track.scrollBy({ left: offset, top: 0, behavior: 'auto' });
+                }
             };
 
-            nextBtn.addEventListener('click', () => {
-                const slides = getSlides();
-                const i = getClosestIndex();
-                goTo((i + 1) % slides.length);
+            const scrollToIndex = (i, behavior = 'smooth') => {
+                const list = slides();
+                const el = list[i];
+                if (!el) return;
+
+                const offset = getSlideCenterOffset(el);
+                track.scrollBy({ left: offset, top: 0, behavior });
+
+                idx = i;
+
+                window.setTimeout(() => {
+                    fixLoop();
+                    setActiveByNearestCenter();
+                }, behavior === 'smooth' ? 360 : 0);
+            };
+
+            const next = () => scrollToIndex(idx + 1, 'smooth');
+            const prev = () => scrollToIndex(idx - 1, 'smooth');
+
+            const start = () => {
+                stop();
+                timer = window.setInterval(() => {
+                    if (!paused) next();
+                }, 2300);
+            };
+
+            const stop = () => {
+                if (timer) window.clearInterval(timer);
+                timer = null;
+            };
+
+            nextBtn?.addEventListener('click', () => { next(); start(); });
+            prevBtn?.addEventListener('click', () => { prev(); start(); });
+
+            let raf = 0;
+            track.addEventListener('scroll', () => {
+                if (raf) cancelAnimationFrame(raf);
+                raf = requestAnimationFrame(() => setActiveByNearestCenter());
+            }, { passive: true });
+
+            root.addEventListener('mouseenter', () => { paused = true; });
+            root.addEventListener('mouseleave', () => { paused = false; start(); });
+            root.addEventListener('touchstart', () => { paused = true; }, { passive: true });
+            root.addEventListener('touchend', () => { paused = false; start(); }, { passive: true });
+
+            window.requestAnimationFrame(() => {
+                scrollToIndex(idx, 'auto');
+                setActiveByNearestCenter();
+                start();
             });
 
-            prevBtn.addEventListener('click', () => {
-                const slides = getSlides();
-                const i = getClosestIndex();
-                goTo((i - 1 + slides.length) % slides.length);
-            });
+            window.addEventListener('resize', () => {
+                scrollToIndex(idx, 'auto');
+                setActiveByNearestCenter();
+            }, { passive: true });
         })();
     </script>
 
-
-
-<?php require_once __DIR__ . '/../../app/footer.php'; ?>
 
 
 <?php require_once __DIR__ . '/../../app/footer.php'; ?>

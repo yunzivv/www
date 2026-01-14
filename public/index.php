@@ -4,28 +4,47 @@ require_once __DIR__ . '/../app/header.php'; ?>
 <main>
     <section class="hero">
         <img class="bg" src="assets/img/main_bg01.jpg" alt="main background1"/>
+
         <div class="hero-inner">
-            <p class="hero-eyebrow">JOURNEY TO THE MOST</p>
-            <h1 class="title1">
-                최고를 향한 여정에 <br/>
-                동반자가 되겠습니다.
-            </h1>
-            <p class="hero-desc">
-                에이시스트는 글로벌 리눅스 전문기업인 MontaVista Software LLC 의 한국 공식 기술지원 파트너입니다. <br/>
-                리눅스 기술지원·컨설팅 전문기업으로서 임베디드시스템 개발을 위한 <br/>
-                리눅스 개발환경 구축, 엔터프라이즈 리눅스에 대한 기술지원, 장기유지보수서비스를 제공합니다.
-            </p>
+
+                <div class="hero-copy">
+                    <p class="hero-eyebrow">JOURNEY TO THE MOST</p>
+
+                    <h1 class="main-hero-title">
+                        최고를 향한 여정에 <br/>
+                        동반자가 되겠습니다.
+                    </h1>
+
+                    <p class="hero-desc">
+                        에이시스트는 글로벌 리눅스 전문기업인 MontaVista Software LLC 의 한국 공식 기술지원 파트너입니다. <br/>
+                        리눅스 기술지원·컨설팅 전문기업으로서 임베디드시스템 개발을 위한 <br/>
+                        리눅스 개발환경 구축, 엔터프라이즈 리눅스에 대한 기술지원, 장기유지보수서비스를 제공합니다.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="hero-btn hero-btn--primary" href="/contact.php">문의하기</a>
+                        <a class="hero-btn hero-btn--ghost" href="/solutions.php">서비스 보기</a>
+                    </div>
+
+                    <ul class="hero-chips" aria-label="핵심 제공 분야">
+                        <li>Linux 기술지원</li>
+                        <li>컨설팅</li>
+                        <li>장기 유지보수</li>
+                        <li>엔터프라이즈 지원</li>
+                    </ul>
+                </div>
         </div>
     </section>
+
 
     <section id="highlights" class="main-section ">
         <div class="container">
             <header class="section-head">
-                <h1 class="section-title">· HIGHLIGHTS</h1>
+                <h1 class="kicker text-highlight-gr2">· HIGHLIGHTS</h1>
             </header>
 
             <div class="card-grid">
-                <a href="/service/centoslts.php" class="card">
+                <a href="/service/ltsecure.php" class="card">
                     <div class="card-media">
                         <img src="assets/img/highlight01.png" alt="LTSecure"/>
                     </div>
@@ -38,7 +57,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
                     </div>
                 </a>
 
-                <a href="/service/centoslts.php" class="card">
+                <a href="/solutions/montavista.php" class="card">
                     <div class="card-media">
                         <img src="assets/img/highlight02.png" alt="Carrier Grade eXpress"/>
                     </div>
@@ -55,11 +74,17 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </section>
 
     <section id="solutions">
-
+        <header class="solution-head">
+            <p class="kicker">· SOLUTIONS</p>
+            <div class="main-title ">
+                에이시스트가 제공하는 <br>
+                <strong class="hero-title-accent2">최고의 솔루션을 소개</strong>합니다.
+            </div>
+        </header>
         <div class="solutions-page">
             <div class="solutions-shell">
                 <div>
-                    <p class="kicker">· SOLUTIONS</p>
+<!--                    <p class="kicker">· SOLUTIONS</p>-->
                     <h2 class="title1">
                         Linux is<br/>
                         Everywhere
@@ -93,7 +118,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
         <div class="solutions-page">
             <div class="solutions-shell">
                 <div>
-                    <p class="kicker">· SOLUTIONS</p>
+<!--                    <p class="kicker">· SOLUTIONS</p>-->
                     <h2 class="title1">
                         Know what’s in<br/>
                         your code.
@@ -104,8 +129,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
                     </p>
 
                     <div class="solutions-cta">
-                        <a class="btn primary" href="solutions/flexera_backup.php">FlexNet Code Insight&nbsp;&nbsp;&nbsp;→</a>
-                        <a class="btn btn-ghost-dark" href="contact.php">도입 문의</a>
+                        <a class="btn primary" href="solutions/flexera.php">FlexNet Code Insight&nbsp;&nbsp;&nbsp;→</a>
                     </div>
 
                     <ul class="solutions-pills">
@@ -127,15 +151,15 @@ require_once __DIR__ . '/../app/header.php'; ?>
         <div class="container">
 
             <header class="service-head">
-                <span class="kicker">· SERVICE</span>
-                <h1 class="section-title">
-                    에이시스트가 제공하는
-                    <strong class="text-highlight">최고의 서비스</strong>를 소개합니다.
-                </h1>
+                <p class="kicker">· SERVICE</p>
+                <div class="text-highlight-gr main-title">
+                    에이시스트가 제공하는 <br>
+                    <strong class="hero-title-accent2">최고의 서비스를 소개</strong>합니다.
+                </div>
             </header>
 
             <div class="service-list">
-                <article class="service-item" style="--bg:url('assets/img/main_service01.png')">
+                <article class="service-item" style="--bg:url('img/main_service01.png')">
                     <div class="service-index">01</div>
                     <div class="service-content">
                         <h2>CentOS EOL Support & Maintenance</h2>
@@ -144,10 +168,10 @@ require_once __DIR__ . '/../app/header.php'; ?>
                             특정 고객을 위한 전용 CentOS Branch를 구성합니다.
                         </p>
                     </div>
-                    <a href="/service/centos.php">자세히 보기 →</a>
+                    <a href="/service/ltsecure.php">자세히 보기 →</a>
                 </article>
 
-                <article class="service-item" style="--bg:url('assets/img/main_service01.png')">
+                <article class="service-item" style="--bg:url('img/main_service02.png')">
                     <div class="service-index">02</div>
                     <div class="service-content">
                         <h2>OpenSource Audit Service</h2>
@@ -170,10 +194,10 @@ require_once __DIR__ . '/../app/header.php'; ?>
         <div class="container">
             <header class="section-head section-head--light">
                 <h2 class="kicker text-highlight0">CONTACT US</h2>
-                <h1 class="">
+                <div class="main-title">
                     에이시스트의 전문가에게 문의하세요. <br />
                     신속하게 연락드리겠습니다.
-                </h1>
+                </div>
             </header>
 
             <a class="btn btn-ghost-dark" href="mailto:assist@assist.com">CONTACT US &nbsp;&nbsp;

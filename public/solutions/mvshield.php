@@ -7,41 +7,17 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <section id="hero-mvshield">
                 <div class="hero-wrap">
                     <div class="hero-copy">
-                        <div class="hero-badge">MontaVista</div>
 
-                        <h1 class="hero-title">
-                            MVShield로<br/>
-                            <span class="hero-title-accent">EOL 이후 10년+</span> 안정 운영
-                        </h1>
+                        <div class="hero-title">
+                            <div class="up-tit">CentOS7 커뮤니티 지원 종료,<br/></div>
+                            <span class="hero-title-accent">MVShield가 해결책</span>
+                        </div>
 
                         <p class="hero-sub">
-                            CentOS 7 커뮤니티 지원 종료(EOL) 이후에도<br/>
-                            Enterprise Linux 수준의 유지보수·기술지원을 제공합니다.
+                            MVShield는 오픈소스 기반 Enterprise Linux 를 위한 유지보수 및 기술지원 서비스입니다.
+                            커뮤니티에 의한 지원 종료(EOL) 후에도 EOL 전과 동일한 수준의 유지보수 및 기술지원 서비스를 10년이상 보장합니다.
+                            CentOS는 물론 Ubuntu, Rocky Linux, AlmaLinux등 모든 오픈소스 리눅스 배포판에 대한 고객 요구사항에 대응할 수 있습니다.
                         </p>
-
-                        <ul class="hero-points">
-                            <li>보안 패치 &amp; 취약점 대응</li>
-                            <li>장기 유지보수(10년 이상)</li>
-                            <li>CentOS · Ubuntu · Rocky · AlmaLinux 대응</li>
-                        </ul>
-
-                        <div class="hero-cta">
-                            <a class="btn btn-ghost logo-btn">
-                                <span class="hero-btn-logo">
-                                  <img src="/assets/img/centos_logo.png" alt=""/>
-                                </span>
-                            </a>
-                            <a class="btn btn-ghost logo-btn">
-                                <span class="hero-btn-logo">
-                                  <img src="/assets/img/ubuntu_logo.png" alt=""/>
-                                </span>
-                            </a>
-                            <a class="btn btn-ghost logo-btn">
-                                <span class="hero-btn-logo">
-                                  <img src="/assets/img/rockyLinux_logo.png" alt=""/>
-                                </span>
-                            </a>
-                        </div>
 
                     </div>
                     <div class="hero-card">
@@ -64,8 +40,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         <article class="mv-case">
                             <div class="mv-case-media">
                                 <picture>
-                                    <source media="(max-width:720px)"
-                                            srcset="/images/sub/m_mvshield_info02_con_img03.png">
                                     <img src="/../assets/img/mvshield_case2.png" alt="">
                                 </picture>
                             </div>
@@ -81,8 +55,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         <article class="mv-case">
                             <div class="mv-case-media">
                                 <picture>
-                                    <source media="(max-width:720px)"
-                                            srcset="/images/sub/m_mvshield_info02_con_img02.png">
                                     <img src="/../assets/img/mvshield_case1.png" alt="">
                                 </picture>
                             </div>
@@ -100,8 +72,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         <article class="mv-case">
                             <div class="mv-case-media">
                                 <picture>
-                                    <source media="(max-width:720px)"
-                                            srcset="/images/sub/m_mvshield_info02_con_img01.png">
                                     <img src="/../assets/img/mvshield_case4.png" alt="">
                                 </picture>
                             </div>
@@ -117,8 +87,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         <article class="mv-case">
                             <div class="mv-case-media">
                                 <picture>
-                                    <source media="(max-width:720px)"
-                                            srcset="/images/sub/m_mvshield_info02_con_img04.png">
                                     <img src="/../assets/img/mvshield_case3.png" alt="">
                                 </picture>
                             </div>
@@ -143,11 +111,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 						MVShield
 					</span>란?
                     </div>
-                    글로벌 임베디드 리눅스 전문 기업 MontaVista가 제공하는
 
+                    <div class="basic">글로벌 임베디드 리눅스 전문 기업 MontaVista가 제공하는</div>
                     <span class="accent">
 						Enterprise Linux 장기유지보수 및 기술지원 서비스
-                    </span>입니다.
+                    </span>
                 </div>
                 <img src="/../assets/img/mvshield_info03.png" alt="">
             </section>
@@ -177,7 +145,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             <div class="name">
                                 <div>
                                     <strong>CentOS</strong>
-                                    <span>Supported versions</span>
                                 </div>
                                 <div class="chips" aria-label="CentOS supported versions">
                                     <span class="chip version">5</span>
@@ -194,7 +161,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             </div>
                             <div class="name">
                                 <strong>Ubuntu</strong>
-                                <span>LTS / selected</span>
                             </div>
                         </article>
 
@@ -204,21 +170,18 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             </div>
                             <div class="name">
                                 <strong>AlmaLinux</strong>
-                                <span>All versions</span>
                             </div>
                         </article>
                     </div>
 
-                    <p class="note">* 지원 범위는 계약 형태에 따라 확장 구성 가능합니다.</p>
-                    <p class="note">* MVShield 계약 형태에 따라 현재 미지원 OS/버전에 대한 서비스 구성 가능합니다.</p>
+                    <p class="note">*MVShield 계약 형태에 따라 현재 미지원 OS/버전에 대한 서비스 구성 가능</p>
                 </div>
             </section>
 
             <section class="journey">
                 <section>
                     <header class="head">
-                        <h2 class="title"><span class="text-highlight-g">EOL</span> 이후에도 멈추지 않는 <span
-                                    class="text-highlight">장기 지원</span></h2>
+                        <h2 class="title"><span class="text-highlight-g">MVShield</span>는</h2>
                         <div class="sub">EOL 이후에도 10년(LTM 5년 + ELTM 5년)간의 장기유지보수를 보장하고,<br>
                             이후에도 고객이 원하는 시점까지 종료 없이 연장 지원합니다.</div>
                     </header>
@@ -239,20 +202,17 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                 <section id="rocky-migration" class="section">
                     <header class="head">
-                        <p class="kicker">MIGRATION</p>
-                        <h2 class="title">OS Migration이 필요하다면, <span class="text-highlight-m">Rocky Linux</span>로</h2>
+                        <h2 class="title">OS Migration이 필요하다면, <span class="text-highlight-m">Rocky Linux</span>로 !</h2>
                     </header>
 
                     <div class="grid three">
                         <article class="card">
-                            <div class="kicker">SPONSOR</div>
                             <div class="h3">Tier 1 Principal Sponsor</div>
-                            <img src="/../assets/img/rockyLinux_logo.png" alt="">
+                            <img src="/../assets/img/rocky&monta.png" alt="">
 
                         </article>
 
                         <article class="card">
-                            <div class="kicker">PROVIDER</div>
                             <div class="h3">Support Provider</div>
                             <ul class="list">
                                 <li>SIG (Special Interest Group)</li>
@@ -262,14 +222,14 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         </article>
 
                         <article class="card">
-                            <div class="kicker">SUPPORT</div>
                             <div class="h3">유지보수 / 기술지원</div>
                             <ul class="list">
                                 <li>EOL 이후에도 Long Term Maintenance 제공</li>
                                 <li>MontaVista 한국지사 운영 (Since 2003)</li>
                             </ul>
                             <div class="note-box">
-                                Embedded/Enterprise Linux 기술지원 · 개발용역 · 리눅스 컨설팅 과제 수행
+                                - Embedded/Enterprise Linux 기술지원 <br>
+                                - 개발용역 · 리눅스 컨설팅 과제 수행
                             </div>
                         </article>
                     </div>
@@ -277,16 +237,16 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                 <section id="cost-saving" class="section">
                     <header class="head">
-                        <h2 class="title">대규모 인프라일수록 비용 절감 효과</h2>
-                        <div class="sub">OS 버전별 과금 정책, 대규모 인프라 보유 시 획기적인 비용절감을 기대할 수 있습니다. </div>
+                        <div class="sub">OS 버전별 과금 정책, 대규모 인프라 보유 시 </div>
+                        <h2 class="title"><span class="text-highlight-g">획기적인 비용절감</span>을 기대할 수 있습니다. </h2>
                     </header>
 
                     <div class=" media wide">
                         <picture>
                             <source media="(max-width:720px)"
-                                    srcset="/images/sub/m_mvshield_info07_con_img_con_img01.png">
+                                    srcset="/../assets/img/mvshield_info07_mo.png">
                             <source media="(max-width:980px)"
-                                    srcset="/images/sub/t_mvshield_info07_con_img_con_img01.png">
+                                    srcset="/../assets/img/mvshield_info07_tab.png">
                             <img src="/../assets/img/mvshield_info07.png" alt="">
                         </picture>
                     </div>
@@ -304,8 +264,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                 <section id="lts" class="section">
 
-                    <section class="mv-section">
-                        <div class="mv-shell">
+<!--                    <section class="mv-section">-->
+<!--                        <div class="mv-shell">-->
                             <div class="mv-cta-block">
                                 <div class="mv-cta-copy">
                                     <p class="mv-kicker">· RESOURCES</p>
@@ -325,8 +285,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                             <path d="M9 7h8v8"/>
                                         </svg>
                                     </a>
-                                    <a class="mv-rbtn primary" href="ds_CGE7.pdf" target="_blank"
-                                       rel="noopener noreferrer">
+                                    <a class="mv-rbtn primary" href="mvshield.pdf" download>
                                         소개자료
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                              viewBox="0 0 24 24" fill="none"
@@ -341,8 +300,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+<!--                        </div>-->
+<!--                    </section>-->
                 </section>
             </section>
 
