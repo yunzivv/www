@@ -4,7 +4,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
 <main id="about-page">
 
 <!--    hero-->
-    <section class="about-sec reveal">
+    <section class="about-sec" data-reveal>
         <div class="hero-flex wrap">
             <div class="hero-text-wrap">
                 <div class="hero-quote">“최고를 향한 여정에 동반자가 되겠습니다.”</div>
@@ -22,7 +22,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
 
 <!--    business-->
-    <section class="wrap" aria-labelledby="about-biz">
+    <section class="wrap about-biz">
             <header class="about-head" data-reveal>
                 <h2 class="about-title" id="about-biz">사업영역</h2>
             </header>
@@ -121,9 +121,12 @@ require_once __DIR__ . '/../app/header.php'; ?>
 </main>
 
 
+
 <script>
     (() => {
-        const items = document.querySelectorAll('#about-page [data-reveal]');
+        const root = document.getElementById('about-page');
+        if (!root) return;
+        const items = root.querySelectorAll('[data-reveal]');
         if (!items.length) return;
 
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -132,12 +135,12 @@ require_once __DIR__ . '/../app/header.php'; ?>
         }
 
         const io = new IntersectionObserver((entries) => {
-            entries.forEach((e) => {
+            for (const e of entries) {
                 if (e.isIntersecting) {
                     e.target.classList.add('is-in');
                     io.unobserve(e.target);
                 }
-            });
+            }
         }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
 
         items.forEach(el => io.observe(el));

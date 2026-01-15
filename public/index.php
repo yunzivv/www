@@ -73,15 +73,15 @@ require_once __DIR__ . '/../app/header.php'; ?>
 <!--    solutions-->
     <section id="solutions">
         <header class="solution-head wrap">
-            <p class="kicker">SOLUTIONS</p>
-            <div class="main-title ">
+            <p class="kicker" data-reveal>SOLUTIONS</p>
+            <div class="main-title " data-reveal>
                 에이시스트가 제공하는 <br>
                 <strong class="hero-title-accent3">최고의 솔루션을 소개</strong>합니다.
             </div>
         </header>
         <div class="solutions-page wrap">
-            <div class="solutions-shell">
-                <div>
+            <div class="solutions-shell" data-reveal>
+                <div >
                     <h2 class="title1">
                         Linux is<br/>
                         Everywhere
@@ -110,7 +110,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
         </div>
 
         <div class="solutions-page wrap">
-            <div class="solutions-shell">
+            <div class="solutions-shell" data-reveal>
                 <div>
                     <h2 class="title1">
                         Know what’s in<br/>
@@ -145,14 +145,14 @@ require_once __DIR__ . '/../app/header.php'; ?>
         <div class="container wrap">
 
             <header class="service-head">
-                <p class="kicker">SERVICE</p>
-                <div class="text-highlight-gr main-title">
+                <p class="kicker" data-reveal>SERVICE</p>
+                <div class="text-highlight-gr main-title" data-reveal>
                     에이시스트가 제공하는 <br>
                     <strong class="hero-title-accent2">최고의 서비스를 소개</strong>합니다.
                 </div>
             </header>
 
-            <div class="card-grid">
+            <div class="card-grid" data-reveal>
                 <a href="/service/ltsecure.php" class="card">
                     <div class="card-media">
                         <img src="assets/img/main_service01.png" alt="LTSecure"/>
@@ -190,14 +190,14 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
         <div class="container wrap">
             <header class="section-head section-head--light">
-                <h2 class="kicker text-highlight0">CONTACT US</h2>
-                <div class="main-title">
+                <h2 class="kicker text-highlight0" data-reveal>CONTACT US</h2>
+                <div class="main-title" data-reveal>
                     에이시스트의 전문가에게 문의하세요. <br/>
                     신속하게 연락드리겠습니다.
                 </div>
             </header>
 
-            <a class="btn btn-ghost-dark" href="mailto:assist@assist.com">CONTACT US &nbsp;&nbsp;
+            <a class="btn btn-ghost-dark" href="mailto:assist@assist.com" data-reveal>CONTACT US &nbsp;&nbsp;
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                      viewBox="0 0 24 24" fill="none"
                      stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

@@ -600,6 +600,16 @@
     }
     #oss-audit-page .oa-case {
         padding: 24px 12px;}
+    .about-biz {
+        margin: 80px 0;
+    }
+    #about-page .about-client {
+        padding: 70px 0;
+    }
+    .about-sec {
+        padding: 100px 0 70px;
+    }
+
     .hero-title, .mv-cases-title, .fl-title3, .rl-h2, .oa-title, .mv-h1 {font-size: 28px !important;}
     .hero-quote {font-size: 22px !important;}
     .hero-sub, .basic, .lead {font-size: 14px !important;}

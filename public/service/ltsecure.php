@@ -5,10 +5,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <!--    hero-->
     <section class="lt-hero">
-        <div class="service-title">
+        <div class="service-title" data-reveal>
             LTSecure
         </div>
-        <div class="wrap lt-hero-grid">
+        <div class="wrap lt-hero-grid" data-reveal>
             <div class="lt-hero-copy">
                 <h1 class="lt-title">CentOS를
                     <br><span class="text-highlight2">아직 사용하고 계시나요?</span></h1>
@@ -36,12 +36,12 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <!--    risk-->
     <section class="lt-sec sec--dark">
         <div class="lt-risk-wrap wrap">
-            <div class="lt-head">
+            <div class="lt-head" data-reveal>
                 <h3 class="lt-sub">CentOS EOL 버전을 계속 사용할 경우</h3>
                 <h2 class="lt-h2">발생할 수 있는 위험</h2>
             </div>
 
-            <div class="lt-risk-grid">
+            <div class="lt-risk-grid" data-reveal>
                 <article class="lt-risk">
                     <span class="lt-risk-no">01</span>
                     <span>새로운 보안 취약점에<strong> 대응하지 못함</strong></span>
@@ -70,19 +70,19 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <section class="journey">
         <section class="wrap">
             <header class="head">
-                <div class="title">CentOS EOL 버전을 <span class="text-highlight2">안전하게 사용하는 최적 솔루션</span>
+                <div class="title" data-reveal>CentOS EOL 버전을 <span class="text-highlight2">안전하게 사용하는 최적 솔루션</span>
                     <br>
                     <span class="hero-title-accent lts-title">LTSecure</span>
                 </div>
-                <div class="feature-desc">EOL 시점으로부터 10년 (LTM 5년 + ELTM 5년) 간의 장기 유지보수를 보장하여 안정적인 운영환경을 제공합니다.
+                <div class="feature-desc" data-reveal>EOL 시점으로부터 10년 (LTM 5년 + ELTM 5년) 간의 장기 유지보수를 보장하여 안정적인 운영환경을 제공합니다.
                     <br>
                     소규모 인프라를 운영 중인 고객을 위해 비용 부담을 줄인 가격정책을 제시합니다.
                 </div>
-                <img class="cycle-dot" src="../assets/img/mvshield_info08.png" alt="">
+                <img class="cycle-dot" src="../assets/img/mvshield_info08.png" alt="" data-reveal>
             </header>
-            <span class="cycle">LTSecure 수명주기</span>
+            <span class="cycle" data-reveal>LTSecure 수명주기</span>
 
-            <div class="">
+            <div class="" data-reveal>
                 <img src="../assets/img/centoslts_info03.png" alt="">
                 <div class="mvshield-desc">
                     <img src="../assets/img/centoslts_info04.png" alt="">
@@ -100,11 +100,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <!--    os-->
     <section id="os-support">
         <div class="wrap">
-            <header class="head">
+            <header class="head" data-reveal>
                 <div class="lt-h2">지원 OS</div>
             </header>
 
-            <div class="grid four">
+            <div class="grid four" data-reveal>
                 <article class="os">
                     <div class="logo">
                         <img src="/../assets/img/rockyLinux_ci.png" alt="Rocky Linux">
@@ -147,15 +147,15 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <section class="lt-sec">
         <div class="wrap">
             <div class="lt-head">
-                <h2 class="lt-h2"><span class="text-highlight2">LTSecure</span> 서비스 구성</h2>
-                <p class="lt-sub composition"><span>
+                <h2 class="lt-h2" data-reveal><span class="text-highlight2">LTSecure</span> 서비스 구성</h2>
+                <p class="lt-sub composition" data-reveal><span>
 						보안위협 및 인증심사 대비를 위한 업데이트 및 보안 패치를 제공합니다.
 					</span></p>
             </div>
 
             <div class="lt-compare">
                 <div class="lt-compare-desktop" role="region" aria-label="비교표 (데스크톱)">
-                    <table class="lt-table">
+                    <table class="lt-table" data-reveal>
                         <thead>
                         <tr>
                             <th>항목</th>
@@ -195,7 +195,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
 
                 <!-- Mobile swiper -->
-                <div class="lt-compare-mobile">
+                <div class="lt-compare-mobile" data-reveal>
                     <div class="swiper lt-compare-swiper">
                         <div class="swiper-wrapper">
 
@@ -290,11 +290,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <!--    why-->
     <section class="lt-sec sec--dark">
         <div class="wrap">
-            <div class="lt-head lt-head--dark">
+            <div class="lt-head lt-head--dark" data-reveal>
                 <h2 class="lt-h2">Why <span class="hero-title-accent3">LTSecure?</span></h2>
             </div>
 
-            <div class="lt-why-desktop">
+            <div class="lt-why-desktop" data-reveal>
                 <div class="lt-why-tabs" role="tablist" aria-label="Why LTSecure">
                     <button type="button" role="tab" aria-selected="false">
                         <span class="lt-why-icn" aria-hidden="true">
@@ -338,7 +338,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
             </div>
 
-            <div class="lt-why-body">
+            <div class="lt-why-body" data-reveal>
                 <div class="swiper lt-why-swiper">
                     <div class="swiper-wrapper">
 
@@ -376,7 +376,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
 
         <!-- mobile accordion -->
-        <div class="lt-why-mobile wrap">
+        <div class="lt-why-mobile wrap" data-reveal>
             <details class="lt-details">
                 <summary>
                     <span class="lt-why-icn" aria-hidden="true">
@@ -444,8 +444,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <!-- target -->
     <div class="lts-target">
         <div class="wrap">
-            <div class="lts-target-title">대상 고객</div>
-            <ul>
+            <div class="lts-target-title" data-reveal>대상 고객</div>
+            <ul data-reveal>
                 <li><img src="/../assets/img/check.svg" alt="">금융, 공공기관, 제조업 등 CentOS 기반 시스템을 장기간 운영해야 하는 기업 및 기관</li>
                 <li><img src="/../assets/img/check.svg" alt="">보안이 중요한 미션 크리티컬 시스템 운영 기업</li>
                 <li><img src="/../assets/img/check.svg" alt="">소규모 인프라 운영 고객 대상 (설치 서버 기준 25대 미만)</li>
@@ -456,11 +456,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <!-- process -->
     <section class="lt-sec">
         <div class="wrap">
-            <div class="lt-head">
+            <div class="lt-head" data-reveal>
                 <h2 class="lt-h2">서비스 신청 및 개시절차</h2>
             </div>
 
-            <div class="lt-process">
+            <div class="lt-process" data-reveal>
                 <div class="lt-process-visual">
                     <picture>
                         <source media="(max-width: 640px)" srcset="/../assets/img/centoslts_info08_mo.png"/>
@@ -488,11 +488,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <!-- faq -->
     <section class="lt-sec sec--soft">
         <div class="wrap">
-            <div class="lt-head">
+            <div class="lt-head" data-reveal>
                 <h2 class="lt-h2">자주 묻는 질문</h2>
             </div>
 
-            <div class="lt-faq">
+            <div class="lt-faq" data-reveal>
 
                 <details class="lt-details">
                     <summary class="faq"><span class="lt-q">Q</span>MVShield 서비스와 LTSecure 서비스의 차이점이 무엇인가요?</summary>
@@ -552,6 +552,31 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 </main>
+
+<script>
+    (() => {
+        const root = document.getElementById('ltsecure-page');
+        if (!root) return;
+        const items = root.querySelectorAll('[data-reveal]');
+        if (!items.length) return;
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            items.forEach(el => el.classList.add('is-in'));
+            return;
+        }
+
+        const io = new IntersectionObserver((entries) => {
+            for (const e of entries) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('is-in');
+                    io.unobserve(e.target);
+                }
+            }
+        }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
+
+        items.forEach(el => io.observe(el));
+    })();
+</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {

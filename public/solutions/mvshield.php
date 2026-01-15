@@ -1,16 +1,16 @@
 <?php require_once __DIR__ . '/../../app/head.php';
 require_once __DIR__ . '/../../app/header.php'; ?>
 
-    <main>
+    <main id="mvshield-page">
         <div id="mvshield">
 
 <!--            hero-->
             <section id="hero-mvshield">
-                <div class="service-title">
+                <div class="service-title" data-reveal>
                     MontaVista MVShield
                 </div>
                 <div class="hero-wrap wrap">
-                    <div class="hero-copy">
+                    <div class="hero-copy" data-reveal>
 
                         <div class="hero-title">
                             <div class="up-tit">CentOS7 커뮤니티 지원 종료,<br/></div>
@@ -23,7 +23,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             CentOS는 물론 Ubuntu, Rocky Linux, AlmaLinux등 모든 오픈소스 리눅스 배포판에 대한 고객 요구사항에 대응할 수 있습니다.
                         </p>
                     </div>
-                    <div class="hero-card">
+                    <div class="hero-card" data-reveal>
                         <img src="/../assets/img/mvshield01.png" alt="MontaVista MVShield"/>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--cases-->
             <section id="mv-cases">
                 <div class="mv-cases-wrap wrap">
-                    <header class="mv-cases-head">
+                    <header class="mv-cases-head" data-reveal>
                         <p class="mv-kicker">USE CASES</p>
                         <h2 class="mv-cases-title">
                             CentOS 7 유지가 필요한 사례
@@ -40,7 +40,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </header>
 
                     <div class="mv-cases-grid">
-                        <article class="mv-case">
+                        <article class="mv-case" data-reveal>
                             <div class="mv-case-media">
                                 <picture>
                                     <img src="/../assets/img/mvshield_case2.png" alt="">
@@ -55,7 +55,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                 </h3>
                             </div>
                         </article>
-                        <article class="mv-case">
+                        <article class="mv-case" data-reveal>
                             <div class="mv-case-media">
                                 <picture>
                                     <img src="/../assets/img/mvshield_case1.png" alt="">
@@ -73,7 +73,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         </article>
 
 
-                        <article class="mv-case">
+                        <article class="mv-case" data-reveal>
                             <div class="mv-case-media">
                                 <picture>
                                     <img src="/../assets/img/mvshield_case4.png" alt="">
@@ -89,7 +89,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                 </h3>
                             </div>
                         </article>
-                        <article class="mv-case">
+                        <article class="mv-case" data-reveal>
                             <div class="mv-case-media">
                                 <picture>
                                     <img src="/../assets/img/mvshield_case3.png" alt="">
@@ -112,7 +112,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
 <!--            about-->
             <section id="about-mvshield" class="wrap">
-                <div class="about-content">
+                <div class="about-content" data-reveal>
                     <div class="hero-title">
 					<span class="hero-title-accent">
 						MVShield
@@ -124,7 +124,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 						Enterprise Linux 장기유지보수 및 기술지원 서비스
                     </span>
                 </div>
-                <picture>
+                <picture data-reveal>
                     <source media="(max-width: 640px)" srcset="/../assets/img/mvshield_info03_mo.png"/>
                     <img src="/../assets/img/mvshield_info03.png" alt="">
                 </picture>
@@ -135,11 +135,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--os-->
             <section id="os-support">
                 <div class="wrap">
-                    <header class="head">
+                    <header class="head" data-reveal>
                         MVShield 지원 OS
                     </header>
 
-                    <div class="grid">
+                    <div class="grid" data-reveal>
                         <article class="os">
                             <div class="logo">
                                 <img src="/../assets/img/rockyLinux_ci.png" alt="Rocky Linux">
@@ -186,21 +186,21 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         </article>
                     </div>
 
-                    <p class="note">*MVShield 계약 형태에 따라 현재 미지원 OS/버전에 대한 서비스 구성 가능</p>
+                    <p class="note" data-reveal>*MVShield 계약 형태에 따라 현재 미지원 OS/버전에 대한 서비스 구성 가능</p>
                 </div>
             </section>
 
 <!--            journey-->
             <section class="journey">
                 <section class="wrap">
-                    <header class="head">
+                    <header class="head" data-reveal>
                         <div class="title"><span class="text-highlight-g">MVShield</span>는</div>
                         <div class="sub">EOL 이후에도 10년(LTM 5년 + ELTM 5년)간의 장기유지보수를 보장하고,<br>
                             이후에도 고객이 원하는 시점까지 종료 없이 연장 지원합니다.
                         </div>
                     </header>
 
-                    <div>
+                    <div data-reveal>
                         <img src="../assets/img/mvshield_info05.png" alt="">
                         <div class="mvshield-desc">
                             <img src="../assets/img/mvshield_info06.png" alt="">
@@ -216,20 +216,20 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
 <!--                rocky migration-->
                 <section id="rocky-migration" class="wrap">
-                    <header class="head">
+                    <header class="head" data-reveal>
                         <span class="rck-title-eyebrow">OS Migration이 필요하다면,</span>
                         <h2 class="title">
                             <span class="text-highlight-m">Rocky Linux</span>로 !</h2>
                     </header>
 
                     <div class="grid three">
-                        <article class="card">
+                        <article class="card" data-reveal>
                             <div class="h3">Tier 1 Principal Sponsor</div>
                             <img src="/../assets/img/rocky&monta.png" alt="">
 
                         </article>
 
-                        <article class="card">
+                        <article class="card" data-reveal>
                             <div class="h3">Support Provider</div>
                             <ul class="list">
                                 <li>SIG (Special Interest Group)</li>
@@ -238,7 +238,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             </ul>
                         </article>
 
-                        <article class="card">
+                        <article class="card" data-reveal>
                             <div class="h3">유지보수 / 기술지원</div>
                             <ul class="list">
                                 <li>EOL 이후에도 Long Term Maintenance 제공</li>
@@ -256,12 +256,12 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--                cost saving-->
                 <section id="cost-saving" class="section">
                     <div class="wrap">
-                        <header class="head">
+                        <header class="head" data-reveal>
                             <div class="sub">OS 버전별 과금 정책, 대규모 인프라 보유 시</div>
                             <h2 class="title"><span class="text-highlight-g">획기적인 비용절감</span>을 기대할 수 있습니다. </h2>
                         </header>
 
-                        <div class=" media wide">
+                        <div class=" media wide" data-reveal>
                             <picture>
                                 <source media="(max-width:720px)"
                                         srcset="/../assets/img/mvshield_info07_mo.png">
@@ -271,7 +271,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             </picture>
                         </div>
 
-                        <div class="callout">
+                        <div class="callout" data-reveal>
                             <div class="callout-copy">
                                 <div class="h3">소규모 인프라 고객은
                                     <span class="text-highlight-g">CentOS/Rocky Linux LTS 서비스</span>를 이용할 수 있습니다.
@@ -287,7 +287,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--                resource-->
                 <section class="wrap">
                     <section class="resources">
-                        <div class="mv-cta-block">
+                        <div class="mv-cta-block" data-reveal>
                             <div class="mv-cta-copy">
                                 <p class="mv-kicker">· RESOURCES</p>
                                 <h2 class="mv-h2">Datasheets & Links</h2>
@@ -325,6 +325,31 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </section>
         </div>
     </main>
+
+    <script>
+        (() => {
+            const root = document.getElementById('mvshield-page');
+            if (!root) return;
+            const items = root.querySelectorAll('[data-reveal]');
+            if (!items.length) return;
+
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                items.forEach(el => el.classList.add('is-in'));
+                return;
+            }
+
+            const io = new IntersectionObserver((entries) => {
+                for (const e of entries) {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('is-in');
+                        io.unobserve(e.target);
+                    }
+                }
+            }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
+
+            items.forEach(el => io.observe(el));
+        })();
+    </script>
 
 
 <?php require_once __DIR__ . '/../../app/footer.php'; ?>

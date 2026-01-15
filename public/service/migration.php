@@ -37,14 +37,14 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--    support-->
     <section class="mv-section rocky">
         <div class="wrap">
-            <div class="safe-migration">
+            <div class="safe-migration" data-reveal>
                 <h2 class="rl-h2">CentOS에서 Rocky Linux로의 <br/>
                     안전한 <span class="hero-title-accent">마이그레이션</span> 지원</h2>
                 <p class="mt-desc">CentOS 7/8 버전을 Rocky Linux로 마이그레이션하고 시스템의 안정적인 장기 운영을 위해 Rocky Linux 기술지원 및 연장지원
                     서비스를 제공합니다.</p>
             </div>
 
-            <div class="mi-media">
+            <div class="mi-media" data-reveal>
                 <picture>
                     <source media="(max-width: 640px)" srcset="/../assets/img/rockylinux_info02_mo.png">
                     <source media="(max-width: 1024px)"
@@ -62,7 +62,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 <h2 class="rl-h2" id="rl-target">마이그레이션 대상 버전</h2>
             </header>
 
-            <div class="media-wrap">
+            <div class="media-wrap" data-reveal>
                 <source media="(max-width: 640px)" srcset="/../assets/img/rockylinux_info03_mo.png">
                 <img src="/../assets/img/rockylinux_info03.png" alt=""/>
             </div>

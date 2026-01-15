@@ -10,7 +10,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 MontaVista Linux
             </div>
             <div class="wrap mv-split">
-                <div class="">
+                <div class="" data-reveal>
                     <h2 class="mv-h2">About</h2>
                     <div class="mv-sec-title">MontaVista Software</div>
 
@@ -27,7 +27,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         국내 고객을 대상으로 다양한 리눅스 관련 사업을 함께 수행하고 있습니다.
                     </p>
                 </div>
-                <div class="">
+                <div class="" data-reveal>
                     <img src="/../assets/img/montavista_img01.png" alt="MontaVista"/>
                 </div>
             </div>
@@ -37,11 +37,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--        cgx/cge7-->
         <section class="mv-section">
             <div class="wrap mv-split2">
-                <div class="">
+                <div class="" data-reveal>
                     <img src="/../assets/img/montavista_img02.jpg" alt=""/>
                 </div>
 
-                <div class="">
+                <div class="" data-reveal>
                     <div class="mv-sec-title">Carrier Grade Express(CGX) / Carrier Grade Edition 7(CGE7)</div>
                     <p class="mv-desc">
                         CGX/CGE7은 캐리어그레이드급의 안정성, 강화된 보안성, 운용성을 보장하는 MontaVista의 Embedded Linux 배포판입니다.
@@ -59,11 +59,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--        expected-->
         <section class="" id="mv_expected">
             <div class="wrap">
-                <div class="mv-head">
+                <div class="mv-head" data-reveal>
                     <h1 class="section-title">도입 시 기대효과</h1>
                 </div>
 
-                <div class="mv-parallax" data-mv-slider>
+                <div class="mv-parallax" data-mv-slider data-reveal>
                     <button class="mv-sbtn prev" type="button" aria-label="이전" data-mv-prev><</button>
 
                     <div class="mv-track" data-mv-track>
@@ -153,7 +153,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
 
 <!--        cgx/cge7 maintenance-->
-        <div class="mv-figure wrap">
+        <div class="mv-figure wrap" data-reveal>
             <div class="figure-wrap">
                 <h2 class="carrier-title">Carrier Grade Express</h2>
                 <div>
@@ -172,36 +172,36 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--        profiles-->
         <section class="mv-section" id="mv-profiles">
             <div class="wrap">
-                <div class="mv-head">
+                <div class="mv-head" data-reveal>
                     <h1 class="section-title text-highlight">Technology Profiles *</h1>
                 </div>
 
                 <ul class="mv-profile-grid">
-                    <li class="mv-profile">
+                    <li class="mv-profile" data-reveal>
                         <img src="/../assets/img/technology_img01.jpg" alt="CGX CGL and Security"/>
                         <div>
                             <span>CGX CGL and Security</span>
                         </div>
                     </li>
-                    <li class="mv-profile">
+                    <li class="mv-profile" data-reveal>
                         <img src="/../assets/img/technology_img02.jpg" alt="CGX IoT"/>
                         <div>
                             <span>CGX IoT</span>
                         </div>
                     </li>
-                    <li class="mv-profile">
+                    <li class="mv-profile" data-reveal>
                         <img src="/../assets/img/technology_img03.jpg" alt="CGX Virtualization"/>
                         <div>
                             <span>CGX Virtualization</span>
                         </div>
                     </li>
-                    <li class="mv-profile">
+                    <li class="mv-profile" data-reveal>
                         <img src="/../assets/img/technology_img04.jpg" alt="CGX Dataplane"/>
                         <div>
                             <span>CGX Dataplane</span>
                         </div>
                     </li>
-                    <li class="mv-profile">
+                    <li class="mv-profile" data-reveal>
                         <img src="/../assets/img/technology_img05.jpg" alt="CGX Graphics"/>
                         <div>
                             <span>CGX Graphics</span>
@@ -214,11 +214,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 <!--        customer-->
         <section class="wrap">
             <div class="mv-customer">
-                <div class="mv-head">
+                <div class="mv-head" data-reveal>
                     <h1 class="section-title">산업별 주요 고객사</h1>
                 </div>
 
-                <div class="mv-customer-view" data-mv-tabs>
+                <div class="mv-customer-view" data-mv-tabs data-reveal>
 
                     <div class="mv-tabbar">
                         <div class="mv-tablist" role="tablist" aria-label="산업 카테고리">
@@ -260,7 +260,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </div>
 
             <div class="resources">
-                <div class="mv-cta-block">
+                <div class="mv-cta-block" data-reveal>
                     <div class="mv-cta-copy">
                         <p class="mv-kicker">RESOURCES</p>
                         <h2 class="mv-h2">Datasheets & Links</h2>
@@ -632,6 +632,31 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 setActiveByNearestCenter();
                 checkArrowVisibility();
             }, {passive: true});
+        })();
+    </script>
+
+    <script>
+        (() => {
+            const root = document.getElementById('mv-page');
+            if (!root) return;
+            const items = root.querySelectorAll('[data-reveal]');
+            if (!items.length) return;
+
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                items.forEach(el => el.classList.add('is-in'));
+                return;
+            }
+
+            const io = new IntersectionObserver((entries) => {
+                for (const e of entries) {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('is-in');
+                        io.unobserve(e.target);
+                    }
+                }
+            }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
+
+            items.forEach(el => io.observe(el));
         })();
     </script>
 

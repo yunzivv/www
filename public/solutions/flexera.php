@@ -6,12 +6,12 @@ require_once __DIR__ . '/../../app/header.php';
 
 <!--    about revena -->
     <section class="fl-hero">
-        <div class="service-title">
+        <div class="service-title" data-reveal>
             FlexNet Code Insight
         </div>
         <div class="wrap">
             <div class="mv-split">
-                <div class="fl-card">
+                <div class="fl-card" data-reveal>
                     <span class="fl-sub-title">About</span>
                     <div class="fl-sec-title">Revenera</div>
                     <span class="fl-sub-title">(Software Supply division of Flexera)</span>
@@ -26,7 +26,7 @@ require_once __DIR__ . '/../../app/header.php';
                         있습니다.
                     </p>
                 </div>
-                <div class="fl-media">
+                <div class="fl-media" data-reveal>
                     <img alt="Revenera" src="/assets/img/flexera01.png"/>
                 </div>
             </div>
@@ -37,10 +37,10 @@ require_once __DIR__ . '/../../app/header.php';
     <section class="mv-section">
         <div class="wrap">
             <div class="mv-split mv-split-reverse">
-                <div class="fl-media">
+                <div class="fl-media" data-reveal>
                     <img alt="FlexNet Code Insight" src="/assets/img/flexera02.jpg"/>
                 </div>
-                <div class="fl-card fl-card2">
+                <div class="fl-card fl-card2" data-reveal>
                     <div class="fl-sec-title">FlexNet Code Insight</div>
                     <p>
                         FlexNet Code Insight는 오픈소스라이선스 컴플라이언스와 소프트웨어보안을 위한 통합 솔루션입니다.
@@ -56,7 +56,7 @@ require_once __DIR__ . '/../../app/header.php';
 
 <!--    chart-->
     <div class="fl-section3 mv-section wrap">
-        <div class="">
+        <div class="" data-reveal>
             <div class="fl-title3">“The Largest Open Source Knowledge Base”</div>
             <div class="fl-desc">
                 With more than 14 million components and support for 25+ languages and 70+ extensions,<br>
@@ -65,7 +65,7 @@ require_once __DIR__ . '/../../app/header.php';
             </div>
         </div>
 
-        <div class="fl-img-wrapper">
+        <div class="fl-img-wrapper" data-reveal>
             <source media="(max-width: 640px)" srcset="/assets/img/flexera03_mo.jpg">
             <img src="/assets/img/flexera03.jpg" alt="">
         </div>
@@ -74,12 +74,12 @@ require_once __DIR__ . '/../../app/header.php';
 <!--feature-->
     <section id="main-feature" class="sec--dark">
         <div class="wrap">
-            <header>
+            <header data-reveal>
                 <h1 class="flex-feature-title">주요 기능</h1>
             </header>
 
             <div class="flex-func">
-                <article class="func-card">
+                <article class="func-card" data-reveal>
                     <div class="func-icon">
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
@@ -89,7 +89,7 @@ require_once __DIR__ . '/../../app/header.php';
                     </div>
                 </article>
 
-                <article class="func-card">
+                <article class="func-card" data-reveal>
                     <div class="func-icon">
                         <i class="fa-solid fa-eye" aria-hidden="true"></i>
                     </div>
@@ -98,7 +98,7 @@ require_once __DIR__ . '/../../app/header.php';
                     </div>
                 </article>
 
-                <article class="func-card">
+                <article class="func-card" data-reveal>
                     <div class="func-icon">
                         <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
 
@@ -108,7 +108,7 @@ require_once __DIR__ . '/../../app/header.php';
                     </div>
                 </article>
 
-                <article class="func-card">
+                <article class="func-card" data-reveal>
                     <div class="func-icon">
                         <i class="fa-solid fa-gears" aria-hidden="true"></i>
                     </div>
@@ -117,7 +117,7 @@ require_once __DIR__ . '/../../app/header.php';
                     </div>
                 </article>
 
-                <article class="func-card">
+                <article class="func-card" data-reveal>
                     <div class="func-icon">
                         <i class="fa-solid fa-plug" aria-hidden="true"></i>
                     </div>
@@ -126,7 +126,7 @@ require_once __DIR__ . '/../../app/header.php';
                     </div>
                 </article>
 
-                <article class="func-card">
+                <article class="func-card" data-reveal>
                     <div class="func-icon">
                         <i class="fa-solid fa-sliders" aria-hidden="true"></i>
                     </div>
@@ -144,7 +144,7 @@ require_once __DIR__ . '/../../app/header.php';
     </section>
 
 <!--    chart-->
-    <figure class="mv-chart">
+    <figure class="mv-chart" data-reveal>
         <div class="wrap">
         <img alt="" src="/assets/img/flexera_chartbox.jpg"/>
         </div>
@@ -153,7 +153,7 @@ require_once __DIR__ . '/../../app/header.php';
 <!--    resource-->
     <section class="wrap flexera">
         <div class="resources">
-            <div class="mv-cta-block">
+            <div class="mv-cta-block" data-reveal>
                 <div class="mv-cta-copy">
                     <p class="mv-kicker">· RESOURCES</p>
                     <h2 class="mv-h2">Datasheets &amp; Links</h2>
@@ -184,5 +184,30 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
     </section>
 </main>
+
+<script>
+    (() => {
+        const root = document.getElementById('flexera-page');
+        if (!root) return;
+        const items = root.querySelectorAll('[data-reveal]');
+        if (!items.length) return;
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            items.forEach(el => el.classList.add('is-in'));
+            return;
+        }
+
+        const io = new IntersectionObserver((entries) => {
+            for (const e of entries) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('is-in');
+                    io.unobserve(e.target);
+                }
+            }
+        }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
+
+        items.forEach(el => io.observe(el));
+    })();
+</script>
 
 <?php require_once __DIR__ . '/../../app/footer.php'; ?>
