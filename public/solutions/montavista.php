@@ -3,30 +3,33 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <main id="mv-page">
 
-        <section class="mv-hero ">
-            <div class="wrap">
-                <div class="mv-hero-visual">
-                    <img src="/../assets/img/montavista_img02.png" alt="MontaVista"/>
-                </div>
+<!--        hero-->
+<!--        <section class="mv-hero ">-->
+<!--            <div class="wrap">-->
+<!--                <div class="mv-hero-visual">-->
+<!--                    <img src="/../assets/img/montavista_img02.png" alt="MontaVista"/>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="mv-hero-copy">-->
+<!--                    <h1 class="mv-title hero-title-accent">MontaVista Software</h1>-->
+<!--                    <div class="mv-lead">-->
+<!--                        에이시스트는 <b>Embedded Linux</b> 전문 기업 MontaVista Software사와-->
+<!--                        10년 이상 파트너십을 유지하고 있으며, <b>국내 고객을 대상으로 다양한 리눅스 관련 사업</b>을 함께 수행하고 있습니다.-->
+<!--                    </div>-->
+<!--                    <ul class="mv-pills">-->
+<!--                        <li>Linux is Everywhere</li>-->
+<!--                        <li>Embedded</li>-->
+<!--                        <li>Real Time</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="watermark" aria-hidden="true">MontaVista Software</div>-->
+<!--        </section>-->
 
-                <div class="mv-hero-copy">
-                    <h1 class="mv-title hero-title-accent">MontaVista Software</h1>
-                    <div class="mv-lead">
-                        에이시스트는 <b>Embedded Linux</b> 전문 기업 MontaVista Software사와
-                        10년 이상 파트너십을 유지하고 있으며, <b>국내 고객을 대상으로 다양한 리눅스 관련 사업</b>을 함께 수행하고 있습니다.
-                    </div>
 
-                    <ul class="mv-pills">
-                        <li>Linux is Everywhere</li>
-                        <li>Embedded</li>
-                        <li>Real Time</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="watermark" aria-hidden="true">MontaVista Software</div>
-        </section>
+<!--        montavista sofrware-->
+        <section class="mv-hero" id="mv-about">
 
-        <section class="mv-section" id="mv-about">
             <div class="wrap mv-split">
                 <div class="">
                     <h2 class="mv-h2">About</h2>
@@ -45,14 +48,14 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         국내 고객을 대상으로 다양한 리눅스 관련 사업을 함께 수행하고 있습니다.
                     </p>
                 </div>
-
                 <div class="">
                     <img src="/../assets/img/montavista_img01.png" alt="MontaVista"/>
                 </div>
             </div>
-
         </section>
 
+
+<!--        cgx/cge7-->
         <section class="mv-section">
             <div class="wrap mv-split2">
                 <div class="">
@@ -73,6 +76,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </div>
         </section>
 
+
+<!--        expected-->
         <section class="" id="mv_expected">
             <div class="wrap">
                 <div class="mv-head">
@@ -164,10 +169,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                     <button class="mv-sbtn next" type="button" aria-label="다음" data-mv-next>></button>
                 </div>
-
             </div>
         </section>
 
+
+<!--        cgx/cge7 maintenance-->
         <div class="mv-figure wrap">
             <div class="figure-wrap">
                 <h2 class="carrier-title">Carrier Grade Express</h2>
@@ -183,6 +189,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </div>
         </div>
 
+
+<!--        profiles-->
         <section class="mv-section" id="mv-profiles">
             <div class="wrap">
                 <div class="mv-head">
@@ -224,6 +232,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </div>
         </section>
 
+<!--        customer-->
         <section class="wrap">
             <div class="mv-customer">
                 <div class="mv-head">

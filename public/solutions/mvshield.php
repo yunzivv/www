@@ -4,7 +4,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     <main>
         <div id="mvshield">
 
+<!--            hero-->
             <section id="hero-mvshield">
+                <div class="service-title">
+                    MontaVista MVShield
+                </div>
                 <div class="hero-wrap wrap">
                     <div class="hero-copy">
 
@@ -18,7 +22,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                             커뮤니티에 의한 지원 종료(EOL) 후에도 EOL 전과 동일한 수준의 유지보수 및 기술지원 서비스를 10년이상 보장합니다.
                             CentOS는 물론 Ubuntu, Rocky Linux, AlmaLinux등 모든 오픈소스 리눅스 배포판에 대한 고객 요구사항에 대응할 수 있습니다.
                         </p>
-
                     </div>
                     <div class="hero-card">
                         <img src="/../assets/img/mvshield01.png" alt="MontaVista MVShield"/>
@@ -26,7 +29,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
             </section>
 
-
+<!--cases-->
             <section id="mv-cases">
                 <div class="mv-cases-wrap wrap">
                     <header class="mv-cases-head">
@@ -99,15 +102,14 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                     <br>
                                     <strong class="text-highlight">EOL OS의 유지보수와 기술지원을
                                         계속해 줄 수 있다면 ..</strong>
-
                                 </h3>
                             </div>
                         </article>
-
                     </div>
                 </div>
             </section>
 
+<!--            about-->
             <section id="about-mvshield" class="wrap">
                 <div class="about-content">
                     <div class="hero-title">
@@ -129,6 +131,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </section>
 
 
+<!--os-->
             <section id="os-support">
                 <div class="wrap">
                     <header class="head">
@@ -186,6 +189,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
             </section>
 
+<!--            journey-->
             <section class="journey">
                 <section class="wrap">
                     <header class="head">
@@ -209,6 +213,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </section>
 
+<!--                rocky migration-->
                 <section id="rocky-migration" class="wrap">
                     <header class="head">
                         <span class="rck-title-eyebrow">OS Migration이 필요하다면,</span>
@@ -246,6 +251,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </section>
 
+
+<!--                cost saving-->
                 <section id="cost-saving" class="section">
                     <div class="wrap">
                         <header class="head">
@@ -275,6 +282,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </section>
 
+
+<!--                resource-->
                 <section class="wrap">
                     <section class="resources">
                         <div class="mv-cta-block">

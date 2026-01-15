@@ -3,7 +3,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
 <main id="rlmig-page" class="rl-page">
 
-    <!-- HERO -->
+    <!--    hero-->
     <section class="rl-hero" aria-labelledby="rl-title">
         <div class="service-title rocky">
             Rocky Linux Migration
@@ -34,6 +34,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
+<!--    support-->
     <section class="mv-section ">
         <div class="wrap">
             <div class="safe-migration">
@@ -54,7 +55,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
-    <!-- TARGET VERSIONS -->
+<!--    target version-->
     <section id="migration-target" class="rl-section" aria-labelledby="rl-target">
         <div class="wrap">
             <header class="rl-head" data-reveal>
@@ -68,7 +69,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
-    <!-- SERVICE PLANS -->
+<!--    service plan-->
     <section class="rl-section rl-section--plans" aria-labelledby="rl-plans">
         <div class="wrap">
             <header class="rl-head" data-reveal>

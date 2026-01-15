@@ -53,67 +53,24 @@
     .lt-details-body { font-size: 18px;}
     #rocky-migration .card li li {font-size: 16px;}
 
-    .mnav-toggle {
-        display: block;
-    }
-    .gnb {
-        display: none;
-    }
-
-    .mnav-toggle {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
+    .mnav-toggle {display: block;}
+    .mnav-toggle {display: inline-flex;align-items: center;justify-content: center;}
+    .gnb {display: none;}
 }
 
 @media (max-width: 980px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-inner {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    #main-feature .mv-track {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    #main-feature .mv-track > :nth-child(7) {
-        grid-column: 1 / -1;
-    }
-    .mv-track {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        padding: 0;
-    }
-
-    .mv-track > :nth-child(7) {
-        grid-column: 1 / -1;
-    }
-    #mv_expected .mv-parallax {
-        --mv-slide-w: min(720px, 88vw);
-    }
-    #mvshield .hero-wrap {
-        grid-template-columns: 1fr;
-    }
-
-    #mvshield .hero-visual {
-        order: -1;
-        min-height: auto;
-    }
-    #os-support .grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    #os-support .os-centos {
-        grid-column: span 3;
-    }
-    .journey .grid.two {
-        grid-template-columns: 1fr;
-    }
-
+    .hero-grid {grid-template-columns: 1fr;}
+    .hero-inner {padding-left: 40px;padding-right: 40px;}
+    #main-feature .mv-track {grid-template-columns: repeat(2, minmax(0, 1fr));}
+    #main-feature .mv-track > :nth-child(7) {grid-column: 1 / -1;}
+    .mv-track {grid-template-columns: repeat(2, minmax(0, 1fr));padding: 0;}
+    .mv-track > :nth-child(7) {grid-column: 1 / -1;}
+    #mv_expected .mv-parallax {--mv-slide-w: min(720px, 88vw);}
+    #mvshield .hero-wrap {grid-template-columns: 1fr;}
+    #mvshield .hero-visual {order: -1;min-height: auto;}
+    #os-support .grid {grid-template-columns: repeat(3, minmax(0, 1fr));}
+    #os-support .os-centos {grid-column: span 3;}
+    .journey .grid.two {grid-template-columns: 1fr;}
     .journey .grid.three {
         grid-template-columns: 1fr;
     }

@@ -3,19 +3,19 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
 <main id="location" class="mv-page">
 
+<!--    map-->
     <div class="lo-wrap wrap">
         <h1 class="mv-h1">오시는길</h1>
         <div class="lo-desc">
             아래 지도와 안내를 통해 회사 위치 및 교통편을 확인하실 수 있습니다.
         </div>
-
         <div class="map-area">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.549459063372!2d127.12072232524511!3d37.49495700080584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca58edc65c09f%3A0x3407e4467a7edf23!2zKOyjvCnsoJzsnbTtiKzsl6DthYztgazrhoDroZzsp4A!5e0!3m2!1sko!2skr!4v1625809878610!5m2!1sko!2skr"
                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
 
-
+<!--info-->
     <div class="location-card wrap">
         <div class="direction">
             <div class="dir-column">

@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../../app/header.php'; ?>
 <main id="oss-audit-page" class="oa-page">
 
-    <!-- HERO -->
+    <!--    hero-->
     <section class="oa-hero" aria-labelledby="oa-title">
         <div class="service-title ">
             OSS Audit Service
@@ -34,7 +34,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     </section>
 
 
-    <!-- INSIGHT -->
+<!--    insight-->
     <section class="oa-section" aria-labelledby="oa-insight">
         <div class="wrap">
             <div class="oa-insight" data-reveal>
@@ -54,7 +54,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     </section>
 
 
-    <!-- SCOPE -->
+<!--    scope-->
     <section class="oa-section oa-section--tint" aria-labelledby="oa-scope">
         <div class="wrap">
             <header class="oa-head" data-reveal>
@@ -103,7 +103,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     </section>
 
 
-    <!-- CASES -->
+<!--    case-->
     <section class="oa-section" aria-labelledby="oa-cases">
         <div class="wrap">
             <header class="oa-head" data-reveal>
@@ -216,11 +216,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     </div>
                 </div>
             </section>
-
         </div>
     </section>
-
 </main>
+
 
 <script>
     (() => {

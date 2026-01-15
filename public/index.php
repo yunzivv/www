@@ -1,12 +1,12 @@
 <?php require_once __DIR__ . '/../app/head.php';
 require_once __DIR__ . '/../app/header.php'; ?>
 
-<main>
+<main class="main-page">
+
+<!--    hero-->
     <section class="hero">
         <img class="bg" src="assets/img/main_bg01.jpg" alt="main background1"/>
-
         <div class="hero-inner wrap">
-
             <div class="hero-copy">
                 <p class="hero-eyebrow">JOURNEY TO THE MOST</p>
 
@@ -32,6 +32,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </section>
 
 
+<!--    highlight-->
     <section id="highlights" class="main-section ">
         <div class="wrap">
             <header class="section-head">
@@ -68,6 +69,8 @@ require_once __DIR__ . '/../app/header.php'; ?>
         </div>
     </section>
 
+
+<!--    solutions-->
     <section id="solutions">
         <header class="solution-head wrap">
             <p class="kicker">SOLUTIONS</p>
@@ -137,6 +140,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </section>
 
 
+<!--    service-->
     <section id="service" class="service-section">
         <div class="container wrap">
 
@@ -148,31 +152,6 @@ require_once __DIR__ . '/../app/header.php'; ?>
                 </div>
             </header>
 
-            <!--            <div class="service-list">-->
-            <!--                <article class="service-item" style="--bg:url('img/main_service01.png')">-->
-            <!--                    <div class="service-index">01</div>-->
-            <!--                    <div class="service-content">-->
-            <!--                        <h2>CentOS EOL Support & Maintenance</h2>-->
-            <!--                        <p class="desc">-->
-            <!--                            CentOS에 대한 상용 기술지원을 제공합니다.<br/>-->
-            <!--                            특정 고객을 위한 전용 CentOS Branch를 구성합니다.-->
-            <!--                        </p>-->
-            <!--                    </div>-->
-            <!--                    <a href="/service/ltsecure.php">자세히 보기 →</a>-->
-            <!--                </article>-->
-            <!---->
-            <!--                <article class="service-item" style="--bg:url('img/main_service02.png')">-->
-            <!--                    <div class="service-index">02</div>-->
-            <!--                    <div class="service-content">-->
-            <!--                        <h2>OpenSource Audit Service</h2>-->
-            <!--                        <p class="desc">-->
-            <!--                            오픈소스 컨설팅 전문기업으로<br/>-->
-            <!--                            직접 OpenSource Audit Service를 수행합니다.-->
-            <!--                        </p>-->
-            <!--                    </div>-->
-            <!--                    <a href="/service/ossAudit.php">자세히 보기 →</a>-->
-            <!--                </article>-->
-            <!--            </div>-->
             <div class="card-grid">
                 <a href="/service/ltsecure.php" class="card">
                     <div class="card-media">
@@ -205,6 +184,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </section>
 
 
+<!--    contact-->
     <section id="contact" class="main-section contact-cta">
         <div class="contact-bg"></div>
 

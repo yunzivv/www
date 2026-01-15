@@ -3,17 +3,15 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
 <main id="ltsecure-page" class="lt-page">
 
-    <!-- HERO -->
+<!--    hero-->
+    <div class="solution-title">
+        LTSecure
+    </div>
     <section class="lt-hero">
-        <div class="service-title">
-            LTSecure
-        </div>
         <div class="wrap lt-hero-grid">
-
             <div class="lt-hero-copy">
                 <h1 class="lt-title">CentOS를
                     <br><span class="text-highlight2">아직 사용하고 계시나요?</span></h1>
-
                 <p class="lt-lead">
                     커뮤니티 지원이 종료된 CentOS는 심각한 보안 취약점이 발견되더라도 <br/>
                     이에 대한 패치가 제공되지 않습니다. 지금 바로 대책이 필요합니다. <br/>
@@ -21,7 +19,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     <span class="text-highlight">고객 맞춤형 CentOS 연장지원</span>
                     서비스입니다.
                 </p>
-
                 <ul class="pills" aria-label="핵심 요약">
                     <li>최신 CVE 대응</li>
                     <li>10년 장기지원</li>
@@ -29,15 +26,15 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     <li>전문가 기술지원</li>
                 </ul>
             </div>
-
             <div class="lt-hero-visual" aria-hidden="true">
                 <img src="../assets/img/CentOS%20LTS.png" alt="LTSecure 이미지"/>
             </div>
         </div>
     </section>
 
-    <section class="lt-sec sec--dark">
 
+<!--    risk-->
+    <section class="lt-sec sec--dark">
         <div class="lt-risk-wrap wrap">
             <div class="lt-head">
                 <h3 class="lt-sub">CentOS EOL 버전을 계속 사용할 경우</h3>
@@ -45,7 +42,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </div>
 
             <div class="lt-risk-grid">
-
                 <article class="lt-risk">
                     <span class="lt-risk-no">01</span><span>새로운 보안 취약점에<strong> 대응하지 못함</strong></span>
                 </article>
@@ -58,13 +54,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 <article class="lt-risk">
                     <span class="lt-risk-no">04</span><span>문제 발생시,<strong> 커뮤니티 기술 지원 불가</strong></span>
                 </article>
-
             </div>
-
         </div>
     </section>
 
-    <!-- SOLUTION -->
+<!--    solution-->
     <section class="journey">
         <section class="wrap">
             <header class="head">
@@ -92,7 +86,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </section>
     </section>
 
-    <!-- OS -->
+<!--    os-->
     <section id="os-support">
         <div class="wrap">
             <header class="head">
@@ -138,7 +132,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
-    <!-- COMPOSITION -->
+<!--    composition-->
     <section class="lt-sec">
         <div class="wrap">
             <div class="lt-head">
@@ -282,6 +276,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
+<!--    why-->
     <section class="lt-sec sec--dark">
         <div class="wrap">
             <div class="lt-head lt-head--dark">
@@ -368,7 +363,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 </div>
             </div>
 
-            <!-- Mobile: details accordion -->
+            <!-- mobile accordion -->
             <div class="lt-why-mobile">
 
                 <details class="lt-details">
@@ -409,6 +404,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
+    <!-- target -->
     <div class="lts-target">
         <div class="wrap">
             <div class="lts-target-title">대상 고객</div>
@@ -420,7 +416,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </div>
 
-    <!-- PROCESS -->
+    <!-- process -->
     <section class="lt-sec">
         <div class="wrap">
             <div class="lt-head">
@@ -450,7 +446,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
         </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- faq -->
     <section class="lt-sec sec--soft">
         <div class="wrap">
             <div class="lt-head">
@@ -603,7 +599,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             });
         }
 
-        // ===== Why (desktop) =====
         const whyEl = document.querySelector('#ltsecure-page .lt-why-swiper');
         const tabs = Array.from(document.querySelectorAll('#ltsecure-page .lt-why-tabs button'));
         if (whyEl && window.Swiper) {
@@ -632,7 +627,6 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 });
             });
 
-            // init active
             tabs.forEach((b, i) => b.classList.toggle('is-active', i === 0));
         }
     });

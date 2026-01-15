@@ -3739,7 +3739,7 @@ p {
     border: 1px solid rgba(73, 190, 87, .18);
 }
 
-.service-title {
+.service-title, .solution-title {
     text-align: center;
     font-size: 56px;
     font-weight: 600;
@@ -4590,6 +4590,8 @@ p {
 #rlmig-page .rl-hero {
     padding: clamp(120px, 10vw, 150px) 0 clamp(48px, 6vw, 70px);
 }
+
+.solution-title {padding-top: clamp(120px, 10vw, 150px); }
 
 #rlmig-page .rl-hero__grid {
     display: grid;

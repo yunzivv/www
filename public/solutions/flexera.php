@@ -2,27 +2,31 @@
 require_once __DIR__ . '/../../app/head.php';
 require_once __DIR__ . '/../../app/header.php';
 ?>
-<main>
-    <section aria-labelledby="ci-title" class="mv-hero" id="flexera-hero">
-        <div class="mv-shell reverse wrap">
-            <div>
-                <div class="up-tit">소프트웨어보안 통합 솔루션<br></div>
-                <h1 class="fl-title hero-title-accent2">FlexNet Code Insight</h1>
-                <p class="mv-lead">
-                    오픈소스소프트웨어 관련 리스크 관리를 위한 최적의 솔루션<br>
-                    전체 소프트웨어 수명주기동안 보안취약점을 탐지해, 보안관련위협을 최소화합니다.
-                </p>
-                <ul aria-label="Key highlights" class="mv-pills">
-                    <li>OSS Compliance</li>
-                    <li><img alt="FlexNet Code Insight overview" src="/assets/img/flexera_logo.png"/></li>
-                    <li><img alt="FlexNet Code Insight overview" src="/assets/img/revena_logo.png"/></li>
-                </ul>
-            </div>
-            <div aria-hidden="true" class="">
-                <img alt="FlexNet Code Insight overview" src="/assets/img/main_solution02.png"/>
-            </div>
-        </div>
-    </section>
+<main id="flexera-page">
+
+<!--    hero-->
+<!--    <section aria-labelledby="ci-title" class="mv-hero" id="flexera-hero">-->
+<!--        <div class="mv-shell reverse wrap">-->
+<!--            <div>-->
+<!--                <div class="up-tit">소프트웨어보안 통합 솔루션<br></div>-->
+<!--                <h1 class="fl-title hero-title-accent2">FlexNet Code Insight</h1>-->
+<!--                <p class="mv-lead">-->
+<!--                    오픈소스소프트웨어 관련 리스크 관리를 위한 최적의 솔루션<br>-->
+<!--                    전체 소프트웨어 수명주기동안 보안취약점을 탐지해, 보안관련위협을 최소화합니다.-->
+<!--                </p>-->
+<!--                <ul aria-label="Key highlights" class="mv-pills">-->
+<!--                    <li>OSS Compliance</li>-->
+<!--                    <li><img alt="FlexNet Code Insight overview" src="/assets/img/flexera_logo.png"/></li>-->
+<!--                    <li><img alt="FlexNet Code Insight overview" src="/assets/img/revena_logo.png"/></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div aria-hidden="true" class="">-->
+<!--                <img alt="FlexNet Code Insight overview" src="/assets/img/main_solution02.png"/>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    about revena -->
     <section class="mv-section">
         <div class="wrap">
             <div class="mv-split">
@@ -47,6 +51,8 @@ require_once __DIR__ . '/../../app/header.php';
             </div>
         </div>
     </section>
+
+<!--    code insight-->
     <section class="mv-section">
         <div class="wrap">
             <div class="mv-split mv-split-reverse">
@@ -67,6 +73,7 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
     </section>
 
+<!--    chart-->
     <div class="fl-section3 mv-section wrap">
         <div class="">
             <div class="fl-title3">“The Largest Open Source Knowledge Base”</div>
@@ -83,7 +90,7 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
     </div>
 
-
+<!--feature-->
     <section id="main-feature" class="sec--dark">
         <div class="wrap">
             <header>
@@ -152,17 +159,17 @@ require_once __DIR__ . '/../../app/header.php';
                     </div>
                 </article>
             </div>
-
-
         </div>
     </section>
 
+<!--    chart-->
     <figure class="mv-chart">
         <div class="wrap">
         <img alt="" src="/assets/img/flexera_chartbox.jpg"/>
         </div>
     </figure>
 
+<!--    resource-->
     <section class="mv-section">
         <div class="wrap">
             <div class="mv-cta-block">
@@ -196,4 +203,5 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
     </section>
 </main>
+
 <?php require_once __DIR__ . '/../../app/footer.php'; ?>

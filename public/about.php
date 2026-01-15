@@ -3,6 +3,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
 
 <main id="about-page">
 
+<!--    hero-->
     <section class="about-sec reveal">
         <div class="hero-flex wrap">
             <div class="hero-text-wrap">
@@ -19,7 +20,8 @@ require_once __DIR__ . '/../app/header.php'; ?>
         </div>
     </section>
 
-    <!-- BUSINESS -->
+
+<!--    business-->
     <section class="wrap" aria-labelledby="about-biz">
             <header class="about-head" data-reveal>
                 <h2 class="about-title" id="about-biz">사업영역</h2>
@@ -66,6 +68,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
             </div>
 
 
+<!--        engineering-->
             <article class="about-eng" data-reveal>
                 <div class="about-eng__head">
                     <div>
@@ -99,7 +102,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </section>
 
 
-    <!-- CLIENTS -->
+<!--    clients-->
     <section class="wrap about-client">
         <header class="about-head" data-reveal>
             <h2 class="about-title" id="about-clients">주요고객</h2>
@@ -116,6 +119,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
     </section>
 
 </main>
+
 
 <script>
     (() => {
