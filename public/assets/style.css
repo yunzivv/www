@@ -647,7 +647,6 @@ footer.site-footer {
 }
 
 .main-hero-title {
-    -webkit-text-size-adjust: none;
     font-size: 60px;
     font-weight: 900;
     line-height: 130%;
@@ -1148,15 +1147,13 @@ footer.site-footer {
 }
 
 #solutions .solutions-cta {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-    flex-wrap: wrap;
     margin-bottom: 14px;
 }
 
 #solutions .solutions-cta .btn {
-    width: 50%;
-    min-width: 440px;
     text-align: center;
     white-space: nowrap;
 }
@@ -1479,8 +1476,8 @@ h1, h2 {
     background: rgba(15, 23, 42, .04);
     color: #0f172a;
     border: 1px solid rgba(15, 23, 42, .18);
-    white-space: nowrap;
     transition: all .2s ease;
+    white-space: nowrap;
 }
 
 .mv-hero-visual {
@@ -2243,7 +2240,7 @@ p {
 
 #mv-cases .mv-cases-title {
     margin: 0;
-    font-size: 46px;
+    font-size: clamp(30px, 46px, 46px);
     line-height: 1.12;
     letter-spacing: -0.04em;
     color: var(--ink);
@@ -2253,7 +2250,7 @@ p {
     margin: 0;
     max-width: 72ch;
     color: var(--muted);
-    font-size: 14.5px;
+    font-size: 14px;
     line-height: 1.75;
 }
 
@@ -2473,7 +2470,7 @@ p {
 #os-support .chips {
     display: flex;
     gap: 8px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     margin: 0;
@@ -3783,6 +3780,10 @@ p {
 #migration-target .rl-h2,
 #migration-target .media-wrap{
     text-align: center;
+}
+
+#migration-target .media-wrap * {
+    margin: 0 auto;
 }
 
 .safe-migration {

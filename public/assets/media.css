@@ -6,6 +6,10 @@
 }
 
 @media (max-width: 1024px) {
+    .fl-title3 {font-size: 46px;}
+    .oa-h2 {font-size: 30px;}
+    .hero-wrap {gap: 10px;}
+    .mv-desc { line-height: 1.55; }
     .func-card .f-card-sub{font-size: .82rem;}
     .card-grid {grid-template-columns:1fr;}
     #ltsecure-page .lt-sub.composition { margin-bottom: 2rem; }
@@ -21,7 +25,7 @@
     .func-card{padding: 14px 12px;gap: 10px;align-content: start;}
     .func-card .f-card-title{font-size: 1.02rem;font-weight: 500;line-height: 1.35;letter-spacing: -0.02em;text-wrap: balance;}
     .func-card .func-icon{width: 58px;height: 58px;margin: .85rem 0 .55rem;font-size: 30px;}
-    .func-card .f-card-pills{flex-wrap: wrap;gap: 7px;margin-top: 8px;font-size: 11.5px;}
+    .func-card .f-card-pills{flex-wrap: wrap;gap: 7px;margin-top: 8px;font-size: 11px;}
     .func-card .f-card-pills li{padding: 7px 10px;}
     #ltsecure-page .lt-hero{padding: clamp(120px, 14vw, 150px) 24px clamp(72px, 10vw, 110px);}
     #ltsecure-page .lt-hero-visual img{height: clamp(220px, 40vh, 360px)}
@@ -131,54 +135,17 @@
         margin-bottom: 2rem;
     }
 
-    .mvshield-desc .desc {
-        margin: 0;
-        padding: 0 4px;
-        font-size: 12px;
-        line-height: 1.6;
-    }
+    .mvshield-desc .desc {margin: 0;padding: 0 4px;font-size: 12px;line-height: 1.6;}
+    .journey #rocky-migration {margin: 1.25rem;padding: 1.25rem;border-radius: 22px;}
+    #cost-saving {padding: 2.5rem 1.25rem;}
+    #cost-saving .media {padding: 1rem;}
+    .lt-risk-wrap {grid-template-columns: 1fr;gap: 16px;padding: 2rem 0;}
+    #ltsecure-page .lt-head {text-align: center;margin-bottom: 2px;}
+    #ltsecure-page .lt-head .lt-sub {font-size: 14px;opacity: .82;}
+    #ltsecure-page .lt-head .lt-h2 {font-size: clamp(30px, 4vw, 34px);line-height: 1.15;margin-bottom: 1rem;}
 
-    .journey #rocky-migration {
-        margin: 1.25rem;
-        padding: 1.25rem;
-        border-radius: 22px;
-    }
-
-    #cost-saving {
-        padding: 2.5rem 1.25rem;
-    }
-
-    #cost-saving .media {
-        padding: 1rem;
-    }
-    .lt-risk-wrap {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        padding: 2rem 0;
-    }
-
-    #ltsecure-page .lt-head {
-        text-align: center;
-        margin-bottom: 2px;
-    }
-
-    #ltsecure-page .lt-head .lt-sub {
-        font-size: 14px;
-        opacity: .82;
-    }
-
-    #ltsecure-page .lt-head .lt-h2 {
-        font-size: clamp(30px, 4vw, 34px);
-        line-height: 1.15;
-        margin-bottom: 1rem;
-    }
-
-    #ltsecure-page .lt-risk-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-rows: none;
-        gap: 12px;
-        align-items: stretch;
-    }
+    #ltsecure-page .lt-risk-grid {grid-template-columns: repeat(2, minmax(0, 1fr));grid-template-rows: none;gap: 12px;align-items: stretch;
+}
 
     #ltsecure-page .lt-risk {
         min-height: 74px;
@@ -500,7 +467,8 @@
 
 @media (max-width: 720px) {
 
-    #cost-saving h2.title, .mv-cases-title, .mv-sec-title, .fl-sec-title, .fl-title3, .oa-title, .about-title,.mv-h1 {font-size: 30px;}
+    #cost-saving h2.title, .mv-cases-title, .mv-sec-title, .fl-sec-title, .fl-title3,
+    .oa-title, .about-title,.mv-h1 {font-size: 30px;}
     .about-content .accent, .fl-sub-title, .mv-h2, .oa-h2 {font-size: 24px;}
     #cost-saving sub, .callout-copy .h3, .about-content .basic{font-size: 18px;}
     .mv-slide {
@@ -595,256 +563,91 @@
     #os-support .os-centos {
         grid-column: auto;
     }
-    #rlmig-page .rl-plans {
-        grid-template-columns: 1fr;
-    }
+    #rlmig-page .rl-plans {grid-template-columns: 1fr;}
 
-    #rlmig-page .rl-actions .rl-btn {
-        flex: 1 1 auto;
-    }
+    #rlmig-page .rl-actions .rl-btn {flex: 1 1 auto;}
 }
 
 @media (max-width: 640px) {
-    .hero-eyebrow {font-size: 16px;}
-    .main-hero-title { font-size: 30px}
-    .hero-desc {font-size: 16px;}
-    .site-header .gnb-list {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
+    .hero-eyebrow, .hero-desc{font-size: 16px;}
+    .hero-title, .mv-cases-title, .title, .fl-title, .fl-title3,
+    .service-title, #rlmig-page  .rl-h1, .oa-title { font-size: 30px}
+    .title1, .up-tit, .rck-title-eyebrow{ font-size: 25px}
+    .card-title, .title1, .sub{ font-size: 22px}
+    .slide-title, .accent, .h3, .oa-h3, .oa-h4 { font-size: 18px}
+    .desc , .solutions-cta, .solutions-pills, .card-desc, .mv-pills, .mv-desc, .hero-sub,
+    .mv-case-title, .basic, .rl-lead, .mt-desc, .lead, .oa-p, .oa-muted{ font-size: 14px}
+    .site-header .gnb-list {flex-wrap: wrap;justify-content: flex-end;}
+    .site-header .gnb-list > .gnb-item {flex: 0 1 auto;text-align: right;}
+    .site-header .gnb-list > .gnb-item > .gnb-link {width: auto;}
+    .site-footer .footCnt {grid-template-columns: 1fr;}
+    .site-footer .privacy {justify-self: start;}
+    .btn-top {right: 16px;bottom: 16px;width: 42px;height: 42px;}
+    .main-hero-title {font-size: clamp(24px, 4vw, 30px);}
+    .hero-eyebrow {font-size: clamp(10px, 14px, 18px);}
+    .hero-desc {font-size: 13px;margin: 10px 0;}
+    .hero-actions, .hero-chips {display: none;}
+    .container {width: calc(100% - 24px);}
+    .main-section {padding: 58px 0;}
+    .hero-inner {padding: 96px 4% 70px;}
+    .main-title {font-size: 30px;}
 
-    .site-header .gnb-list > .gnb-item {
-        flex: 0 1 auto;
-        text-align: right;
-    }
+    .hero-title, .mv-cases-title, .fl-title3, .rl-h2, .oa-title, .mv-h1 {font-size: 28px !important;}
+    .hero-quote {font-size: 22px !important;}  .hero-sub, .basic, .lead {font-size: 14px !important;}  .accent, .sub, .oa-h2 {font-size: 16px !important;}
 
-    .site-header .gnb-list > .gnb-item > .gnb-link {
-        width: auto;
-    }
-    .site-footer .footCnt {
-        grid-template-columns: 1fr;
-    }
+    #solutions .solutions-shell, .card-grid {grid-template-columns:1fr;}
 
-    .site-footer .privacy {
-        justify-self: start;
-    }
-    .btn-top {
-        right: 16px;
-        bottom: 16px;
-        width: 42px;
-        height: 42px;
-    }
-    .hero-inner {
-        padding: 96px 0 70px;
-    }
-
-    .main-hero-title {
-        font-size: clamp(24px, 26px, 30px);
-    }
-
-    .hero-eyebrow {
-        font-size: clamp(10px, 14px, 18px);
-    }
-
-    .hero-desc {
-        font-size: 13px;
-        margin: 10px 0;
-    }
-
-    .hero-actions, .hero-chips {
-        display: none;
-    }
-
-    .main-title {
-        font-size: 1.5rem;
-    }
-    .container {
-        width: calc(100% - 24px);
-    }
-
-    .main-section {
-        padding: 58px 0;
-    }
-
-    .hero-inner {
-        padding: 96px 4% 70px;
-    }
-
-    .hero-title {
-        font-size: 30px;
-    }
-
-    .main-title. {
-        font-size: 30px;
-    }
-
-    #solutions .solutions-shell, .card-grid {
-        grid-template-columns:1fr;
-    }
-
-    .card-media img {
-        height: 200px;
-    }
-    #mv-cases .mv-cases-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .mv-hero-visual{
-        border-radius: 18px;
-    }
-
-    .mv-hero-visual img{
-        height: clamp(210px, 60vw, 320px);
-    }
+    .card-media img {height: 200px;}
+    #mv-cases .mv-cases-grid {grid-template-columns: 1fr;}
+    .mv-hero-visual{border-radius: 18px;}
+    .mv-hero-visual img{height: clamp(210px, 60vw, 320px);}
 }
 
 @media (max-width: 560px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-card,
-    .about-eng {
-        padding: 14px;
-        border-radius: 18px;
-    }
-
-    .about-card::before {
-        border-radius: 18px;
-    }
-
-    #about-page .about-card__title {
-        font-size: 18px;
-    }
-
-    #about-page .about-card__desc {
-        text-align: center;
-        font-size: 15px;
-        padding: 0 1rem;
-    }
-    #rlmig-page .rl-plan__top {
-        padding: 14px;
-    }
-
-    #rlmig-page .rl-plan__desc {
-        padding: 12px 14px 0;
-    }
-
-    #rlmig-page .rl-plan__cols {
-        padding: 0 14px 14px;
-    }
-    #oss-audit-page .oa-benefits {
-        grid-template-columns: 1fr;
-    }
-
-    #oss-audit-page .oa-chips {
-        grid-template-columns: 1fr;
-    }
-
-    #oss-audit-page .oa-btn {
-        flex: 1 1 auto;
-    }
+    .about-grid {grid-template-columns: 1fr;}
+    .about-card, .about-eng {padding: 14px;border-radius: 18px;}
+    .about-card::before {border-radius: 18px;}
+    #about-page .about-card__title {font-size: 18px;}
+    #about-page .about-card__desc {text-align: center;font-size: 15px;padding: 0 1rem;}
+    #rlmig-page .rl-plan__top {padding: 14px;}
+    #rlmig-page .rl-plan__desc {padding: 12px 14px 0;}
+    #rlmig-page .rl-plan__cols {padding: 0 14px 14px;}
+    #oss-audit-page .oa-benefits {grid-template-columns: 1fr;}
+    #oss-audit-page .oa-chips {grid-template-columns: 1fr;}
+    #oss-audit-page .oa-btn {flex: 1 1 auto;}
 }
 
 @media (max-width: 520px) {
-    #main-feature .mv-track {
-        grid-template-columns: 1fr;
-    }
+    #main-feature .mv-track {grid-template-columns: 1fr;}
+    #main-feature .mv-track > :nth-child(7) {grid-column: auto;}
+    .mv-track {grid-template-columns: 1fr;}
+    .mv-track > :nth-child(7) {grid-column: auto;}
+    #mvshield {padding: calc(var(--header-h) + 34px) 0 56px;}
+    .journey section {padding: 1rem 14px;}
+    .journey #rocky-migration {margin: 14px auto;padding: 1rem;}
 
-    #main-feature .mv-track > :nth-child(7) {
-        grid-column: auto;
-    }
-    .mv-track {
-        grid-template-columns: 1fr;
-    }
+    #cost-saving {padding: 2rem 14px;}
+    .callout {padding: 18px;}
 
-    .mv-track > :nth-child(7) {
-        grid-column: auto;
-    }
-    #mvshield {
-        padding: calc(var(--header-h) + 34px) 0 56px;
-    }
-    .journey section {
-        padding: 1rem 14px;
-    }
+    main-feature{padding: 3rem 14px;}
+    .flex-feature-title{margin: 0 0 26px;}
+    .func-card{padding: 13px 12px;}
+    .func-card .func-icon{width: 50px;height: 50px;font-size: 26px;}
+    .func-card .f-card-title{font-size: .95rem;}
+    .func-card .f-card-pills{gap: 6px;font-size: 11px;}
+    .func-card .f-card-pills li{padding: 6px 9px;}
+    .lt-risk-wrap {padding: 1.5rem 0;gap: 14px;}
 
-    .journey #rocky-migration {
-        margin: 14px auto;
-        padding: 1rem;
-    }
-
-    #cost-saving {
-        padding: 2rem 14px;
-    }
-
-    .callout {
-        padding: 18px;
-    }
-
-    .callout .h3 {
-        font-size: 1.05rem;
-    }
-    #main-feature{
-        padding: 3rem 14px;
-    }
-
-    .flex-feature-title{
-        margin: 0 0 26px;
-        font-size: 1.85rem;
-    }
-
-    .func-card{
-        padding: 13px 12px;
-    }
-
-    .func-card .func-icon{
-        width: 50px;
-        height: 50px;
-        font-size: 26px;
-    }
-
-    .func-card .f-card-title{
-        font-size: .95rem;
-    }
-
-    .func-card .f-card-pills{
-        gap: 6px;
-        font-size: 11px;
-    }
-
-    .func-card .f-card-pills li{
-        padding: 6px 9px;
-    }
-    .lt-risk-wrap {
-        padding: 1.5rem 0;
-        gap: 14px;
-    }
-
-    #ltsecure-page .lt-head {
-        text-align: left;
-    }
-
-    #ltsecure-page .lt-head .lt-sub {
-        font-size: 13px;
-    }
-
-    #ltsecure-page .lt-head .lt-h2 {
-        font-size: 22px;
-    }
-
+    #ltsecure-page .lt-head {text-align: left;}
+    #ltsecure-page .lt-head .lt-sub {font-size: 13px;}
+    #ltsecure-page .lt-head .lt-h2 {font-size: 22px;}
     #ltsecure-page .lt-risk-grid {
         grid-template-columns: 1fr;
         gap: 10px;
         margin-left: 0;
     }
 
-    #ltsecure-page .lt-risk {
-        min-height: 68px;
-        padding: 12px 12px;
-        border-radius: 18px;
-        line-height: 1.45;
-        box-shadow: 0 14px 34px rgba(0, 0, 0, .30), inset 0 1px 0 rgba(255, 255, 255, .06);
-    }
+    #ltsecure-page .lt-risk {min-height: 68px;padding: 12px 12px;border-radius: 18px;line-height: 1.45;box-shadow: 0 14px 34px rgba(0, 0, 0, .30), inset 0 1px 0 rgba(255, 255, 255, .06);}
 
     #ltsecure-page .lt-risk-no {height: 26px;padding: 0 10px;font-size: 11.5px;}
     #ltsecure-page .lt-os-grid {grid-template-columns: repeat(2, minmax(0, 1fr));}

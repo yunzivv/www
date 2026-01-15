@@ -35,18 +35,18 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                     <p class="mv-desc">
                         MontaVista Software는 1999년 미국 실리콘벨리에서 설립된 Embedded Linux 전문기업 입니다.
                         설립 이후 줄곧 Linux 한 분야에만 집중하고 있으며, 전 세계에 2,000여개사의 고객을 보유하고 있습니다.
-                        <br><br>
+                        <br>
                         MontaVista Linux는 최초의 리눅스 스마트폰, 최초의 6-Nine(99.9999%의 고가용성) 통신장비,
                         리눅스를 탑재한 최초의 인간형로봇, 최초의 리눅스 기반 디지털 TV, 최초의 리눅스 기반 FDA 승인 의료기기,
                         리눅스 운영체제를 탑재한 최초의 승용차 등에 적용되었으며, 전 세계에서 가장 많은 상용제품에 적용된
                         Embedded Linux 배포판입니다.
-                        <br><br>
+                        <br>
                         에이시스트는 MontaVista Software사와 10년 이상 파트너십을 유지하고 있으며,
                         국내 고객을 대상으로 다양한 리눅스 관련 사업을 함께 수행하고 있습니다.
                     </p>
                 </div>
 
-                <div class="mv-media">
+                <div class="">
                     <img src="/../assets/img/montavista_img01.png" alt="MontaVista"/>
                 </div>
             </div>
