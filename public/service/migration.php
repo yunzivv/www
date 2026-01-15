@@ -63,8 +63,10 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             </header>
 
             <div class="media-wrap" data-reveal>
+                <picture>
                 <source media="(max-width: 640px)" srcset="/../assets/img/rockylinux_info03_mo.png">
                 <img src="/../assets/img/rockylinux_info03.png" alt=""/>
+                </picture>
             </div>
         </div>
     </section>

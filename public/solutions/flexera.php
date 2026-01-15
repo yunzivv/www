@@ -66,8 +66,10 @@ require_once __DIR__ . '/../../app/header.php';
         </div>
 
         <div class="fl-img-wrapper" data-reveal>
-            <source media="(max-width: 640px)" srcset="/assets/img/flexera03_mo.jpg">
-            <img src="/assets/img/flexera03.jpg" alt="">
+            <picture>
+                <source media="(max-width: 640px)" srcset="/assets/img/flexera03_mo.jpg">
+                <img src="/assets/img/flexera03.jpg" alt="">
+            </picture>
         </div>
     </div>
 

@@ -504,7 +504,9 @@ picture, picture > img {
     cursor: pointer;
     font-size: 17px;
 }
-
+.mnav-item .mnav-acc {
+    border-bottom: none;
+}
 .mnav-chevron {
     opacity: .85;
 }
@@ -984,6 +986,7 @@ footer.site-footer {
     transition: all .3s ease;
 }
 
+
 .card-body {
     padding: 2rem 3rem;
     display: flex;
@@ -1173,8 +1176,8 @@ footer.site-footer {
 }
 
 #solutions .solutions-cta {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
     gap: 10px;
     margin-bottom: 14px;
 }
@@ -1193,7 +1196,7 @@ footer.site-footer {
 }
 
 .solutions-pills li {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     text-align: center;
     list-style: none;
     padding: 8px 12px;
@@ -3098,7 +3101,7 @@ img.cycle-dot{ margin: 30px auto ;}
 
 /* sections */
 #ltsecure-page .lt-sec {
-    padding: 120px 0;
+    padding: 150px 0;
 }
 
 #ltsecure-page .lt-head {
@@ -3145,7 +3148,6 @@ img.cycle-dot{ margin: 30px auto ;}
 }
 
 /* Risk */
-
 #ltsecure-page .lt-risk-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

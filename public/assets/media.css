@@ -12,6 +12,7 @@
     .mv-desc { line-height: 1.55; }
     .card-grid {grid-template-columns:1fr;}
     .main-section {padding: 15% 0;}
+    #solutions .solutions-shell {grid-template-columns:1fr;}
     #mv_expected .mv-slide {padding: 20px;}
     .journey {
         padding-top: clamp(50px, 8vh, 70px);
@@ -43,6 +44,7 @@
     #ltsecure-page .lt-hero-visual img{height: clamp(220px, 40vh, 360px)}
     #ltsecure-page .lt-sec{padding: clamp(44px, 6vw, 84px) 0;}
     #ltsecure-page .lt-hero-copy .pills {display: none}
+    .lt-risk-wrap {padding: 50px 0;}
     #ltsecure-page .lt-solution,
     #ltsecure-page .lt-process,
     #ltsecure-page .lt-cust-grid{grid-template-columns: 1fr;}
@@ -76,6 +78,8 @@
             display: inline-flex;
 
         }
+    #rlmig-page .rl-hero, #oss-audit-page .oa-hero, .fl-hero,
+    .mv-hero, #ltsecure-page .lt-hero, #mvshield {padding-top: clamp(200px, 23vh, 250px);}
     .mnav-toggle {display: inline-flex;align-items: center;justify-content: center;}
     .gnb {display: none;}
     .m-menu {display: block;}
@@ -382,35 +386,16 @@
         order: 1;
     }
 
-    .mv-split-reverse {
-        grid-template-columns:1fr;
-    }
-    #main-feature{
-        padding: 3.5rem 1.25rem;
-    }
+    .mv-split-reverse {grid-template-columns:1fr;}
+    .mv-split-reverse .fl-media { order: 2; }
+    .mv-split-reverse .fl-card{ order: 1; }
 
-    .flex-feature-title{
-        margin: 0 0 34px;
-        font-size: 2.05rem;
-    }
+    #main-feature{padding: 3.5rem 1.25rem;}
 
-    .func-card{
-        padding: 14px;
-        border-radius: 18px;
-    }
-
-    .func-card .func-icon{
-        width: 54px;
-        height: 54px;
-        margin: .7rem 0 .45rem;
-        font-size: 28px;
-    }
-
-    .func-card .f-card-title{
-        font-size: .98rem;
-        font-weight: 500;
-        line-height: 1.38;
-    }
+    .flex-feature-title{margin: 0 0 34px;font-size: 2.05rem;}
+    .func-card{padding: 14px;border-radius: 18px;}
+    .func-card .func-icon{width: 54px;height: 54px;margin: .7rem 0 .45rem;font-size: 28px;}
+    .func-card .f-card-title{font-size: .98rem;font-weight: 500;line-height: 1.38;}
 
     .func-card .f-card-pills{
         justify-content: center;
@@ -557,6 +542,7 @@
         grid-template-columns: 1fr;
         margin-top: 40px;
     }
+    .about-content {margin-bottom: 40px;}
     #cost-saving {
         padding: 70px 0 50px;}
     .callout {margin-top: 50px;}
@@ -576,12 +562,13 @@
     .main-section {padding: 58px 0;}
     .hero-inner {padding: 200px 4% 300px;}
     .main-title {font-size: 30px;}
-    #solutions .solutions-shell, .card-grid {grid-template-columns:1fr;}
-    .card-media img {height: 200px;}
+    .card-grid {grid-template-columns:1fr;}
+    .card-media img {height: 100%;}
     .mv-hero-visual{border-radius: 18px;}
     .mv-hero-visual img{height: clamp(210px, 60vw, 320px);}
     .journey #rocky-migration {
         margin-bottom: clamp(60px, 7.5vh, 70px);
+        padding: 50px 20px 20px;
     }
     #rlmig-page .rl-section {
         padding: 70px 0;
@@ -607,7 +594,7 @@
         padding: 70px 0;
     }
     .about-sec {
-        padding: 100px 0 70px;
+        padding: 200px 0 70px;
     }
 
     .hero-title, .mv-cases-title, .fl-title3, .rl-h2, .oa-title, .mv-h1 {font-size: 28px !important;}

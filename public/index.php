@@ -93,7 +93,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
                     </p>
 
                     <div class="solutions-cta">
-                        <a class="btn primary" href="solutions/montavista.php">MontaVista Linux&nbsp;&nbsp;&nbsp;→</a>
+                        <a class="btn primary" href="solutions/montavista.php">&nbsp;&nbsp;&thinsp;MontaVista Linux&nbsp;&nbsp;&nbsp;→&thinsp;&nbsp;&nbsp;&nbsp;</a>
                     </div>
 
                     <ul class="solutions-pills">

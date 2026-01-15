@@ -94,16 +94,7 @@
                         </li>
 
                         <li class="mnav-link"><a href="/about.php">ABOUT US</a></li>
-                        <li class="mnav-item">
-                            <button class="mnav-acc" type="button" aria-expanded="false">
-                                CONTACT
-                                <span class="mnav-chevron">▾</span>
-                            </button>
-                            <div class="mnav-sub">
-                                <a href="mailto:assist@assist.com">Contact Us</a>
-                                <a href="/location.php">오시는 길</a>
-                            </div>
-                        </li>
+                        <li class="mnav-link"><a href="/location.php">CONTACT US</a></li>
                     </ul>
                 </nav>
             </aside>
