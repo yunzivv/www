@@ -3,33 +3,12 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
     <main id="mv-page">
 
-<!--        hero-->
-<!--        <section class="mv-hero ">-->
-<!--            <div class="wrap">-->
-<!--                <div class="mv-hero-visual">-->
-<!--                    <img src="/../assets/img/montavista_img02.png" alt="MontaVista"/>-->
-<!--                </div>-->
-<!---->
-<!--                <div class="mv-hero-copy">-->
-<!--                    <h1 class="mv-title hero-title-accent">MontaVista Software</h1>-->
-<!--                    <div class="mv-lead">-->
-<!--                        에이시스트는 <b>Embedded Linux</b> 전문 기업 MontaVista Software사와-->
-<!--                        10년 이상 파트너십을 유지하고 있으며, <b>국내 고객을 대상으로 다양한 리눅스 관련 사업</b>을 함께 수행하고 있습니다.-->
-<!--                    </div>-->
-<!--                    <ul class="mv-pills">-->
-<!--                        <li>Linux is Everywhere</li>-->
-<!--                        <li>Embedded</li>-->
-<!--                        <li>Real Time</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="watermark" aria-hidden="true">MontaVista Software</div>-->
-<!--        </section>-->
-
 
 <!--        montavista sofrware-->
         <section class="mv-hero" id="mv-about">
-
+            <div class="service-title">
+                MontaVista Linux
+            </div>
             <div class="wrap mv-split">
                 <div class="">
                     <h2 class="mv-h2">About</h2>
@@ -119,7 +98,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         </article>
 
                         <article class="mv-slide">
-                            <img src="/../assets/img/expected03.png" alt="신속한 양산 H/W 지원"/>
+                            <img src="/../assets/img/expected03.jpg" alt="신속한 양산 H/W 지원"/>
                             <div>
                                 <div class="mv-slide-top">
                                     <h2 class="slide-title">신속한 양산 H/W 지원</h2>
@@ -597,6 +576,14 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 start();
             });
 
+            slides().forEach((slide, index) => {
+                slide.addEventListener('click', () => {
+                    if (index !== idx) {
+                        scrollToIndex(index, 'smooth');
+                    }
+                });
+            });
+
             let raf = 0;
             track.addEventListener('scroll', () => {
                 if (raf) cancelAnimationFrame(raf);
@@ -618,15 +605,32 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 start();
             }, {passive: true});
 
+            const checkArrowVisibility = () => {
+                if (!root) return;
+                const rootRect = root.getBoundingClientRect();
+                const spaceLeft = rootRect.left;
+                const spaceRight = window.innerWidth - rootRect.right;
+                const btnSafetyMargin = 65;
+
+                if (prevBtn) {
+                    prevBtn.style.display = spaceLeft > btnSafetyMargin ? 'block' : 'none';
+                }
+                if (nextBtn) {
+                    nextBtn.style.display = spaceRight > btnSafetyMargin ? 'block' : 'none';
+                }
+            };
+
             window.requestAnimationFrame(() => {
                 scrollToIndex(idx, 'auto');
                 setActiveByNearestCenter();
                 start();
+                checkArrowVisibility();
             });
 
             window.addEventListener('resize', () => {
                 scrollToIndex(idx, 'auto');
                 setActiveByNearestCenter();
+                checkArrowVisibility();
             }, {passive: true});
         })();
     </script>

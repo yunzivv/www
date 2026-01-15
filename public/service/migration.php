@@ -35,7 +35,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
     </section>
 
 <!--    support-->
-    <section class="mv-section ">
+    <section class="mv-section rocky">
         <div class="wrap">
             <div class="safe-migration">
                 <h2 class="rl-h2">CentOS에서 Rocky Linux로의 <br/>

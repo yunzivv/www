@@ -1,27 +1,27 @@
 <?php require_once __DIR__ . '/../app/head.php';
 require_once __DIR__ . '/../app/header.php'; ?>
 
-<main class="main-page">
+<main class="main-page" id="main-page">
 
 <!--    hero-->
     <section class="hero">
         <img class="bg" src="assets/img/main_bg01.jpg" alt="main background1"/>
         <div class="hero-inner wrap">
             <div class="hero-copy">
-                <p class="hero-eyebrow">JOURNEY TO THE MOST</p>
+                <p class="hero-eyebrow" data-reveal>JOURNEY TO THE MOST</p>
 
-                <h1 class="main-hero-title">
+                <h1 class="main-hero-title" data-reveal>
                     최고를 향한 여정에 <br/>
                     동반자가 되겠습니다.
                 </h1>
 
-                <p class="hero-desc">
+                <p class="hero-desc" data-reveal>
                     에이시스트는 글로벌 리눅스 전문기업인 MontaVista Software LLC 의 한국 공식 기술지원 파트너입니다. <br/>
                     리눅스 기술지원·컨설팅 전문기업으로서 임베디드시스템 개발을 위한 <br/>
                     리눅스 개발환경 구축, 엔터프라이즈 리눅스에 대한 기술지원, 장기유지보수서비스를 제공합니다.
                 </p>
 
-                <ul class="hero-chips" aria-label="">
+                <ul class="hero-chips" data-reveal>
                     <li>Linux 기술지원</li>
                     <li>컨 설 팅</li>
                     <li>장기 유지보수</li>
@@ -35,12 +35,12 @@ require_once __DIR__ . '/../app/header.php'; ?>
 <!--    highlight-->
     <section id="highlights" class="main-section ">
         <div class="wrap">
-            <header class="section-head">
+            <header class="section-head" data-reveal>
                 <h1 class="kicker text-highlight-gr2">HIGHLIGHTS</h1>
             </header>
 
             <div class="card-grid">
-                <a href="/service/ltsecure.php" class="card">
+                <a href="/service/ltsecure.php" class="card" data-reveal>
                     <div class="card-media">
                         <img src="assets/img/highlight01.png" alt="LTSecure"/>
                     </div>
@@ -53,7 +53,7 @@ require_once __DIR__ . '/../app/header.php'; ?>
                     </div>
                 </a>
 
-                <a href="/solutions/montavista.php" class="card">
+                <a href="/solutions/montavista.php" class="card" data-reveal>
                     <div class="card-media">
                         <img src="assets/img/highlight02.png" alt="Carrier Grade eXpress"/>
                     </div>
@@ -206,19 +206,35 @@ require_once __DIR__ . '/../app/header.php'; ?>
                     <path d="M3 7l9 7 9-7"/>
                 </svg>
             </a>
-            <a class="btn btn-ghost-dark wide-letter" href="/location.php">오시는 길 &nbsp;&nbsp;
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                     viewBox="0 0 24 24" fill="none"
-                     stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     aria-hidden="true" focusable="false">
-                    <path d="M12 22s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                </svg>
-            </a>
-
         </div>
     </section>
 
 </main>
+
+
+<script>
+    (() => {
+        const root = document.getElementById('main-page');
+        if (!root) return;
+        const items = root.querySelectorAll('[data-reveal]');
+        if (!items.length) return;
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            items.forEach(el => el.classList.add('is-in'));
+            return;
+        }
+
+        const io = new IntersectionObserver((entries) => {
+            for (const e of entries) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('is-in');
+                    io.unobserve(e.target);
+                }
+            }
+        }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
+
+        items.forEach(el => io.observe(el));
+    })();
+</script>
 
 <?php require_once __DIR__ . '/../app/footer.php'; ?>

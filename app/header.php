@@ -39,15 +39,8 @@
                     <a class="gnb-link" href="/about.php">ABOUT US</a>
                 </li>
 
-                <li class="gnb-item dropdown">
-                    <a class="gnb-link dropdown-trigger" href="/service/ltsecure.php" aria-expanded="false">
-                        CONTACT US
-                    </a>
-
-                    <div class="dropdown-panel" role="menu">
-                        <a class="dropdown-item" href="/location.php" role="menuitem">오시는 길</a>
-                        <a class="dropdown-item" href="mailto:assist@assist.com" role="menuitem">Contact Us</a>
-                    </div>
+                <li class="gnb-item">
+                    <a class="gnb-link" href="/location.php">CONTACT US</a>
                 </li>
 
                 <li class="gnb-item login">
@@ -56,12 +49,15 @@
             </ul>
         </nav>
 
-        <button class="mnav-toggle" type="button" aria-label="메뉴 열기" aria-controls="mobileNav" aria-expanded="false">
-            <span class="mnav-bar"></span>
-            <span class="mnav-bar"></span>
-            <span class="mnav-bar"></span>
-        </button>
-
+        <div class="m-menu">
+            <a class="gnb-link support-link-mobile login" href="/login.php">SURPORT LOGIN</a>
+            <button class="mnav-toggle" type="button" aria-label="메뉴 열기" aria-controls="mobileNav"
+                    aria-expanded="false">
+                <span class="mnav-bar"></span>
+                <span class="mnav-bar"></span>
+                <span class="mnav-bar"></span>
+            </button>
+        </div>
         <div class="mnav" id="mobileNav" aria-hidden="true">
             <div class="mnav-backdrop" data-mnav-close></div>
 
@@ -114,7 +110,6 @@
         </div>
 
 
-
     </div>
 </header>
 
@@ -131,7 +126,7 @@
             header.classList.toggle('is-scrolled', scrolled);
         };
         setScrolled();
-        window.addEventListener('scroll', setScrolled, { passive: true });
+        window.addEventListener('scroll', setScrolled, {passive: true});
 
         const closeAll = () => {
             triggers.forEach(a => a.setAttribute('aria-expanded', 'false'));

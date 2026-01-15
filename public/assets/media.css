@@ -10,8 +10,16 @@
     .oa-h2 {font-size: 30px;}
     .hero-wrap {gap: 10px;}
     .mv-desc { line-height: 1.55; }
-    .func-card .f-card-sub{font-size: .82rem;}
     .card-grid {grid-template-columns:1fr;}
+    .main-section {padding: 15% 0;}
+    #mv_expected .mv-slide {padding: 20px;}
+    .journey {
+        padding-top: clamp(50px, 8vh, 70px);
+    }
+    #ltsecure-page .lt-risk-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lts-target li {font-size: 18px}
     #ltsecure-page .lt-sub.composition { margin-bottom: 2rem; }
     .feature {grid-template-columns:1fr;}
     .feature-media img {height: 260px;}
@@ -22,6 +30,10 @@
     #ltsecure-page .lts-target .wrap {flex-direction: column}
     .flex-feature-title{margin: 0 0 44px;font-size: 2.4rem;line-height: 1.06;}
     .flex-func{grid-template-columns: repeat(2, minmax(0, 1fr));gap: 14px;}
+    .fl-desc {
+        margin-bottom: 65px;
+    }
+    #ltsecure-page .journey {padding: 110px 0;}
     .func-card{padding: 14px 12px;gap: 10px;align-content: start;}
     .func-card .f-card-title{font-size: 1.02rem;font-weight: 500;line-height: 1.35;letter-spacing: -0.02em;text-wrap: balance;}
     .func-card .func-icon{width: 58px;height: 58px;margin: .85rem 0 .55rem;font-size: 30px;}
@@ -53,14 +65,25 @@
     .lt-details-body { font-size: 18px;}
     #rocky-migration .card li li {font-size: 16px;}
 
-    .mnav-toggle {display: block;}
+        .mnav-toggle {
+
+            display: block;
+
+        }
+
+        .support-link-mobile {
+
+            display: inline-flex;
+
+        }
     .mnav-toggle {display: inline-flex;align-items: center;justify-content: center;}
     .gnb {display: none;}
+    .m-menu {display: block;}
 }
 
 @media (max-width: 980px) {
     .hero-grid {grid-template-columns: 1fr;}
-    .hero-inner {padding-left: 40px;padding-right: 40px;}
+    /*.hero-inner {padding-left: 40px;padding-right: 40px;}*/
     #main-feature .mv-track {grid-template-columns: repeat(2, minmax(0, 1fr));}
     #main-feature .mv-track > :nth-child(7) {grid-column: 1 / -1;}
     .mv-track {grid-template-columns: repeat(2, minmax(0, 1fr));padding: 0;}
@@ -246,19 +269,14 @@
     .site-header .header-inner {
         width: calc(100% - 24px);
     }
-    .mv-sbtn {
-        display: none;
-    }
 
+    #mv-cases .mv-cases-grid {grid-template-columns: 1fr;}
     .mv-cta-block {
         grid-template-columns:1fr;
     }
 
     .mv-cta-actions {
         justify-content: flex-start;
-    }
-    #mv-cases .mv-cases-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     #ltsecure-page .lt-compare-desktop, #ltsecure-page .lt-why-desktop, #ltsecure-page .lt-why-body {
         display: none;
@@ -394,10 +412,6 @@
         line-height: 1.38;
     }
 
-    .func-card .f-card-sub{
-        font-size: .8rem;
-    }
-
     .func-card .f-card-pills{
         justify-content: center;
     }
@@ -526,7 +540,7 @@
 }
 
 @media (max-width: 640px) {
-    .hero-eyebrow, .hero-desc{font-size: 16px;}
+    .hero {height: 748px;}
     .hero-title, .mv-cases-title, .title, .fl-title, .fl-title3,
     .service-title, #rlmig-page  .rl-h1, .oa-title { font-size: 30px}
     .title1, .up-tit, .rck-title-eyebrow{ font-size: 25px}
@@ -539,6 +553,20 @@
     .site-header .gnb-list > .gnb-item > .gnb-link {width: auto;}
     .site-footer .footCnt {grid-template-columns: 1fr;}
     .site-footer .privacy {justify-self: start;}
+    #ltsecure-page .lt-risk-grid {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+    #cost-saving {
+        padding: 70px 0 50px;}
+    .callout {margin-top: 50px;}
+
+    .fl-desc {
+        margin: 1.2rem 0 45px;
+    }
+    .mv-chart {
+        padding: 100px 0;}
+    #ltsecure-page .journey {padding: 70px 0;}
     .btn-top {right: 16px;bottom: 16px;width: 42px;height: 42px;}
     .main-hero-title {font-size: clamp(24px, 4vw, 30px);}
     .hero-eyebrow {font-size: clamp(10px, 14px, 18px);}
@@ -546,18 +574,36 @@
     .hero-actions, .hero-chips {display: none;}
     .container {width: calc(100% - 24px);}
     .main-section {padding: 58px 0;}
-    .hero-inner {padding: 96px 4% 70px;}
+    .hero-inner {padding: 200px 4% 300px;}
     .main-title {font-size: 30px;}
-
-    .hero-title, .mv-cases-title, .fl-title3, .rl-h2, .oa-title, .mv-h1 {font-size: 28px !important;}
-    .hero-quote {font-size: 22px !important;}  .hero-sub, .basic, .lead {font-size: 14px !important;}  .accent, .sub, .oa-h2 {font-size: 16px !important;}
-
     #solutions .solutions-shell, .card-grid {grid-template-columns:1fr;}
-
     .card-media img {height: 200px;}
-    #mv-cases .mv-cases-grid {grid-template-columns: 1fr;}
     .mv-hero-visual{border-radius: 18px;}
     .mv-hero-visual img{height: clamp(210px, 60vw, 320px);}
+    .journey #rocky-migration {
+        margin-bottom: clamp(60px, 7.5vh, 70px);
+    }
+    #rlmig-page .rl-section {
+        padding: 70px 0;
+    }
+
+    #rlmig-page .rl-head {
+        margin-bottom: 40px;
+    }
+    .feature-desc {font-size: 14px;}
+    .cycle {font-size: 22px;}
+    .mvshield-desc .desc { font-size: 16px;}
+    #ltsecure-page .journey .title {font-size: 18px;}
+    #ltsecure-page .journey .hero-title-accent {font-size: clamp(22px, 2.7vw, 25px);}
+    #oss-audit-page .oa-insight__media {
+        margin: 20px 0;
+    }
+    #oss-audit-page .oa-case {
+        padding: 24px 12px;}
+    .hero-title, .mv-cases-title, .fl-title3, .rl-h2, .oa-title, .mv-h1 {font-size: 28px !important;}
+    .hero-quote {font-size: 22px !important;}
+    .hero-sub, .basic, .lead {font-size: 14px !important;}
+    .hero-eyebrow, .hero-desc, .accent, .sub, .oa-h2 {font-size: 16px !important;}
 }
 
 @media (max-width: 560px) {
@@ -572,9 +618,13 @@
     #oss-audit-page .oa-benefits {grid-template-columns: 1fr;}
     #oss-audit-page .oa-chips {grid-template-columns: 1fr;}
     #oss-audit-page .oa-btn {flex: 1 1 auto;}
+    #ltsecure-page .lt-sec {
+        padding: 70px 0;
+    }
 }
 
 @media (max-width: 520px) {
+    .hero {height: auto;}
     #main-feature .mv-track {grid-template-columns: 1fr;}
     #main-feature .mv-track > :nth-child(7) {grid-column: auto;}
     .mv-track {grid-template-columns: 1fr;}

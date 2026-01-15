@@ -4,30 +4,11 @@ require_once __DIR__ . '/../../app/header.php';
 ?>
 <main id="flexera-page">
 
-<!--    hero-->
-<!--    <section aria-labelledby="ci-title" class="mv-hero" id="flexera-hero">-->
-<!--        <div class="mv-shell reverse wrap">-->
-<!--            <div>-->
-<!--                <div class="up-tit">소프트웨어보안 통합 솔루션<br></div>-->
-<!--                <h1 class="fl-title hero-title-accent2">FlexNet Code Insight</h1>-->
-<!--                <p class="mv-lead">-->
-<!--                    오픈소스소프트웨어 관련 리스크 관리를 위한 최적의 솔루션<br>-->
-<!--                    전체 소프트웨어 수명주기동안 보안취약점을 탐지해, 보안관련위협을 최소화합니다.-->
-<!--                </p>-->
-<!--                <ul aria-label="Key highlights" class="mv-pills">-->
-<!--                    <li>OSS Compliance</li>-->
-<!--                    <li><img alt="FlexNet Code Insight overview" src="/assets/img/flexera_logo.png"/></li>-->
-<!--                    <li><img alt="FlexNet Code Insight overview" src="/assets/img/revena_logo.png"/></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div aria-hidden="true" class="">-->
-<!--                <img alt="FlexNet Code Insight overview" src="/assets/img/main_solution02.png"/>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
 <!--    about revena -->
-    <section class="mv-section">
+    <section class="fl-hero">
+        <div class="service-title">
+            FlexNet Code Insight
+        </div>
         <div class="wrap">
             <div class="mv-split">
                 <div class="fl-card">
@@ -35,7 +16,7 @@ require_once __DIR__ . '/../../app/header.php';
                     <div class="fl-sec-title">Revenera</div>
                     <span class="fl-sub-title">(Software Supply division of Flexera)</span>
                     <p>
-                        <strong>Revenera</strong>는 Flexera의 Software Supply division으로,
+                        Revenera는 Flexera의 Software Supply division으로,
                         Revenara는 글로벌 소프트웨어업체인 Flexera 사의 소프트웨어 부서입니다.
                         Flexera 는 소프트웨어라이센싱 및 컴플라이언스 업계에서 30년이상의 역사를 가진 굴지의 소프트웨어기업입니다.
                         대표적인 제품으로는 InstallShield, Code Insight, Entitlement Management, Monetization Solution 등이 있으며,
@@ -170,8 +151,8 @@ require_once __DIR__ . '/../../app/header.php';
     </figure>
 
 <!--    resource-->
-    <section class="mv-section">
-        <div class="wrap">
+    <section class="wrap flexera">
+        <div class="resources">
             <div class="mv-cta-block">
                 <div class="mv-cta-copy">
                     <p class="mv-kicker">· RESOURCES</p>

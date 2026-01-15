@@ -107,6 +107,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         </article>
                     </div>
                 </div>
+                <div class="watermark">MVShield</div>
             </section>
 
 <!--            about-->
@@ -144,8 +145,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                                 <img src="/../assets/img/rockyLinux_ci.png" alt="Rocky Linux">
                             </div>
                             <div class="name">
-                                <strong>Rocky Linux</strong>
-                                <span>All versions</span>
+                                <strong>Rocky Linux All versions</strong>
+<!--                                <span>All versions</span>-->
                             </div>
                         </article>
 

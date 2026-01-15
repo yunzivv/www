@@ -12,8 +12,8 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                 <div class="oa-hero__copy" data-reveal>
                     <h1 class="oa-title hero-title-accent2" id="oa-title">Open Source Audit Service</h1>
                     <p class="lead">
-                        소프트웨어 자산에 대한 검증은 기업의 오픈소스 소프트웨어 라이선스관리는 물론 기업간 인수합병
-                        (M&amp;A)시에도 필수 불가결한 요소입니다. 하지만 오픈소스 소프트웨어 라이선스 관리 및 검증을 위한
+                        소프트웨어 자산에 대한 검증은 기업의 오픈소스 소프트웨어 라이선스관리는 물론 기업간 인수합병(M&amp;A) 시에도
+                        필수 불가결한 요소입니다. 하지만 오픈소스 소프트웨어 라이선스 관리 및 검증을 위한
                         전문 인력을 채용하거나 담당 부서를 설치하는 것은 대부분의 기업의 경영환경에서 큰 부담이
                         될 수 있습니다.
                         <br/>
@@ -21,7 +21,11 @@ require_once __DIR__ . '/../../app/header.php'; ?>
                         서비스를 제공합니다. 기업이 원하는 시점에, 검증의 목적에 따라 차별화된 서비스를 제공하여
                         최대한의 효율성과 비용절감 효과를 기대할 수 있습니다.
                     </p>
-
+                    <ul class="pills" aria-label="">
+                        <li>오픈소스 소프트웨어</li>
+                        <li>인수합병 검증</li>
+                        <li>소프트웨어 자산 검증</li>
+                    </ul>
                 </div>
 
                 <figure class="oa-figure oa-hero__media" data-reveal>
@@ -64,7 +68,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
             <div class="oa-scope">
                 <article class="oa-card" data-reveal>
                     <div class="oa-card__top">
-                        <h3 class="oa-h3">표준 검증 서비스(STANDARD AUDIT)</h3>
+                        <div class="oa-card-title">표준 검증 서비스 <br>(STANDARD AUDIT)</div>
                     </div>
                     <ul class="oa-list">
                         <li class="oa-badge">Priority 1 Licenses</li>
@@ -80,12 +84,12 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
                 <article class="oa-card forensic" data-reveal>
                     <div class="oa-card__top">
-                        <h3 class="oa-h3">포렌식 검증 서비스(FORENSIC AUDIT)</h3>
+                        <h3 class="oa-card-title">포렌식 검증 서비스<br>(FORENSIC AUDIT)</h3>
                     </div>
 
                     <div class="oa-stack">
                         <div class="oa-subcard">
-                            표준 검증 서비스(STANDARD AUDIT)
+                            표준 검증 서비스<br>(STANDARD AUDIT)
                         </div>
                         <div class="oa-plus">
                             +
@@ -104,7 +108,7 @@ require_once __DIR__ . '/../../app/header.php'; ?>
 
 
 <!--    case-->
-    <section class="oa-section" aria-labelledby="oa-cases">
+    <section id="oa-case" class="oa-section" aria-labelledby="oa-cases">
         <div class="wrap">
             <header class="oa-head" data-reveal>
                 <h2 class="oa-title" id="oa-cases">검증 서비스 사례</h2>
